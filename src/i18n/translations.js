@@ -530,6 +530,7 @@ export const translations = {
             { name: "Yüksek Etkili İletişim", description: "Net, özlü teknik raporlama sunmak ve disiplinler arası ekipler arasında etkili iletişim kanalları sürdürmek." },
         ],
         languages: [
+            { name: "Arapça", level: "Ana Dil" },
             { name: "Türkçe", level: "Akıcı, C1" },
             { name: "İngilizce", level: "İleri, B2" },
         ],
