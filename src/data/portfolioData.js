@@ -120,7 +120,7 @@ export const leadershipExperience = [
     date: "2019 – 2020",
     icon: Heart,
     logo: `${import.meta.env.BASE_URL}logos/kizilay-clean.png?v=2`,
-    scale: 1.5,
+    scale: 0.85,
     description: "Provided Arabic–Turkish interpretation support in humanitarian service environments, helping improve communication between Arabic-speaking beneficiaries and Turkish staff. Assisted with real-time guidance and service communication in high-pressure support settings.",
     tags: ["Translation", "Humanitarian Support", "Cross-Cultural Liaison", "Volunteering"]
   }
