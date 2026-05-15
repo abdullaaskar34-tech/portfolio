@@ -133,6 +133,7 @@ export default function Education() {
   const [modalType, setModalType] = useState(null);
   const { language } = useLanguage();
   const t = translations[language];
+  const base = import.meta.env.BASE_URL;
 
   // Refactored education data
   const educationData = [
@@ -146,7 +147,7 @@ export default function Education() {
       statusIcon: BadgeCheck,
       university: t.education.university,
       info: t.education.completed,
-      transcriptUrl: `${import.meta.env.BASE_URL}transcripts/biomedical-transcript.pdf`,
+      transcriptUrl: `${base}transcripts/biomedical-transcript.pdf`,
       themeColor: "emerald",
       bgGradient: "from-white to-emerald-50/30",
       ringColor: "hover:ring-emerald-200",
@@ -165,7 +166,7 @@ export default function Education() {
       statusIcon: Zap,
       university: t.education.university,
       info: t.education.doubleMajor,
-      transcriptUrl: `${import.meta.env.BASE_URL}transcripts/electrical-electronics-transcript.pdf`,
+      transcriptUrl: `${base}transcripts/electrical-electronics-transcript.pdf`,
       themeColor: "sky",
       bgGradient: "from-white to-sky-50/30",
       ringColor: "hover:ring-sky-200",
