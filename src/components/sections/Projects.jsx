@@ -213,10 +213,19 @@ function ProjectModal({ project, onClose, language, t }) {
 
 function ProjectCard({ project, onClick, language, t }) {
     return (
-        <GlareHover borderRadius="48px" glareOpacity={0.15} className="h-full">
+        <GlareHover 
+            width="100%"
+            height="100%"
+            borderRadius="48px" 
+            borderColor="rgba(120, 150, 180, 0.45)"
+            background="rgba(255, 255, 255, 0.75)"
+            glareOpacity={0.3} 
+            glareSize={300}
+            className="h-full"
+        >
             <article
                 onClick={onClick}
-                className="group cursor-pointer flex flex-col h-full overflow-hidden rounded-[48px] border border-white bg-white/50 shadow-lg transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] hover:bg-white hover:ring-2 hover:ring-sky-100"
+                className="group cursor-pointer flex flex-col h-full w-full overflow-hidden transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)]"
             >
                 <div className="relative h-72 overflow-hidden p-4">
                     <div className="h-full w-full rounded-[36px] overflow-hidden bg-slate-900 shadow-inner relative">

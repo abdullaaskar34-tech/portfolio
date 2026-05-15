@@ -6,6 +6,9 @@
   border: 1px solid var(--gh-border);
   overflow: hidden;
   position: relative;
+  display: flex; /* Changed from grid to flex to ensure children can fill height more easily if needed */
+  align-items: center;
+  justify-content: center;
 }
 
 .glare-hover::before {
@@ -14,8 +17,8 @@
   inset: 0;
   background: linear-gradient(
     var(--gh-angle),
-    hsla(0, 0%, 0%, 0) 50%,
-    var(--gh-rgba) 60%,
+    hsla(0, 0%, 0%, 0) 60%,
+    var(--gh-rgba) 70%,
     hsla(0, 0%, 0%, 0),
     hsla(0, 0%, 0%, 0) 100%
   );
@@ -29,6 +32,10 @@
     0 0;
   z-index: 5;
   pointer-events: none;
+}
+
+.glare-hover:hover {
+  cursor: pointer;
 }
 
 .glare-hover:hover::before {

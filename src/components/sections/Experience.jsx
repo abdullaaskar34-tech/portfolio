@@ -227,10 +227,19 @@ function CaseModal({ caseStudy, onClose, language, t }) {
 
 function CaseCard({ caseStudy, onClick, language }) {
     return (
-        <GlareHover borderRadius="32px" glareOpacity={0.15} className="h-full">
+        <GlareHover 
+            width="100%"
+            height="100%"
+            borderRadius="32px" 
+            borderColor="rgba(120, 150, 180, 0.45)"
+            background="rgba(255, 255, 255, 0.75)"
+            glareOpacity={0.3} 
+            glareSize={300}
+            className="h-full"
+        >
             <div 
                 onClick={onClick}
-                className="group cursor-pointer relative h-full overflow-hidden rounded-[32px] bg-white border border-slate-100 p-4 transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] hover:ring-2 hover:ring-sky-100"
+                className="group cursor-pointer relative h-full overflow-hidden p-4 transition-all hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] hover:-translate-y-2"
             >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] mb-6">
                     <img 

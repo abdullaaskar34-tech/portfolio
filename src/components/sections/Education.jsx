@@ -195,14 +195,16 @@ export default function Education() {
           {educationData.map((item) => (
             <GlareHover 
               key={item.id} 
+              width="100%"
+              height="100%"
               borderRadius="32px" 
               borderColor="rgba(120, 150, 180, 0.45)"
               background="rgba(255, 255, 255, 0.75)"
-              glareOpacity={0.22}
-              glareSize={250}
+              glareOpacity={0.3}
+              glareSize={300}
               className="h-full"
             >
-              <div className={`group relative h-full overflow-hidden p-8 transition-all hover:shadow-2xl`}>
+              <div className={`group relative h-full w-full overflow-hidden p-8 transition-all hover:shadow-2xl`}>
                 <div className={`absolute -right-10 -top-10 h-40 w-40 rounded-full ${item.id === 'biomedical' ? 'bg-emerald-100/20' : 'bg-sky-100/20'} blur-3xl transition-all group-hover:opacity-40`} />
                 
                 <div className="relative z-10 flex flex-col h-full">

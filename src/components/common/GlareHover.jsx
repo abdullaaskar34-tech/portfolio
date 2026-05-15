@@ -2,14 +2,14 @@ import React from 'react';
 import './GlareHover.css';
 
 const GlareHover = ({
-  width = '100%',
-  height = '100%',
-  background = 'transparent',
-  borderRadius = 'inherit',
-  borderColor = 'transparent',
+  width = '500px',
+  height = '500px',
+  background = '#000',
+  borderRadius = '10px',
+  borderColor = '#333',
   children,
   glareColor = '#ffffff',
-  glareOpacity = 0.2,
+  glareOpacity = 0.5,
   glareAngle = -45,
   glareSize = 250,
   transitionDuration = 650,
