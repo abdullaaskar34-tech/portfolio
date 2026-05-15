@@ -216,20 +216,30 @@ export default function Education() {
                 <p className="text-sm font-bold text-slate-400 mb-8">{item.university} {item.id === 'biomedical' ? `• ${item.info}` : `(${item.info})`}</p>
                 
                 <div className="flex flex-col gap-3">
-                    <a
-                      href={item.transcriptUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      onClick={() => setModalType(item.id)}
                       className="flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-6 py-4 text-[11px] font-black uppercase tracking-[0.2em] text-white transition-all hover:scale-[1.02] hover:bg-slate-900 active:scale-95 shadow-xl"
                     >
                       {t.education.viewTranscript} <ChevronRight size={18} />
-                    </a>
+                    </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </GlassCard>
+
+      <TranscriptModal
+        open={modalType !== null}
+        onClose={() => setModalType(null)}
+        title={modalType ? educationData.find(e => e.id === modalType).degree : ""}
+        subtitle={modalType ? educationData.find(e => e.id === modalType).university : ""}
+        courses={modalType ? getCourses(modalType) : []}
+        icon={modalType ? educationData.find(e => e.id === modalType).icon : Building2}
+        themeColor={modalType ? educationData.find(e => e.id === modalType).themeColor : "sky"}
+        language={language}
+        t={t}
+      />
     </>
   );
 }
