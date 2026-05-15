@@ -87,7 +87,7 @@ export const leadershipExperience = [
     date: "2026 – 2027",
     icon: ShieldCheck,
     logo: `${import.meta.env.BASE_URL}logos/International Student Senate Member.jpeg`,
-    scale: 1.35,
+    scale: 1.25,
     description: "Represented international engineering students as a university-appointed senate member, acting as a communication bridge between students and university administration. Collected academic and administrative concerns, communicated them to relevant bodies, and supported stronger student participation in faculty-level decision-making.",
     tags: ["Student Representation", "Leadership", "Communication", "Advocacy"]
   },
@@ -98,7 +98,7 @@ export const leadershipExperience = [
     date: "2025 – 2026",
     icon: GraduationCap,
     logo: `${import.meta.env.BASE_URL}logos/Scientific Office Volunteer.png`,
-    scale: 1.45,
+    scale: 1.25,
     description: "Supported academic development initiatives by organizing exam-review sessions, coordinating educational workshops, and collaborating with academic staff and volunteer instructors. Contributed to learning programs serving approximately 500 Syrian students in Karabük.",
     tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
   },
@@ -109,7 +109,7 @@ export const leadershipExperience = [
     date: "2026 – 2027",
     icon: HandHelping,
     logo: `${import.meta.env.BASE_URL}logos/Student Affairs Representative.png`,
-    scale: 1.25,
+    scale: 1.15,
     description: "Assisted Syrian students across Türkiye with academic, administrative, and student-life inquiries. Supported service workflows and contributed to the development of an AI-powered student-support chatbot for a nationwide community of approximately 5,000 students.",
     tags: ["Student Services", "Chatbot Support", "Community Impact", "Problem Solving"]
   },
@@ -120,7 +120,7 @@ export const leadershipExperience = [
     date: "2019 – 2020",
     icon: Heart,
     logo: `${import.meta.env.BASE_URL}logos/Kızılay.png`,
-    scale: 1.7,
+    scale: 1.5,
     description: "Provided Arabic–Turkish interpretation support in humanitarian service environments, helping improve communication between Arabic-speaking beneficiaries and Turkish staff. Assisted with real-time guidance and service communication in high-pressure support settings.",
     tags: ["Translation", "Humanitarian Support", "Cross-Cultural Liaison", "Volunteering"]
   }

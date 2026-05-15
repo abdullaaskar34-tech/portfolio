@@ -50,17 +50,17 @@ export default function Leadership() {
               {/* Left: Logo Section */}
               <div className="flex items-center justify-center shrink-0">
                 {item.logo ? (
-                  <div className="h-20 w-20 md:h-24 md:w-24 overflow-hidden rounded-[24px] bg-white shadow-lg ring-1 ring-slate-100/50 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                  <div className="leadership-logo-box ring-1 ring-slate-100/50 transition-transform duration-500 group-hover:scale-105">
                     <img 
                       src={item.logo} 
                       alt={`${item.organization} logo`} 
-                      className="w-full h-full object-contain p-2"
-                      style={{ transform: `scale(${item.scale || 1.35})` }}
+                      className="p-4"
+                      style={{ transform: `scale(${item.scale || 1.15})` }}
                     />
                   </div>
                 ) : (
-                  <div className="grid h-20 w-20 md:h-24 md:w-24 place-items-center rounded-[24px] bg-sky-50 text-sky-600 transition-all duration-500 group-hover:bg-sky-500 group-hover:text-white shadow-lg ring-1 ring-sky-100/50">
-                    <item.icon size={40} />
+                  <div className="leadership-logo-box bg-sky-50 text-sky-600 transition-all duration-500 group-hover:bg-sky-500 group-hover:text-white shadow-lg ring-1 ring-sky-100/50 group-hover:scale-105">
+                    <item.icon size={48} />
                   </div>
                 )}
               </div>
