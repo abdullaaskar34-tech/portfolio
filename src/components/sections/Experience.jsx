@@ -5,6 +5,7 @@ import SectionTitle from "../common/SectionTitle";
 import { experience } from "../../data/portfolioData";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
+import GlareHover from "../common/GlareHover";
 
 function FullscreenImage({ images, currentIndex, onIndexChange, onClose, language }) {
     const activeImage = images[currentIndex];
@@ -226,35 +227,37 @@ function CaseModal({ caseStudy, onClose, language, t }) {
 
 function CaseCard({ caseStudy, onClick, language }) {
     return (
-        <div 
-            onClick={onClick}
-            className="group cursor-pointer relative overflow-hidden rounded-[32px] bg-white border border-slate-100 p-4 transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] hover:-translate-y-2 hover:ring-2 hover:ring-sky-100"
-        >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] mb-6">
-                <img 
-                    src={caseStudy.thumbnail} 
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                    alt={caseStudy.title} 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                    <p className="text-white text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-                        {language === 'tr' ? 'Tam Raporu Görüntüle' : 'View Full Report'} <ChevronRight size={14} />
+        <GlareHover borderRadius="32px" glareOpacity={0.15} className="h-full">
+            <div 
+                onClick={onClick}
+                className="group cursor-pointer relative h-full overflow-hidden rounded-[32px] bg-white border border-slate-100 p-4 transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.08)] hover:ring-2 hover:ring-sky-100"
+            >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] mb-6">
+                    <img 
+                        src={caseStudy.thumbnail} 
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                        alt={caseStudy.title} 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <p className="text-white text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
+                            {language === 'tr' ? 'Tam Raporu Görüntüle' : 'View Full Report'} <ChevronRight size={14} />
+                        </p>
+                    </div>
+                    <div className="absolute top-4 left-4">
+                        <span className="rounded-xl bg-white/90 backdrop-blur-md px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-slate-800 shadow-lg">
+                            {caseStudy.category.split(' / ')[0]}
+                        </span>
+                    </div>
+                </div>
+
+                <div className="px-2 pb-2">
+                    <h4 className="text-lg font-black text-slate-800 mb-2 group-hover:text-sky-600 transition-colors">{caseStudy.title}</h4>
+                    <p className="text-xs font-medium text-slate-500 line-clamp-2 leading-relaxed">
+                        {caseStudy.problem}
                     </p>
                 </div>
-                <div className="absolute top-4 left-4">
-                    <span className="rounded-xl bg-white/90 backdrop-blur-md px-3 py-1.5 text-[9px] font-black uppercase tracking-widest text-slate-800 shadow-lg">
-                        {caseStudy.category.split(' / ')[0]}
-                    </span>
-                </div>
             </div>
-
-            <div className="px-2 pb-2">
-                <h4 className="text-lg font-black text-slate-800 mb-2 group-hover:text-sky-600 transition-colors">{caseStudy.title}</h4>
-                <p className="text-xs font-medium text-slate-500 line-clamp-2 leading-relaxed">
-                    {caseStudy.problem}
-                </p>
-            </div>
-        </div>
+        </GlareHover>
     );
 }
 

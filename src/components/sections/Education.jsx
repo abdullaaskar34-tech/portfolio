@@ -6,6 +6,7 @@ import { biomedicalCourses, electricalCourses } from "../../data/portfolioData";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import { X } from "lucide-react";
+import GlareHover from "../common/GlareHover";
 
 function CourseCard({ course, language, t }) {
   return (
@@ -133,7 +134,6 @@ export default function Education() {
   const [modalType, setModalType] = useState(null);
   const { language } = useLanguage();
   const t = translations[language];
-  const base = import.meta.env.BASE_URL;
 
   // Refactored education data
   const educationData = [
@@ -193,37 +193,45 @@ export default function Education() {
         <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} animate={true} />
         <div className="grid gap-8 md:grid-cols-2">
           {educationData.map((item) => (
-            <div key={item.id} className={`group relative overflow-hidden rounded-[32px] bg-gradient-to-br ${item.bgGradient} p-8 ring-1 ring-slate-100 transition-all hover:shadow-2xl ${item.ringColor}`}>
-              <div className={`absolute -right-10 -top-10 h-40 w-40 rounded-full ${item.id === 'biomedical' ? 'bg-emerald-100/20' : 'bg-sky-100/20'} blur-3xl transition-all group-hover:opacity-40`} />
-              
-              <div className="relative z-10">
-                <div className="flex justify-between items-start mb-6">
-                   <div className="flex flex-col gap-2">
-                      <p className={`text-sm font-black ${item.textAccent}`}>{item.years}</p>
-                      <div className={`inline-flex items-center gap-2 rounded-full ${item.badgeBg} px-4 py-1.5 text-[10px] font-black text-white shadow-lg ${item.badgeShadow} uppercase tracking-widest`}>
-                         <item.statusIcon size={14} /> {item.status}
-                      </div>
-                   </div>
-                   <div className="text-right">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{item.gpaLabel}</p>
-                      <p className={`text-xl font-black ${item.textAccent}`}>{item.gpa}</p>
-                   </div>
-                </div>
-
-                <h3 className="text-2xl font-black text-slate-800 mb-1">{item.degree} BSc</h3>
-                <p className="text-sm font-bold text-slate-400 mb-8">{item.university} {item.id === 'biomedical' ? `• ${item.info}` : `(${item.info})`}</p>
+            <GlareHover 
+              key={item.id} 
+              borderRadius="32px" 
+              glareOpacity={0.15}
+              glareSize={200}
+              className="h-full"
+            >
+              <div className={`group relative h-full overflow-hidden rounded-[32px] bg-gradient-to-br ${item.bgGradient} p-8 ring-1 ring-slate-100 transition-all hover:shadow-2xl ${item.ringColor}`}>
+                <div className={`absolute -right-10 -top-10 h-40 w-40 rounded-full ${item.id === 'biomedical' ? 'bg-emerald-100/20' : 'bg-sky-100/20'} blur-3xl transition-all group-hover:opacity-40`} />
                 
-                <div className="flex flex-col gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setModalType(item.id)}
-                      className="flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-6 py-4 text-[11px] font-black uppercase tracking-[0.2em] text-white transition-all hover:scale-[1.02] hover:bg-slate-900 active:scale-95 shadow-xl"
-                    >
-                      {t.education.viewTranscript} <ChevronRight size={18} />
-                    </button>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="flex flex-col gap-2">
+                        <p className={`text-sm font-black ${item.textAccent}`}>{item.years}</p>
+                        <div className={`inline-flex items-center gap-2 rounded-full ${item.badgeBg} px-4 py-1.5 text-[10px] font-black text-white shadow-lg ${item.badgeShadow} uppercase tracking-widest`}>
+                          <item.statusIcon size={14} /> {item.status}
+                        </div>
+                    </div>
+                    <div className="text-right">
+                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{item.gpaLabel}</p>
+                        <p className={`text-xl font-black ${item.textAccent}`}>{item.gpa}</p>
+                    </div>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-slate-800 mb-1">{item.degree} BSc</h3>
+                  <p className="text-sm font-bold text-slate-400 mb-8">{item.university} {item.id === 'biomedical' ? `• ${item.info}` : `(${item.info})`}</p>
+                  
+                  <div className="mt-auto flex flex-col gap-3">
+                      <button
+                        type="button"
+                        onClick={() => setModalType(item.id)}
+                        className="flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-6 py-4 text-[11px] font-black uppercase tracking-[0.2em] text-white transition-all hover:scale-[1.02] hover:bg-slate-900 active:scale-95 shadow-xl"
+                      >
+                        {t.education.viewTranscript} <ChevronRight size={18} />
+                      </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </GlareHover>
           ))}
         </div>
       </GlassCard>

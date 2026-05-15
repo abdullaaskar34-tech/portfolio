@@ -5,6 +5,7 @@ import SectionTitle from "../common/SectionTitle";
 import { projects } from "../../data/portfolioData";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
+import GlareHover from "../common/GlareHover";
 
 function ProjectModal({ project, onClose, language, t }) {
   if (!project) return null;
@@ -212,73 +213,75 @@ function ProjectModal({ project, onClose, language, t }) {
 
 function ProjectCard({ project, onClick, language, t }) {
     return (
-        <article
-            onClick={onClick}
-            className="group cursor-pointer flex flex-col overflow-hidden rounded-[48px] border border-white bg-white/50 shadow-lg transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] hover:bg-white hover:ring-2 hover:ring-sky-100"
-        >
-            <div className="relative h-72 overflow-hidden p-4">
-                <div className="h-full w-full rounded-[36px] overflow-hidden bg-slate-900 shadow-inner relative">
-                    <img
-                        src={project.preview}
-                        alt={project.title}
-                        className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                    />
-                    {project.media && project.media[0]?.type === 'video' && (
-                        <div className="absolute bottom-6 h-10 w-10 grid place-items-center rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 transition-all duration-500 right-6">
-                            <Play size={18} fill="currentColor" />
-                        </div>
-                    )}
-                </div>
-                <div className="absolute top-8 flex gap-2 left-8">
-                    <span className="rounded-xl bg-slate-900/90 backdrop-blur-md px-4 py-1.5 text-[9px] font-black uppercase tracking-widest text-white shadow-xl">
-                        {project.year}
-                    </span>
-                    {project.status === "Production Ready" && (
-                        <span className="rounded-xl bg-emerald-500/90 backdrop-blur-md px-4 py-1.5 text-[9px] font-black uppercase tracking-widest text-white shadow-xl">
-                           Live
+        <GlareHover borderRadius="48px" glareOpacity={0.15} className="h-full">
+            <article
+                onClick={onClick}
+                className="group cursor-pointer flex flex-col h-full overflow-hidden rounded-[48px] border border-white bg-white/50 shadow-lg transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] hover:bg-white hover:ring-2 hover:ring-sky-100"
+            >
+                <div className="relative h-72 overflow-hidden p-4">
+                    <div className="h-full w-full rounded-[36px] overflow-hidden bg-slate-900 shadow-inner relative">
+                        <img
+                            src={project.preview}
+                            alt={project.title}
+                            className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        />
+                        {project.media && project.media[0]?.type === 'video' && (
+                            <div className="absolute bottom-6 h-10 w-10 grid place-items-center rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 transition-all duration-500 right-6">
+                                <Play size={18} fill="currentColor" />
+                            </div>
+                        )}
+                    </div>
+                    <div className="absolute top-8 flex gap-2 left-8">
+                        <span className="rounded-xl bg-slate-900/90 backdrop-blur-md px-4 py-1.5 text-[9px] font-black uppercase tracking-widest text-white shadow-xl">
+                            {project.year}
                         </span>
-                    )}
-                </div>
-            </div>
-            
-            <div className="flex flex-1 flex-col p-10 pt-4">
-                <div className="flex items-center gap-2 mb-4">
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-sky-500">
-                        {project.category}
-                    </span>
-                    <div className="h-1 w-1 rounded-full bg-slate-200" />
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
-                        {project.role.split(' & ')[0]}
-                    </span>
-                </div>
-
-                <h3 className="text-2xl font-black text-slate-800 mb-6 leading-tight group-hover:text-sky-600 transition-colors">
-                    {project.title}
-                </h3>
-
-                <div className="flex flex-wrap gap-1.5 mb-8">
-                    {project.tech?.slice(0, 3).map((techItem) => (
-                        <span key={techItem} className="rounded-lg bg-slate-50 px-3 py-1.5 text-[10px] font-bold text-slate-500 ring-1 ring-slate-100">
-                            {techItem}
-                        </span>
-                    ))}
-                    {project.tech?.length > 3 && (
-                        <span className="rounded-lg bg-sky-50 px-3 py-1.5 text-[10px] font-bold text-sky-600 ring-1 ring-sky-100">
-                            +{project.tech.length - 3}
-                        </span>
-                    )}
-                </div>
-
-                <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                    <p className="text-xs font-black uppercase tracking-widest text-slate-800 flex items-center gap-2 group-hover:gap-4 transition-all">
-                        {language === 'tr' ? 'Proje Detaylarını Gör' : 'View Project Details'} <ChevronRight size={16} className="text-sky-500" />
-                    </p>
-                    <div className="h-10 w-10 grid place-items-center rounded-xl bg-slate-50 text-slate-300 group-hover:bg-sky-500 group-hover:text-white transition-all duration-500 shadow-sm">
-                        <Layout size={18} />
+                        {project.status === "Production Ready" && (
+                            <span className="rounded-xl bg-emerald-500/90 backdrop-blur-md px-4 py-1.5 text-[9px] font-black uppercase tracking-widest text-white shadow-xl">
+                            Live
+                            </span>
+                        )}
                     </div>
                 </div>
-            </div>
-        </article>
+                
+                <div className="flex flex-1 flex-col p-10 pt-4">
+                    <div className="flex items-center gap-2 mb-4">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-sky-500">
+                            {project.category}
+                        </span>
+                        <div className="h-1 w-1 rounded-full bg-slate-200" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                            {project.role.split(' & ')[0]}
+                        </span>
+                    </div>
+
+                    <h3 className="text-2xl font-black text-slate-800 mb-6 leading-tight group-hover:text-sky-600 transition-colors">
+                        {project.title}
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 mb-8">
+                        {project.tech?.slice(0, 3).map((techItem) => (
+                            <span key={techItem} className="rounded-lg bg-slate-50 px-3 py-1.5 text-[10px] font-bold text-slate-500 ring-1 ring-slate-100">
+                                {techItem}
+                            </span>
+                        ))}
+                        {project.tech?.length > 3 && (
+                            <span className="rounded-lg bg-sky-50 px-3 py-1.5 text-[10px] font-bold text-sky-600 ring-1 ring-sky-100">
+                                +{project.tech.length - 3}
+                            </span>
+                        )}
+                    </div>
+
+                    <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
+                        <p className="text-xs font-black uppercase tracking-widest text-slate-800 flex items-center gap-2 group-hover:gap-4 transition-all">
+                            {language === 'tr' ? 'Proje Detaylarını Gör' : 'View Project Details'} <ChevronRight size={16} className="text-sky-500" />
+                        </p>
+                        <div className="h-10 w-10 grid place-items-center rounded-xl bg-slate-50 text-slate-300 group-hover:bg-sky-500 group-hover:text-white transition-all duration-500 shadow-sm">
+                            <Layout size={18} />
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </GlareHover>
     );
 }
 
