@@ -146,7 +146,7 @@ export default function Education() {
       statusIcon: BadgeCheck,
       university: t.education.university,
       info: t.education.completed,
-      transcriptUrl: "/transcripts/biomedical-transcript.pdf",
+      transcriptUrl: `${import.meta.env.BASE_URL}transcripts/biomedical-transcript.pdf`,
       themeColor: "emerald",
       bgGradient: "from-white to-emerald-50/30",
       ringColor: "hover:ring-emerald-200",
