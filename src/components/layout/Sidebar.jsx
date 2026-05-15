@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
+import Dock from "../common/Dock";
 
 export default function Sidebar() {
   const { language } = useLanguage();
@@ -82,6 +83,13 @@ export default function Sidebar() {
     }
   };
 
+  const dockItems = navItems.map(item => ({
+    icon: <item.icon size={22} />,
+    label: item.label,
+    onClick: () => handleNavClick(item.id),
+    className: activeSection === item.id ? "bg-sky-500 border-sky-400 shadow-lg shadow-sky-200/50" : ""
+  }));
+
   return (
     <>
       {/* Mobile Top Bar */}
@@ -95,26 +103,16 @@ export default function Sidebar() {
         </button>
       </div>
 
-      {/* Desktop Sidebar */}
-      <aside className="fixed top-1/2 z-40 hidden -translate-y-1/2 flex-col items-center gap-6 rounded-full border border-white/50 bg-white/40 p-4 shadow-2xl backdrop-blur-2xl lg:flex left-8">
-        {navItems.map(({ icon: Icon, label, id }) => (
-          <button
-            key={id}
-            onClick={() => handleNavClick(id)}
-            className={`group relative grid h-12 w-12 place-items-center rounded-full transition-all duration-300 ${
-              activeSection === id
-                ? "bg-sky-500 text-white shadow-lg shadow-sky-200 scale-110"
-                : "text-slate-400 hover:bg-white hover:text-sky-500"
-            }`}
-            aria-label={label}
-          >
-            <Icon size={20} />
-            <span className="pointer-events-none absolute scale-95 rounded-xl bg-slate-800 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-white opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 left-16">
-              {label}
-            </span>
-          </button>
-        ))}
-      </aside>
+      {/* Desktop Sidebar with Dock */}
+      <div className="fixed left-8 top-0 bottom-0 z-40 hidden items-center lg:flex">
+        <Dock 
+          items={dockItems}
+          panelWidth={60}
+          baseItemSize={48}
+          magnification={64}
+          distance={150}
+        />
+      </div>
 
       {/* Mobile Sidebar Overlay */}
       {isMobileMenuOpen && (
