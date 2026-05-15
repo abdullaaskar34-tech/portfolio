@@ -25,30 +25,18 @@ export default function Profile() {
             <div className="flex-1">
               <div className={`mb-6 inline-flex items-center gap-2 rounded-full bg-sky-500/10 px-5 py-2 text-[11px] font-black uppercase tracking-[0.2em] text-sky-600 ring-1 ring-sky-500/20 backdrop-blur-md`}>
                 <span className="h-2 w-2 rounded-full bg-sky-500 animate-ping" />
-                {t.common.available}
+                <ShinyText text={t.common.available} variant="soft" />
               </div>
               
               <h1 className={`text-6xl font-black tracking-tighter text-slate-800 sm:text-7xl xl:text-8xl flex flex-wrap gap-x-4`}>
-                <ShinyText 
-                  text={t.hero.name} 
-                  speed={3} 
-                  color="#1e293b" 
-                  shineColor="#ffffff" 
-                  className="inline-block"
-                />
+                <ShinyText text={t.hero.name} />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 uppercase">
-                  <ShinyText 
-                    text={t.hero.surname} 
-                    speed={3} 
-                    color="inherit" 
-                    shineColor="#ffffff" 
-                    className="inline-block"
-                  />
+                  <ShinyText text={t.hero.surname} className="!bg-clip-text" />
                 </span>
               </h1>
               
               <p className={`mt-8 max-w-6xl text-xl font-medium leading-relaxed text-slate-600 md:text-2xl`}>
-                {t.hero.bio}
+                <ShinyText text={t.hero.bio} variant="soft" />
               </p>
 
               <div className={`mt-10 flex flex-wrap gap-4`}>
@@ -56,7 +44,8 @@ export default function Profile() {
                   onClick={() => window.location.href = "mailto:abdullaaskar34@gmail.com"}
                   className={`flex items-center gap-3 rounded-2xl bg-slate-800 px-10 py-5 text-xs font-black uppercase tracking-widest text-white shadow-xl shadow-slate-200 transition-all hover:scale-105 hover:bg-slate-900 active:scale-95`}
                 >
-                  <Send size={18} /> {t.common.getInTouch}
+                  <Send size={18} /> 
+                  <ShinyText text={t.common.getInTouch} className="!text-white" />
                 </button>
 
                 <a
@@ -90,10 +79,12 @@ export default function Profile() {
                       <Icon size={16} />
                   </div>
                   <p className="text-[11px] font-black uppercase tracking-widest text-slate-400">
-                      {label}
+                      <ShinyText text={label} variant="soft" />
                   </p>
                 </div>
-                <p className="text-2xl font-black text-slate-800 tracking-tight">{value}</p>
+                <p className="text-2xl font-black text-slate-800 tracking-tight">
+                  <ShinyText text={value} />
+                </p>
               </div>
             ))}
           </div>

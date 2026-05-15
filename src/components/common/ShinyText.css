@@ -1,3 +1,55 @@
 .shiny-text {
   display: inline-block;
+  background: linear-gradient(
+    110deg,
+    #1e293b 0%,
+    #1e293b 35%,
+    #38bdf8 50%,
+    #2563eb 60%,
+    #1e293b 75%,
+    #1e293b 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  animation: shinyTextMove 4.5s ease-in-out infinite;
+}
+
+.shiny-text-soft {
+  display: inline-block;
+  background: linear-gradient(
+    110deg,
+    #64748b 0%,
+    #64748b 35%,
+    #38bdf8 50%,
+    #2563eb 60%,
+    #64748b 75%,
+    #64748b 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  animation: shinyTextMove 5.5s ease-in-out infinite;
+}
+
+@keyframes shinyTextMove {
+  0% {
+    background-position: 220% center;
+  }
+  100% {
+    background-position: -220% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shiny-text,
+  .shiny-text-soft {
+    animation: none;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: inherit !important;
+  }
 }
