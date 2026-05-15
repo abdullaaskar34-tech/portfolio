@@ -54,7 +54,7 @@ export default function Leadership() {
                     <img 
                       src={item.logo} 
                       alt={`${item.organization} logo`} 
-                      className="p-4"
+                      className="p-2"
                       style={{ transform: `scale(${item.scale || 1.15})` }}
                     />
                   </div>
