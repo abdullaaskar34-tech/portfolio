@@ -13,7 +13,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
-  animation: shinyTextMove 4.5s ease-in-out infinite;
+  animation: shinyTextMove 8s ease-in-out infinite;
 }
 
 .shiny-text-soft {
@@ -31,7 +31,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
-  animation: shinyTextMove 5.5s ease-in-out infinite;
+  animation: shinyTextMove 9s ease-in-out infinite;
 }
 
 @keyframes shinyTextMove {

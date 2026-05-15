@@ -36,7 +36,7 @@ export default function Profile() {
               </h1>
               
               <p className={`mt-8 max-w-6xl text-xl font-medium leading-relaxed text-slate-600 md:text-2xl`}>
-                <ShinyText text={t.hero.bio} variant="soft" />
+                {t.hero.bio}
               </p>
 
               <div className={`mt-10 flex flex-wrap gap-4`}>
@@ -44,8 +44,7 @@ export default function Profile() {
                   onClick={() => window.location.href = "mailto:abdullaaskar34@gmail.com"}
                   className={`flex items-center gap-3 rounded-2xl bg-slate-800 px-10 py-5 text-xs font-black uppercase tracking-widest text-white shadow-xl shadow-slate-200 transition-all hover:scale-105 hover:bg-slate-900 active:scale-95`}
                 >
-                  <Send size={18} /> 
-                  <ShinyText text={t.common.getInTouch} className="!text-white" />
+                  <Send size={18} /> {t.common.getInTouch}
                 </button>
 
                 <a
@@ -79,12 +78,10 @@ export default function Profile() {
                       <Icon size={16} />
                   </div>
                   <p className="text-[11px] font-black uppercase tracking-widest text-slate-400">
-                      <ShinyText text={label} variant="soft" />
+                      {label}
                   </p>
                 </div>
-                <p className="text-2xl font-black text-slate-800 tracking-tight">
-                  <ShinyText text={value} />
-                </p>
+                <p className="text-2xl font-black text-slate-800 tracking-tight">{value}</p>
               </div>
             ))}
           </div>
