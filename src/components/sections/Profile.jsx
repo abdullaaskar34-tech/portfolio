@@ -25,7 +25,7 @@ export default function Profile() {
             <div className="flex-1">
               <div className={`mb-6 inline-flex items-center gap-2 rounded-full bg-sky-500/10 px-5 py-2 text-[11px] font-black uppercase tracking-[0.2em] text-sky-600 ring-1 ring-sky-500/20 backdrop-blur-md`}>
                 <span className="h-2 w-2 rounded-full bg-sky-500 animate-ping" />
-                <ShinyText text={t.common.available} variant="soft" />
+                {t.common.available}
               </div>
               
               <h1 className={`text-6xl font-black tracking-tighter text-slate-800 sm:text-7xl xl:text-8xl flex flex-wrap gap-x-4`}>
