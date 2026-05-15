@@ -8,6 +8,7 @@ import Leadership from "./components/sections/Leadership";
 import Projects from "./components/sections/Projects";
 import Certifications from "./components/sections/Certifications";
 import LanguageSwitcher from "./components/common/LanguageSwitcher";
+import Plasma from "./components/common/Plasma";
 import { useLanguage } from "./context/LanguageContext";
 import { translations } from "./i18n/translations";
 import "./styles.css";
@@ -18,12 +19,14 @@ export default function App() {
 
   return (
     <main className={`min-h-screen overflow-x-hidden bg-[#f8fbff] text-slate-700 selection:bg-sky-500/20`}>
-      {/* Premium Background Effects */}
-      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-sky-200/20 blur-[120px] animate-pulse" />
-        <div className="absolute right-[-5%] top-[20%] h-[500px] w-[500px] rounded-full bg-blue-100/30 blur-[100px]" />
-        <div className="absolute bottom-[-10%] left-[20%] h-[700px] w-[700px] rounded-full bg-indigo-50/40 blur-[140px]" />
-      </div>
+      {/* Plasma Background Effect */}
+      <Plasma 
+        color="#0ea5e9"
+        speed={0.4}
+        scale={1.2}
+        opacity={0.4}
+        mouseInteractive={true}
+      />
 
       <LanguageSwitcher />
       <Sidebar />
