@@ -215,6 +215,7 @@ export const translations = {
             { name: "High-Impact Communication", description: "Delivering clear, concise technical reporting and maintaining effective communication channels across interdisciplinary teams." },
         ],
         languages: [
+            { name: "Arabic", level: "Native" },
             { name: "Turkish", level: "Fluent, C1" },
             { name: "English", level: "Advanced, B2" },
         ],
