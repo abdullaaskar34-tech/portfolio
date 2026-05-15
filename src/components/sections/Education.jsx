@@ -190,7 +190,7 @@ export default function Education() {
   return (
     <>
       <GlassCard id="education" className="w-full">
-        <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} />
+        <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} animate={true} />
         <div className="grid gap-8 md:grid-cols-2">
           {educationData.map((item) => (
             <div key={item.id} className={`group relative overflow-hidden rounded-[32px] bg-gradient-to-br ${item.bgGradient} p-8 ring-1 ring-slate-100 transition-all hover:shadow-2xl ${item.ringColor}`}>

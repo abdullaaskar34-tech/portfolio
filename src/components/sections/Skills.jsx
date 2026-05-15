@@ -17,7 +17,7 @@ export function TechnicalSkills() {
 
   return (
     <GlassCard className="flex flex-col h-full p-8 md:p-12">
-      <SectionTitle icon={BrainCircuit} eyebrow={t.skills.technical.eyebrow} title={t.skills.technical.title} large={true} />
+      <SectionTitle icon={BrainCircuit} eyebrow={t.skills.technical.eyebrow} title={t.skills.technical.title} large={true} animate={true} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-grow">
         {t.data.technicalSkills.map(({ name, description }, index) => {
           const { icon: Icon, tools } = technicalSkills[index];
@@ -65,7 +65,7 @@ export function ProfessionalSkills() {
 
   return (
     <GlassCard delay={100} className="flex flex-col h-full p-8 md:p-12">
-      <SectionTitle icon={Sparkles} eyebrow={t.skills.professional.eyebrow} title={t.skills.professional.title} large={true} />
+      <SectionTitle icon={Sparkles} eyebrow={t.skills.professional.eyebrow} title={t.skills.professional.title} large={true} animate={true} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-grow">
         {t.data.professionalSkills.map(({ name, description }, index) => {
           const { icon: Icon } = professionalSkills[index];
