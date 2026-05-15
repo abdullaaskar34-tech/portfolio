@@ -196,10 +196,10 @@ export default function Education() {
             <GlareHover 
               key={item.id} 
               borderRadius="32px" 
-              borderColor="rgba(120, 150, 180, 0.35)"
+              borderColor="rgba(120, 150, 180, 0.45)"
               background="rgba(255, 255, 255, 0.75)"
-              glareOpacity={0.15}
-              glareSize={200}
+              glareOpacity={0.22}
+              glareSize={250}
               className="h-full"
             >
               <div className={`group relative h-full overflow-hidden p-8 transition-all hover:shadow-2xl`}>
