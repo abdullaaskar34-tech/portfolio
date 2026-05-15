@@ -2,6 +2,7 @@ import React from "react";
 import { Linkedin, Globe, MapPin, Calendar, Send } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
+import ShinyText from "../common/ShinyText";
 
 export default function Profile() {
   const { language } = useLanguage();
@@ -27,8 +28,23 @@ export default function Profile() {
                 {t.common.available}
               </div>
               
-              <h1 className={`text-6xl font-black tracking-tighter text-slate-800 sm:text-7xl xl:text-8xl`}>
-                {t.hero.name} <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 uppercase">{t.hero.surname}</span>
+              <h1 className={`text-6xl font-black tracking-tighter text-slate-800 sm:text-7xl xl:text-8xl flex flex-wrap gap-x-4`}>
+                <ShinyText 
+                  text={t.hero.name} 
+                  speed={3} 
+                  color="#1e293b" 
+                  shineColor="#ffffff" 
+                  className="inline-block"
+                />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 uppercase">
+                  <ShinyText 
+                    text={t.hero.surname} 
+                    speed={3} 
+                    color="inherit" 
+                    shineColor="#ffffff" 
+                    className="inline-block"
+                  />
+                </span>
               </h1>
               
               <p className={`mt-8 max-w-6xl text-xl font-medium leading-relaxed text-slate-600 md:text-2xl`}>
