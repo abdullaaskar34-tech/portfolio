@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+*.py
+untitled folder
+test_1_9.mp4
+Vision_Task_Allocation.pdf
+assets
+inspection_report.md
+.vscode
