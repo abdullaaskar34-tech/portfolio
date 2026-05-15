@@ -147,7 +147,6 @@ export default function Education() {
       statusIcon: BadgeCheck,
       university: t.education.university,
       info: t.education.completed,
-      transcriptUrl: `${base}transcripts/biomedical-transcript.pdf`,
       themeColor: "emerald",
       bgGradient: "from-white to-emerald-50/30",
       ringColor: "hover:ring-emerald-200",
@@ -166,7 +165,6 @@ export default function Education() {
       statusIcon: Zap,
       university: t.education.university,
       info: t.education.doubleMajor,
-      transcriptUrl: `${base}transcripts/electrical-electronics-transcript.pdf`,
       themeColor: "sky",
       bgGradient: "from-white to-sky-50/30",
       ringColor: "hover:ring-sky-200",
@@ -217,6 +215,7 @@ export default function Education() {
                 
                 <div className="flex flex-col gap-3">
                     <button
+                      type="button"
                       onClick={() => setModalType(item.id)}
                       className="flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-6 py-4 text-[11px] font-black uppercase tracking-[0.2em] text-white transition-all hover:scale-[1.02] hover:bg-slate-900 active:scale-95 shadow-xl"
                     >
