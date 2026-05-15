@@ -8,7 +8,6 @@ import Leadership from "./components/sections/Leadership";
 import Projects from "./components/sections/Projects";
 import Certifications from "./components/sections/Certifications";
 import LanguageSwitcher from "./components/common/LanguageSwitcher";
-import CardNav from "./components/common/CardNav";
 import { useLanguage } from "./context/LanguageContext";
 import { translations } from "./i18n/translations";
 import "./styles.css";
@@ -16,36 +15,6 @@ import "./styles.css";
 export default function App() {
   const { language } = useLanguage();
   const t = translations[language];
-
-  const navItems = [
-    {
-      label: language === 'tr' ? 'Profil' : 'Profile',
-      bgColor: "#0f172a",
-      textColor: "#fff",
-      links: [
-        { label: language === 'tr' ? 'Biyografi' : 'Biography', href: "#profile", ariaLabel: "Profile section" },
-        { label: language === 'tr' ? 'Dil Yetkinlikleri' : 'Languages', href: "#skills", ariaLabel: "Skills section" }
-      ]
-    },
-    {
-      label: language === 'tr' ? 'Akademik' : 'Academic',
-      bgColor: "#0ea5e9",
-      textColor: "#fff",
-      links: [
-        { label: language === 'tr' ? 'Eğitim' : 'Education', href: "#education", ariaLabel: "Education section" },
-        { label: language === 'tr' ? 'Sertifikalar' : 'Certifications', href: "#certificates", ariaLabel: "Certifications section" }
-      ]
-    },
-    {
-      label: language === 'tr' ? 'Kariyer' : 'Career',
-      bgColor: "#10b981",
-      textColor: "#fff",
-      links: [
-        { label: language === 'tr' ? 'Deneyim' : 'Experience', href: "#experience", ariaLabel: "Experience section" },
-        { label: language === 'tr' ? 'Projeler' : 'Projects', href: "#projects", ariaLabel: "Projects section" }
-      ]
-    }
-  ];
 
   return (
     <main className={`min-h-screen overflow-x-hidden bg-[#f8fbff] text-slate-700 selection:bg-sky-500/20`}>
@@ -56,12 +25,6 @@ export default function App() {
         <div className="absolute bottom-[-10%] left-[20%] h-[700px] w-[700px] rounded-full bg-indigo-50/40 blur-[140px]" />
       </div>
 
-      <CardNav 
-        items={navItems}
-        baseColor="rgba(255, 255, 255, 0.8)"
-        buttonBgColor="#0f172a"
-        className="backdrop-blur-md"
-      />
       <LanguageSwitcher />
       <Sidebar />
 
