@@ -10,48 +10,59 @@ import GlareHover from "../common/GlareHover";
 
 function CourseCard({ course, language, t }) {
   return (
-    <div
-      key={course.title}
-      className="group relative rounded-[32px] border border-slate-100 bg-white/50 p-8 transition-all hover:bg-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] hover:ring-2 hover:ring-sky-100"
+    <GlareHover 
+        width="100%"
+        height="100%"
+        borderRadius="32px" 
+        borderColor="rgba(120, 150, 180, 0.25)"
+        background="rgba(255, 255, 255, 0.5)"
+        glareOpacity={0.2}
+        glareSize={250}
+        className="h-full"
     >
-      <div className="flex justify-between items-start gap-6 mb-6">
-        <div className="flex-1">
-          <div className="mb-3 flex flex-wrap gap-2">
-            <span className="rounded-lg bg-sky-50 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-sky-500 ring-1 ring-sky-100">
-                {course.category}
-            </span>
-          </div>
-          <h4 className="text-xl font-black text-slate-800 leading-tight group-hover:text-sky-600 transition-colors">
-            {course.title}
-          </h4>
+        <div
+        key={course.title}
+        className="group relative w-full h-full overflow-hidden p-8 transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
+        >
+        <div className="flex justify-between items-start gap-6 mb-6">
+            <div className="flex-1">
+            <div className="mb-3 flex flex-wrap gap-2">
+                <span className="rounded-lg bg-sky-50 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-sky-500 ring-1 ring-sky-100">
+                    {course.category}
+                </span>
+            </div>
+            <h4 className="text-xl font-black text-slate-800 leading-tight group-hover:text-sky-600 transition-colors">
+                {course.title}
+            </h4>
+            </div>
+            <div className={`shrink-0 flex flex-col items-center justify-center rounded-2xl px-5 py-3 font-black text-white shadow-lg ${
+            course.grade === 'AA' ? 'bg-gradient-to-br from-emerald-500 to-emerald-400 shadow-emerald-100' :
+            course.grade.startsWith('B') ? 'bg-gradient-to-br from-sky-500 to-blue-500 shadow-sky-100' :
+            'bg-gradient-to-br from-slate-500 to-slate-400 shadow-slate-100'
+            }`}>
+            <span className="text-[10px] opacity-70 uppercase tracking-tighter mb-0.5">{t.common.grade}</span>
+            <span className="text-2xl leading-none">{course.grade}</span>
+            </div>
         </div>
-        <div className={`shrink-0 flex flex-col items-center justify-center rounded-2xl px-5 py-3 font-black text-white shadow-lg ${
-          course.grade === 'AA' ? 'bg-gradient-to-br from-emerald-500 to-emerald-400 shadow-emerald-100' :
-          course.grade.startsWith('B') ? 'bg-gradient-to-br from-sky-500 to-blue-500 shadow-sky-100' :
-          'bg-gradient-to-br from-slate-500 to-slate-400 shadow-slate-100'
-        }`}>
-          <span className="text-[10px] opacity-70 uppercase tracking-tighter mb-0.5">{t.common.grade}</span>
-          <span className="text-2xl leading-none">{course.grade}</span>
+        
+        <p className="text-[13px] font-medium leading-relaxed text-slate-500 mb-8 border-slate-100 pl-4 border-l-2">
+            {course.note}
+        </p>
+        
+        <div className="mt-auto flex items-center gap-5">
+            <div className="relative h-2 flex-1 rounded-full bg-slate-50 overflow-hidden shadow-inner">
+                <div 
+                className={`absolute inset-y-0 left-0 rounded-full transition-all duration-1000 ${
+                    course.grade === 'AA' ? 'bg-gradient-to-r from-emerald-500 to-emerald-400 group-hover:shadow-[0_0_12px_rgba(16,185,129,0.4)]' :
+                    'bg-gradient-to-r from-sky-500 to-blue-500'
+                }`}
+                style={{ width: `${course.score}%` }}
+                />
+            </div>
+            <span className="text-[11px] font-black text-slate-400 tabular-nums">{course.score}%</span>
         </div>
-      </div>
-      
-      <p className="text-[13px] font-medium leading-relaxed text-slate-500 mb-8 border-slate-100 pl-4 border-l-2">
-        {course.note}
-      </p>
-      
-      <div className="flex items-center gap-5">
-         <div className="relative h-2 flex-1 rounded-full bg-slate-50 overflow-hidden shadow-inner">
-            <div 
-              className={`absolute inset-y-0 left-0 rounded-full transition-all duration-1000 ${
-                course.grade === 'AA' ? 'bg-gradient-to-r from-emerald-500 to-emerald-400 group-hover:shadow-[0_0_12px_rgba(16,185,129,0.4)]' :
-                'bg-gradient-to-r from-sky-500 to-blue-500'
-              }`}
-              style={{ width: `${course.score}%` }}
-            />
-         </div>
-         <span className="text-[11px] font-black text-slate-400 tabular-nums">{course.score}%</span>
-      </div>
-    </div>
+        </div>
+    </GlareHover>
   );
 }
 
