@@ -190,7 +190,7 @@ export default function Education() {
   return (
     <>
       <GlassCard id="education" className="w-full">
-        <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} animate={true} />
+        <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} />
         <div className="grid gap-8 md:grid-cols-2">
           {educationData.map((item) => (
             <GlareHover 
