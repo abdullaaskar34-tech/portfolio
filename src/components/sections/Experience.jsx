@@ -287,19 +287,24 @@ const Experience = memo(() => {
 
   const getExperience = () => {
     return experience.map((internship, index) => {
-        const transInternship = t.data.experience[index];
+        const transInternship = t.data.experience?.[index];
+        if (!transInternship) return internship;
+
         return {
             ...internship,
             title: transInternship.title,
             place: transInternship.place, 
             description: transInternship.description,
-            cases: internship.cases.map((c, cIdx) => ({
-                ...c,
-                title: transInternship.cases[cIdx].title,
-                problem: transInternship.cases[cIdx].problem,
-                intervention: transInternship.cases[cIdx].intervention,
-                result: transInternship.cases[cIdx].result
-            }))
+            cases: internship.cases.map((c, cIdx) => {
+                const transCase = transInternship.cases?.[cIdx];
+                return {
+                    ...c,
+                    title: transCase?.title || c.title,
+                    problem: transCase?.problem || c.problem,
+                    intervention: transCase?.intervention || c.intervention,
+                    result: transCase?.result || c.result
+                };
+            })
         };
     });
   };

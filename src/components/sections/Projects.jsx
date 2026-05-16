@@ -303,7 +303,9 @@ const Projects = memo(() => {
   const t = translations[language];
 
   const translatedProjects = projects.map((project, index) => {
-    const transProject = t.data.projects[index];
+    const transProject = t.data.projects?.[index];
+    if (!transProject) return project;
+
     return {
         ...project,
         title: transProject.title,

@@ -20,7 +20,9 @@ export const TechnicalSkills = memo(() => {
       <SectionTitle icon={BrainCircuit} eyebrow={t.skills.technical.eyebrow} title={t.skills.technical.title} large={true} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-grow">
         {t.data.technicalSkills.map(({ name, description }, index) => {
-          const { icon: Icon, tools } = technicalSkills[index];
+          const skillData = technicalSkills[index];
+          if (!skillData) return null;
+          const { icon: Icon, tools } = skillData;
 
           return (
             <div key={name} className="group relative rounded-3xl border border-slate-100 bg-slate-50/50 p-6 transition-all hover:bg-white hover:shadow-xl hover:ring-1 hover:ring-sky-100">
@@ -58,7 +60,9 @@ export const ProfessionalSkills = memo(() => {
       <SectionTitle icon={Sparkles} eyebrow={t.skills.professional.eyebrow} title={t.skills.professional.title} large={true} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-grow">
         {t.data.professionalSkills.map(({ name, description }, index) => {
-          const { icon: Icon } = professionalSkills[index];
+          const skillData = professionalSkills[index];
+          if (!skillData) return null;
+          const { icon: Icon } = skillData;
 
           return (
             <div key={name} className="group flex items-start gap-5 p-6 rounded-3xl border border-slate-50 bg-slate-50/30 transition-all hover:bg-white hover:shadow-xl hover:ring-1 hover:ring-emerald-100">

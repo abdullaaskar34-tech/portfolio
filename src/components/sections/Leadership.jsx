@@ -13,7 +13,9 @@ const Leadership = memo(() => {
   const t = translations[language];
 
   const translatedLeadership = leadershipExperience.map((item, index) => {
-    const transItem = t.data.leadershipExperience[index];
+    const transItem = t.data.leadershipExperience?.[index];
+    if (!transItem) return item;
+
     return {
         ...item,
         role: transItem.role,
