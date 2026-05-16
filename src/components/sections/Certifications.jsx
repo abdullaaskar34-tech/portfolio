@@ -8,74 +8,73 @@ import { translations } from "../../i18n/translations";
 import GlareHover from "../common/GlareHover";
 
 const CertificationModal = memo(({ cert, onClose, language, t }) => {
-    return cert ? (
-        (() => {
-            useEffect(() => {
-                const handleKeyDown = (e) => { if (e.key === 'Escape') onClose(); };
-                window.addEventListener('keydown', handleKeyDown);
-                return () => window.removeEventListener('keydown', handleKeyDown);
-            }, [onClose]);
+    useEffect(() => {
+        if (!cert) return;
+        const handleKeyDown = (e) => { if (e.key === 'Escape') onClose(); };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [cert, onClose]);
 
-            return (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/90 p-4 backdrop-blur-2xl animate-in fade-in duration-300" onClick={onClose}>
-                    <div className="relative max-h-[95vh] w-full max-w-7xl overflow-hidden rounded-[48px] border border-white/20 bg-white shadow-[0_32px_128px_rgba(0,0,0,0.4)] flex flex-col md:flex-row animate-in zoom-in-95 duration-500" onClick={(e) => e.stopPropagation()}>
-                        
-                        <button onClick={onClose} className="absolute z-[110] grid h-12 w-12 place-items-center rounded-2xl bg-slate-100 text-slate-500 shadow-xl hover:bg-slate-800 hover:text-white transition-all active:scale-90 right-8 top-8">
-                            <X size={24} />
-                        </button>
+    if (!cert) return null;
 
-                        <div className="md:w-3/5 bg-slate-50/50 p-8 md:p-12 flex items-center justify-center border-slate-100 overflow-hidden md:border-r border-b md:border-b-0">
-                            <div className="relative group/image">
-                                <img src={cert.image} alt={cert.title} className="max-w-full max-h-[70vh] rounded-2xl shadow-2xl ring-1 ring-black/5 object-contain" loading="lazy" decoding="async" />
-                                <div className="absolute inset-0 rounded-2xl bg-black/5 opacity-0 group-hover/image:opacity-100 transition-opacity pointer-events-none" />
-                            </div>
-                        </div>
+    return (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/90 p-4 backdrop-blur-2xl animate-in fade-in duration-300" onClick={onClose}>
+            <div className="relative max-h-[95vh] w-full max-w-7xl overflow-hidden rounded-[48px] border border-white/20 bg-white shadow-[0_32px_128px_rgba(0,0,0,0.4)] flex flex-col md:flex-row animate-in zoom-in-95 duration-500" onClick={(e) => e.stopPropagation()}>
+                
+                <button onClick={onClose} className="absolute z-[110] grid h-12 w-12 place-items-center rounded-2xl bg-slate-100 text-slate-500 shadow-xl hover:bg-slate-800 hover:text-white transition-all active:scale-90 right-8 top-8">
+                    <X size={24} />
+                </button>
 
-                        <div className="flex-1 p-10 md:p-16 overflow-y-auto flex flex-col">
-                            <div className="mb-12">
-                                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 ring-1 ring-emerald-100">
-                                    <ShieldCheck size={14} /> {language === 'tr' ? 'Doğrulanmış Profesyonel Kimlik' : 'Verified Professional Credential'}
-                                </div>
-                                <h3 className="mt-6 text-4xl font-black text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
-                                <p className="mt-4 text-lg font-bold text-sky-500 uppercase tracking-widest">{cert.category}</p>
-                            </div>
-
-                            <div className="space-y-6 mb-12 flex-grow">
-                                <div className="flex items-center gap-5 p-6 rounded-3xl bg-slate-50 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-lg">
-                                    <div className="h-14 w-14 grid place-items-center rounded-2xl bg-white shadow-sm text-sky-500">
-                                        <Building2 size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{t.common.organization}</p>
-                                        <p className="text-lg font-black text-slate-700 leading-none">{cert.issuer}</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-5 p-6 rounded-3xl bg-slate-50 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-lg">
-                                    <div className="h-14 w-14 grid place-items-center rounded-2xl bg-white shadow-sm text-sky-500">
-                                        <Calendar size={24} />
-                                    </div>
-                                    <div>
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{t.common.date}</p>
-                                        <p className="text-lg font-black text-slate-700 leading-none">{cert.date}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a 
-                                href={cert.document || cert.link} 
-                                target="_blank" 
-                                rel="noreferrer" 
-                                className="group flex w-full items-center justify-center gap-4 rounded-3xl bg-slate-800 px-10 py-6 text-xs font-black uppercase tracking-[0.2em] text-white transition-all hover:bg-slate-900 hover:scale-[1.02] active:scale-95 shadow-2xl shadow-slate-200"
-                            >
-                                {language === 'tr' ? 'Sertifika Kaydını Doğrula' : 'Verify Credential Record'} <ExternalLink size={20} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                            </a>
-                        </div>
+                <div className="md:w-3/5 bg-slate-50/50 p-8 md:p-12 flex items-center justify-center border-slate-100 overflow-hidden md:border-r border-b md:border-b-0">
+                    <div className="relative group/image">
+                        <img src={cert.image} alt={cert.title} className="max-w-full max-h-[70vh] rounded-2xl shadow-2xl ring-1 ring-black/5 object-contain" loading="lazy" decoding="async" />
+                        <div className="absolute inset-0 rounded-2xl bg-black/5 opacity-0 group-hover/image:opacity-100 transition-opacity pointer-events-none" />
                     </div>
                 </div>
-            );
-        })()
-    ) : null;
+
+                <div className="flex-1 p-10 md:p-16 overflow-y-auto flex flex-col">
+                    <div className="mb-12">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 ring-1 ring-emerald-100">
+                            <ShieldCheck size={14} /> {language === 'tr' ? 'Doğrulanmış Profesyonel Kimlik' : 'Verified Professional Credential'}
+                        </div>
+                        <h3 className="mt-6 text-4xl font-black text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
+                        <p className="mt-4 text-lg font-bold text-sky-500 uppercase tracking-widest">{cert.category}</p>
+                    </div>
+
+                    <div className="space-y-6 mb-12 flex-grow">
+                        <div className="flex items-center gap-5 p-6 rounded-3xl bg-slate-50 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                            <div className="h-14 w-14 grid place-items-center rounded-2xl bg-white shadow-sm text-sky-500">
+                                <Building2 size={24} />
+                            </div>
+                            <div>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{t.common.organization}</p>
+                                <p className="text-lg font-black text-slate-700 leading-none">{cert.issuer}</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-5 p-6 rounded-3xl bg-slate-50 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-lg">
+                            <div className="h-14 w-14 grid place-items-center rounded-2xl bg-white shadow-sm text-sky-500">
+                                <Calendar size={24} />
+                            </div>
+                            <div>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{t.common.date}</p>
+                                <p className="text-lg font-black text-slate-700 leading-none">{cert.date}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a 
+                        href={cert.document || cert.link} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="group flex w-full items-center justify-center gap-4 rounded-3xl bg-slate-800 px-10 py-6 text-xs font-black uppercase tracking-[0.2em] text-white transition-all hover:bg-slate-900 hover:scale-[1.02] active:scale-95 shadow-2xl shadow-slate-200"
+                    >
+                        {language === 'tr' ? 'Sertifika Kaydını Doğrula' : 'Verify Credential Record'} <ExternalLink size={20} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
 });
 
 const CertificationCard = memo(({ cert, onClick, language, t }) => {
