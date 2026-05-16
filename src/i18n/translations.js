@@ -555,7 +555,7 @@ export const translations = {
             {
                 title: "YOLOv11 Endüstriyel Denetim",
                 role: "Lider Geliştirici",
-                description: "Bu proje, konveyör bandı üzerinde ilerleyen ekmekleri gerçek zamanlı olarak tespit etmek, takip etmek ve saymak için geliştirilen YOLOv11 tabanlı bir endüstriyel bilgisayarlı görü sistemidir. Sistem Python, OpenCV, NumPy, Ultralytics YOLO ve Roboflow YOLO formatındaki veri seti kullanılarak geliştirilmiştir. Mevcut uygulama, ekmek tespiti ve sayımı işlemlerini gerçek zamanlı olarak başarıyla gerçekleştirmektedir. Kusur tespiti ve otomatik ayırma sistemi ise tam kapsamlı endüstriyel kalite kontrol sistemi için bir sonraki geliştirme katmanı olarak planlanmaktadır.",
+                description: "Bu proje, yürüyen bant üzerinde ilerleyen ekmekleri gerçek zamanlı olarak tespit etmek, takip etmek ve saymak için geliştirilen YOLOv11 tabanlı bir endüstriyel bilgisayarlı görü sistemidir. Sistem Python, OpenCV, NumPy, Ultralytics YOLO ve Roboflow YOLO formatındaki veri seti kullanılarak geliştirilmiştir. Mevcut uygulama, ekmek tespiti ve sayımı işlemlerini gerçek zamanlı olarak başarıyla gerçekleştirmektedir. Kusur tespiti ve otomatik ayırma sistemi ise tam kapsamlı endüstriyel kalite kontrol sistemi için bir sonraki geliştirme katmanı olarak planlanmaktadır.",
                 details: [
                     "Gerçek zamanlı YOLOv11 kusur algılama",
                     "Yüksek hızda endüstriyel sayım mantığı",
