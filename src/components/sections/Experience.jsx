@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { BriefcaseBusiness, ChevronRight, ChevronLeft, X, Building2, CircuitBoard, Activity, ShieldCheck, Settings2, Image as ImageIcon, Maximize2 } from "lucide-react";
 import GlassCard from "../common/GlassCard";
 import SectionTitle from "../common/SectionTitle";
@@ -7,7 +7,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import GlareHover from "../common/GlareHover";
 
-function FullscreenImage({ images, currentIndex, onIndexChange, onClose, language }) {
+const FullscreenImage = memo(({ images, currentIndex, onIndexChange, onClose, language }) => {
     const activeImage = images[currentIndex];
 
     const handlePrevious = (e) => {
@@ -85,9 +85,9 @@ function FullscreenImage({ images, currentIndex, onIndexChange, onClose, languag
             </div>
         </div>
     );
-}
+});
 
-function CaseModal({ caseStudy, onClose, language, t }) {
+const CaseModal = memo(({ caseStudy, onClose, language, t }) => {
     if (!caseStudy) return null;
     const [activeImage, setActiveImage] = useState(caseStudy.images[0]);
     const [isFullscreen, setIsFullscreen] = useState(false);
@@ -223,9 +223,9 @@ function CaseModal({ caseStudy, onClose, language, t }) {
             )}
         </>
     );
-}
+});
 
-function CaseCard({ caseStudy, onClick, language }) {
+const CaseCard = memo(({ caseStudy, onClick, language }) => {
     return (
         <GlareHover 
             width="100%"
@@ -268,14 +268,13 @@ function CaseCard({ caseStudy, onClick, language }) {
             </div>
         </GlareHover>
     );
-}
+});
 
-export default function Experience() {
+const Experience = memo(() => {
   const [activeCase, setActiveCase] = useState(null);
   const { language } = useLanguage();
   const t = translations[language];
 
-  // Helper function to merge translation data with media from portfolioData
   const getExperience = () => {
     return experience.map((internship, index) => {
         const transInternship = t.data.experience[index];
@@ -314,7 +313,6 @@ export default function Experience() {
         <div className="space-y-24">
           {translatedExperience.map((internship, idx) => (
             <div key={idx} className="relative">
-              {/* Enhanced Professional Header */}
               <div className="mb-14">
                 <div className="flex flex-col gap-4">
                    <h3 className="text-4xl font-black text-slate-800 tracking-tighter">
@@ -345,4 +343,6 @@ export default function Experience() {
       <CaseModal caseStudy={activeCase} onClose={() => setActiveCase(null)} language={language} t={t} />
     </>
   );
-}
+});
+
+export default Experience;

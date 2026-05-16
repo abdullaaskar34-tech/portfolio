@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import { Linkedin, Globe, MapPin, Calendar, Send } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import ShinyText from "../common/ShinyText";
 
-export default function Profile() {
+const Profile = memo(() => {
   const { language } = useLanguage();
   const t = translations[language];
 
@@ -88,4 +88,6 @@ export default function Profile() {
       </div>
     </section>
   );
-}
+});
+
+export default Profile;

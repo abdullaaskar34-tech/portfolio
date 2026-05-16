@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { 
   MapPin, 
   Calendar, 
@@ -8,7 +8,7 @@ import { leadershipExperience } from "../../data/portfolioData";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 
-export default function Leadership() {
+const Leadership = memo(() => {
   const { language } = useLanguage();
   const t = translations[language];
 
@@ -44,10 +44,8 @@ export default function Leadership() {
             className="group p-0 border-white/60 bg-white/40 transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-sky-500/10 hover:-translate-y-1 overflow-hidden"
           >
             <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-8 items-start p-8 md:p-12 relative overflow-hidden">
-              {/* Optional blue accent marker */}
               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-sky-500/0 group-hover:bg-sky-500 transition-all duration-500" />
 
-              {/* Left: Logo Section */}
               <div className="flex items-center justify-center shrink-0">
                 {item.logo ? (
                   <div className="leadership-logo-box ring-1 ring-slate-100/50 transition-transform duration-500 group-hover:scale-105">
@@ -65,7 +63,6 @@ export default function Leadership() {
                 )}
               </div>
 
-              {/* Middle: Content Section */}
               <div className="flex flex-col">
                 <div className="mb-4">
                   <h3 className="text-2xl md:text-3xl font-black text-slate-800 leading-tight group-hover:text-sky-600 transition-colors mb-2">
@@ -89,7 +86,6 @@ export default function Leadership() {
                     {item.description}
                 </p>
 
-                {/* Footer: Tags */}
                 <div className="flex flex-wrap gap-2.5">
                     {item.tags.map((tag, idx) => (
                     <span 
@@ -102,7 +98,6 @@ export default function Leadership() {
                 </div>
               </div>
 
-              {/* Right: Date Section */}
               <div className="md:text-right shrink-0">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-xs font-black text-sky-600 uppercase tracking-widest border border-slate-100/50 group-hover:bg-sky-500 group-hover:text-white group-hover:border-sky-500 transition-all duration-500">
                       <Calendar size={14} />
@@ -115,4 +110,6 @@ export default function Leadership() {
       </div>
     </section>
   );
-}
+});
+
+export default Leadership;

@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import { GraduationCap, Building2, BadgeCheck, ChevronRight, Zap } from "lucide-react";
+import React, { useState, memo } from "react";
+import { GraduationCap, Building2, BadgeCheck, ChevronRight, Zap, X, Activity, Settings2, ShieldCheck } from "lucide-react";
 import GlassCard from "../common/GlassCard";
 import SectionTitle from "../common/SectionTitle";
 import { biomedicalCourses, electricalCourses } from "../../data/portfolioData";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
-import { X } from "lucide-react";
 import GlareHover from "../common/GlareHover";
 
-function CourseCard({ course, language, t }) {
+const CourseCard = memo(({ course, language, t }) => {
   return (
     <GlareHover 
         width="100%"
@@ -64,9 +63,9 @@ function CourseCard({ course, language, t }) {
         </div>
     </GlareHover>
   );
-}
+});
 
-function TranscriptModal({ open, onClose, title, subtitle, courses, icon: Icon, themeColor = "sky", language, t }) {
+const TranscriptModal = memo(({ open, onClose, title, subtitle, courses, icon: Icon, themeColor = "sky", language, t }) => {
   if (!open) return null;
 
   const highPerformance = courses.filter(c => c.grade === "AA");
@@ -139,9 +138,9 @@ function TranscriptModal({ open, onClose, title, subtitle, courses, icon: Icon, 
       </div>
     </div>
   );
-}
+});
 
-export default function Education() {
+const Education = memo(() => {
   const [modalType, setModalType] = useState(null);
   const { language } = useLanguage();
   const t = translations[language];
@@ -264,4 +263,6 @@ export default function Education() {
       />
     </>
   );
-}
+});
+
+export default Education;

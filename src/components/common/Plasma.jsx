@@ -207,9 +207,20 @@ export const Plasma = ({
     canvas.addEventListener('webglcontextlost', handleContextLost);
     canvas.addEventListener('webglcontextrestored', handleContextRestored);
 
+    const handleVisibilityChange = () => {
+      isVisible = document.visibilityState === 'visible';
+      if (isVisible && !contextLost) {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(loop);
+      } else {
+        cancelAnimationFrame(raf);
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     const io = new IntersectionObserver(([entry]) => {
       const wasVisible = isVisible;
-      isVisible = entry.isIntersecting;
+      isVisible = entry.isIntersecting && document.visibilityState === 'visible';
       if (isVisible && !wasVisible && !contextLost) {
         cancelAnimationFrame(raf);
         raf = requestAnimationFrame(loop);
@@ -223,6 +234,7 @@ export const Plasma = ({
       cancelAnimationFrame(raf);
       ro.disconnect();
       io.disconnect();
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       canvas.removeEventListener('webglcontextlost', handleContextLost);
       canvas.removeEventListener('webglcontextrestored', handleContextRestored);
       if (mouseInteractive && containerEl) {

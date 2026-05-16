@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, memo } from "react";
 import { CircuitBoard, ExternalLink, X, ChevronRight, Play, FileText, UserRound, Code2, Rocket, Layout, Database, Image as ImageIcon } from "lucide-react";
 import GlassCard from "../common/GlassCard";
 import SectionTitle from "../common/SectionTitle";
@@ -7,7 +7,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import GlareHover from "../common/GlareHover";
 
-function ProjectModal({ project, onClose, language, t }) {
+const ProjectModal = memo(({ project, onClose, language, t }) => {
   if (!project) return null;
   
   const leftMedia = [
@@ -26,7 +26,6 @@ function ProjectModal({ project, onClose, language, t }) {
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-950/80 p-4 backdrop-blur-xl transition-all duration-500">
       <div className="relative h-full max-h-[95vh] w-full max-w-7xl overflow-hidden rounded-[48px] border border-white/20 bg-white/95 shadow-[0_32px_128px_rgba(0,0,0,0.4)] flex flex-col lg:flex-row animate-slideUp">
         
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute z-[70] grid h-12 w-12 place-items-center rounded-2xl bg-white/90 text-slate-500 shadow-xl hover:bg-slate-800 hover:text-white transition-all active:scale-90 right-8 top-8"
@@ -34,7 +33,6 @@ function ProjectModal({ project, onClose, language, t }) {
           <X size={24} />
         </button>
 
-        {/* Left: Premium Media Engine */}
         <div className="lg:w-[60%] h-[500px] lg:h-auto bg-slate-900 relative overflow-hidden flex flex-col">
             <div className="flex-1 relative flex items-center justify-center overflow-hidden">
                 {activeMedia?.type === 'document' ? (
@@ -139,7 +137,6 @@ function ProjectModal({ project, onClose, language, t }) {
             )}
         </div>
 
-        {/* Right: Technical Project Data */}
         <div className="flex-1 overflow-y-auto p-10 lg:p-16 bg-white scrollbar-premium">
             <div className="mb-12">
                 <div className="flex flex-wrap items-center gap-3 mb-6">
@@ -209,9 +206,9 @@ function ProjectModal({ project, onClose, language, t }) {
       </div>
     </div>
   );
-}
+});
 
-function ProjectCard({ project, onClick, language, t }) {
+const ProjectCard = memo(({ project, onClick, language, t }) => {
     return (
         <GlareHover 
             width="100%"
@@ -292,9 +289,9 @@ function ProjectCard({ project, onClick, language, t }) {
             </article>
         </GlareHover>
     );
-}
+});
 
-export default function Projects() {
+const Projects = memo(() => {
   const [activeProject, setActiveProject] = useState(null);
   const { language } = useLanguage();
   const t = translations[language];
@@ -341,4 +338,6 @@ export default function Projects() {
       />
     </>
   );
-}
+});
+
+export default Projects;
