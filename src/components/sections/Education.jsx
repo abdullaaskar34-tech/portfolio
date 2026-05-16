@@ -105,7 +105,7 @@ const TranscriptModal = memo(({ open, onClose, title, subtitle, courses, icon: I
         <div className="flex-1 overflow-y-auto px-6 sm:px-10 pb-20 pt-8 sm:pt-10 scrollbar-premium">
           <div className="grid gap-12 sm:gap-20">
             <section>
-              <div className="sticky top-0 z-10 mb-8 sm:mb-10 flex items-center gap-4 bg-white/0 py-2">
+              <div className="mb-8 sm:mb-10 flex items-center gap-4 py-2">
                  <h4 className="rounded-xl sm:rounded-2xl bg-slate-800 px-4 py-2 sm:px-6 sm:py-2.5 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.3em] text-white shadow-lg shadow-slate-200 ring-2 sm:ring-4 ring-white">
                     {t.common.highPerf}
                  </h4>
@@ -117,7 +117,7 @@ const TranscriptModal = memo(({ open, onClose, title, subtitle, courses, icon: I
             </section>
 
             <section>
-              <div className="sticky top-0 z-10 mb-8 sm:mb-10 flex items-center gap-4 bg-white/0 py-2">
+              <div className="mb-8 sm:mb-10 flex items-center gap-4 py-2">
                  <h4 className="rounded-xl sm:rounded-2xl bg-slate-500 px-4 py-2 sm:px-6 sm:py-2.5 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.3em] text-white shadow-lg shadow-slate-100 ring-2 sm:ring-4 ring-white">
                     {t.common.foundation}
                  </h4>
