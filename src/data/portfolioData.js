@@ -430,11 +430,11 @@ export const experience = [
     description: "Hands-on biomedical engineering experience involving troubleshooting, calibration, repair, testing, and maintenance of hospital medical equipment across operating rooms, ICU, radiology, ophthalmology, sterilization, and diagnostic units.",
     cases: [
       {
-        title: "Surgical Operating Light",
+        title: "Device: Surgical Operating Light",
         category: "Operating Room / Lighting Systems",
-        problem: "Fault in the main control board affecting light intensity adjustment.",
-        intervention: "Replaced the main control board and verified power delivery.",
-        result: "Light intensity control restored; device returned to normal operation.",
+        problem: "Problem: There was a problem in the main board affecting the light intensity control.",
+        intervention: "Intervention: The faulty main board was replaced.",
+        result: "Result: The lighting control system was restored and the unit became fully functional.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/surgical-light-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/surgical-light-01.jpg`, alt: "Operating light control interface and intensity fault inspection", caption: "Operating light control interface and intensity fault inspection" },
@@ -444,11 +444,11 @@ export const experience = [
         ]
       },
       {
-        title: "Topcon IS-600 Slit Lamp",
+        title: "Device: Topcon IS-600 Slit Lamp",
         category: "Ophthalmology / Illumination",
-        problem: "Primary illumination lamp failure; brightness potentiometer unresponsive.",
-        intervention: "Temporarily rerouted lamp connection to AUX 2 output to maintain device uptime.",
-        result: "Brightness control bypassed; lamp operating at maximum intensity as a temporary solution.",
+        problem: "Problem: The illumination lamp was not working.",
+        intervention: "Intervention: The device was temporarily connected to AUX 2 until a new potentiometer could be installed.",
+        result: "Result: Temporary operation was restored and the device was prepared for final repair.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/slit-lamp-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/slit-lamp-01.jpg`, alt: "Internal illumination circuit and AUX connection inspection", caption: "Internal illumination circuit and AUX connection inspection" },
@@ -458,11 +458,11 @@ export const experience = [
         ]
       },
       {
-        title: "EEG Electroencephalography System",
+        title: "Device: EEG System",
         category: "Neurodiagnostics / Calibration",
-        problem: "Detected unstable signal readings and channel noise during routine testing.",
-        intervention: "Executed calibration using Netech MiniSim-EEG Simulator; identified electrode gel degradation.",
-        result: "Normal signal morphology restored after replacing electrode contact gel.",
+        problem: "Problem: Signal accuracy and channel response needed verification. A slight error was observed during calibration.",
+        intervention: "Intervention: Calibration and signal verification were performed using the Netech MiniSim-EEG Simulator.",
+        result: "Result: Channel response was checked and the error source was identified for further evaluation.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/eeg-system-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/eeg-system-01.jpg`, alt: "EEG system setup before calibration", caption: "EEG system setup before calibration" },
@@ -472,11 +472,11 @@ export const experience = [
         ]
       },
       {
-        title: "Endoscope Washing and Disinfection Machine",
+        title: "Device: Endoscope Washing and Disinfection Machine",
         category: "Sterilization / Disinfection",
-        problem: "Simultaneous failure of main control board and float-type water level sensor.",
-        intervention: "Replaced both components; re-soldered damaged electrical interfaces.",
-        result: "Proper sterilization cycle and fluid level monitoring verified post-repair.",
+        problem: "Problem: The main control board and float-type water level sensor were defective.",
+        intervention: "Intervention: Both faulty components were replaced, connections were rechecked, and the system was tested.",
+        result: "Result: The machine was restored to proper operating condition.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/endoscope-washer-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/endoscope-washer-01.jpg`, alt: "Endoscope washer control system inspection", caption: "Endoscope washer control system inspection" },
@@ -487,11 +487,11 @@ export const experience = [
         ]
       },
       {
-        title: "Opera Fluoroscopy System",
+        title: "Device: Opera Fluoroscopy System",
         category: "Radiology / Communication",
-        problem: "Error Code 98: Critical communication failure between subsystems.",
-        intervention: "Performed fiber optic signal integrity test; isolated fault to the main CPU board.",
-        result: "Main board removed and prepared for manufacturer-level component repair.",
+        problem: "Problem: The device showed error code 98, indicating a communication failure.",
+        intervention: "Intervention: Manufacturer guidance was reviewed, and the fiber optic cable was tested.",
+        result: "Result: The fiber optic cable was confirmed to be functional, and the communication issue was narrowed down for further troubleshooting.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/fluoroscopy-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/fluoroscopy-01.jpg`, alt: "Fluoroscopy system error code 98 inspection", caption: "Fluoroscopy system error code 98 inspection" },
@@ -509,11 +509,11 @@ export const experience = [
     description: "Advanced clinical engineering training focused on high-acuity life support systems and specialized diagnostic modalities in critical care and emergency departments.",
     cases: [
       {
-        title: "Ventilator Mindray SV300",
+        title: "Device: Ventilator — Mindray SV300",
         category: "Critical Care / Ventilation",
-        problem: "Critical 'Bellows service required' alert; exceeded operating hour threshold.",
-        intervention: "Installed new bellows assembly and performed service hour counter reset.",
-        result: "System cleared for clinical use after passing pressure-leak tests.",
+        problem: "Problem: The ventilator showed a “Bellows service required” warning because the bellows unit had exceeded its operating hours.",
+        intervention: "Intervention: The bellows unit was inspected and replaced.",
+        result: "Result: The warning was cleared and the ventilator was restored to normal operating condition.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/ventilator-sv300-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/ventilator-sv300-01.jpg`, alt: "Mindray SV300 bellows service warning inspection", caption: "Mindray SV300 bellows service warning inspection" },
@@ -522,11 +522,11 @@ export const experience = [
         ]
       },
       {
-        title: "Raphael XTC Ventilator Mixer Valve Replacement",
+        title: "Device: Raphael XTC Ventilator — Mixer Valve Replacement",
         category: "Critical Care / Gas Mixing",
-        problem: "Mixed gas ratio errors linked to mixer valve and oxygen sensor failure.",
-        intervention: "Replacement of the high-precision mixer valve and recalibration of O2 sensors.",
-        result: "Verified oxygen delivery accuracy using a digital test lung simulator.",
+        problem: "Problem: The Raphael XTC ventilator displayed an error caused by a faulty mixer valve and oxygen sensor.",
+        intervention: "Intervention: The faulty mixer valve was replaced, and the device was tested using a test lung.",
+        result: "Result: The ventilation function was verified and the device was restored to working condition.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/ventilator-raphael-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/ventilator-raphael-01.jpg`, alt: "Raphael XTC ventilator oxygen delivery error inspection", caption: "Raphael XTC ventilator oxygen delivery error inspection" },
@@ -536,11 +536,11 @@ export const experience = [
         ]
       },
       {
-        title: "Defibrillator Paddle Replacement and Calibration",
+        title: "Device: Defibrillator Paddle Replacement and Calibration",
         category: "Emergency / Cardiac Care",
-        problem: "Paddles failing to deliver programmed energy output during calibration.",
-        intervention: "Replaced defective high-voltage paddles; tested capacitor discharge reliability.",
-        result: "Recalibrated and verified Joules delivery across the entire energy range.",
+        problem: "Problem: During calibration, the Philips defibrillator paddles failed to deliver the required energy output.",
+        intervention: "Intervention: The defective paddles were replaced with new ones, and the device was recalibrated.",
+        result: "Result: The energy output was verified and the device calibration was restored.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/defibrillator-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/defibrillator-01.jpg`, alt: "Philips defibrillator paddle output calibration test", caption: "Philips defibrillator paddle output calibration test" },
@@ -548,11 +548,11 @@ export const experience = [
         ]
       },
       {
-        title: "Mobile X-Ray Unit Arm Maintenance",
+        title: "Device: Mobile X-Ray Unit Arm",
         category: "Radiology / Mechanical Repair",
-        problem: "Internal steel cable failure leading to total loss of arm mobility.",
-        intervention: "Replaced internal tension cable; re-soldered damaged control wiring.",
-        result: "Full range of motion and mechanical locking stability restored.",
+        problem: "Problem: The arm of the mobile X-Ray unit was not moving due to a failure in the internal steel cable.",
+        intervention: "Intervention: The damaged cable was replaced and the broken wires were re-soldered.",
+        result: "Result: Smooth and proper arm movement was successfully restored.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/mobile-xray-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/mobile-xray-01.jpg`, alt: "Mobile X-ray arm movement failure inspection", caption: "Mobile X-ray arm movement failure inspection" },
@@ -560,11 +560,11 @@ export const experience = [
         ]
       },
       {
-        title: "ENT Unit Pump Replacement",
+        title: "Device: ENT Unit Pump",
         category: "ENT / Fluid Systems",
-        problem: "Suction pump malfunction disrupting diagnostic procedures.",
-        intervention: "Replaced the defective motor/pump assembly; updated fluid circuit connections.",
-        result: "Verified suction pressure and fluid flow rate against clinical specifications.",
+        problem: "Problem: A malfunction was identified in the pump of the ENT unit.",
+        intervention: "Intervention: The defective pump was removed and replaced with a new fully operational pump. Wiring and connections were completed.",
+        result: "Result: The pump system was restored to working condition.",
         thumbnail: `${import.meta.env.BASE_URL}internship-cases/ent-unit-01.jpg`,
         images: [
           { src: `${import.meta.env.BASE_URL}internship-cases/ent-unit-01.jpg`, alt: "ENT unit pump malfunction diagnosis", caption: "ENT unit pump malfunction diagnosis" },
