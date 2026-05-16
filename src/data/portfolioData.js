@@ -326,17 +326,25 @@ export const projects = [
     ]
   },
   {
-    title: "Collaborative Multi-Robot System",
+    title: "Collaborative Robots",
     year: "2024",
     category: "Embedded Systems",
     role: "System Designer",
     status: "Completed",
-    description: "Vision-based centralized control for heterogeneous robots using ArUco markers and global feedback for task allocation and coordination.",
-    tech: ["STM32", "Arduino", "C++", "ArUco Markers", "Robotics"],
+    description: "This project is a low-cost, scalable, vision-based industrial and robotic coordination system designed to coordinate two heterogeneous mobile robots from a central vision system. The operator selects a target point, and the system calculates which robot is closest to the target using Euclidean distance. The selected robot is then guided toward the target through closed-loop heading correction. The system demonstrates centralized task allocation and real-time visual robot coordination using an overhead smartphone camera, ArUco marker tracking, Wi-Fi communication, and two different mobile robot platforms.",
+    tech: ["Python", "Computer Vision", "ArUco", "STM32", "Arduino", "ESP8266", "Wi-Fi", "L298N", "3D Printing", "Euclidean Distance", "Closed-loop Control"],
     details: [
-      "STM32 & Arduino integration",
-      "Vision-based localization (ArUco)",
-      "Centralized task allocation algorithm"
+      "Python-based central control logic",
+      "Computer vision with ArUco markers",
+      "Smartphone overhead camera as the global vision sensor",
+      "STM32F302R8 robot and Arduino Uno robot",
+      "ESP8266 Wi-Fi communication",
+      "3D-printed differential-drive chassis",
+      "L298N motor driver for the STM32 robot",
+      "Motor shield for the Arduino robot",
+      "Laptop as the central controller / Wi-Fi hotspot",
+      "Euclidean-distance task allocation",
+      "Closed-loop heading correction"
     ],
     preview: `${import.meta.env.BASE_URL}project-media/robot-thumbnail.jpg`,
     document: `${import.meta.env.BASE_URL}project-documents/vision-task-allocation.pdf`,
@@ -353,7 +361,7 @@ export const projects = [
     category: "Oncology AI",
     role: "Team Lead",
     status: "Finalist",
-    description: "AI-driven bioinformatics platform to identify subtype-specific biomarkers and therapeutic targets for Glioblastoma Multiforme drug repurposing.",
+    description: "An AI-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
     tech: ["Bioinformatics", "Python", "Genomics", "Machine Learning", "R"],
     details: [
       "Bioinformatics analysis for GBM",

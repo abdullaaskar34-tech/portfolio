@@ -264,19 +264,27 @@ export const translations = {
                 ]
             },
             {
-                title: "Collaborative Multi-Robot System",
+                title: "Collaborative Robots",
                 role: "System Designer",
-                description: "Vision-based centralized control for heterogeneous robots using ArUco markers and global feedback.",
+                description: "This project is a low-cost, scalable, vision-based industrial and robotic coordination system designed to coordinate two heterogeneous mobile robots from a central vision system. The operator selects a target point, and the system calculates which robot is closest to the target using Euclidean distance. The selected robot is then guided toward the target through closed-loop heading correction. The system demonstrates centralized task allocation and real-time visual robot coordination using an overhead smartphone camera, ArUco marker tracking, Wi-Fi communication, and two different mobile robot platforms.",
                 details: [
-                    "STM32 & Arduino integration",
-                    "Vision-based localization (ArUco)",
-                    "Centralized task allocation algorithm"
+                    "Python-based central control logic",
+                    "Computer vision with ArUco markers",
+                    "Smartphone overhead camera as the global vision sensor",
+                    "STM32F302R8 robot and Arduino Uno robot",
+                    "ESP8266 Wi-Fi communication",
+                    "3D-printed differential-drive chassis",
+                    "L298N motor driver for the STM32 robot",
+                    "Motor shield for the Arduino robot",
+                    "Laptop as the central controller / Wi-Fi hotspot",
+                    "Euclidean-distance task allocation",
+                    "Closed-loop heading correction"
                 ]
             },
             {
                 title: "GBM Subtype Drug Repositioning",
                 role: "Team Lead",
-                description: "AI-driven bioinformatics platform to identify subtype-specific biomarkers and therapeutic targets for Glioblastoma Multiforme drug repurposing.",
+                description: "An AI-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
                 details: [
                     "Bioinformatics analysis for GBM",
                     "Drug repurposing pipeline",
@@ -579,17 +587,25 @@ export const translations = {
             {
                 title: "İşbirlikçi Çoklu Robot Sistemi",
                 role: "Sistem Tasarımcısı",
-                description: "ArUco işaretçileri ve küresel geri bildirim kullanarak heterojen robotlar için görü tabanlı merkezi kontrol.",
+                description: "Bu proje, merkezi bir görüntü sistemi üzerinden iki farklı yapıya sahip mobil robotu koordine etmek için geliştirilen düşük maliyetli, ölçeklenebilir ve görüntü tabanlı bir endüstriyel/robotik koordinasyon sistemidir. Operatör bir hedef noktası seçer ve sistem, Öklid mesafesini kullanarak hedefe en yakın robotu hesaplar. Seçilen robot daha sonra kapalı çevrim yön düzeltmesi ile hedef noktaya yönlendirilir. Sistem; üstten konumlandırılmış akıllı telefon kamerası, ArUco işaretçi takibi, Wi-Fi iletişimi ve iki farklı mobil robot platformu kullanarak merkezi görev atamasını ve gerçek zamanlı görsel robot koordinasyonunu göstermektedir.",
                 details: [
-                    "STM32 ve Arduino entegrasyonu",
-                    "Görü tabanlı yer tespiti (ArUco)",
-                    "Merkezi görev tahsis algoritması"
+                    "Python tabanlı merkezi kontrol mantığı",
+                    "ArUco işaretçileri ile bilgisayarlı görü",
+                    "Küresel görüntü sensörü olarak üstten konumlandırılmış akıllı telefon kamerası",
+                    "STM32F302R8 robotu ve Arduino Uno robotu",
+                    "ESP8266 Wi-Fi iletişimi",
+                    "3D baskı diferansiyel sürüş şasisi",
+                    "STM32 robotu için L298N motor sürücü",
+                    "Arduino robotu için motor shield",
+                    "Merkezi kontrolcü / Wi-Fi erişim noktası olarak laptop",
+                    "Öklid mesafesi tabanlı görev ataması",
+                    "Kapalı çevrim yön düzeltmesi"
                 ]
             },
             {
                 title: "GBM Alttipi İlaç Yeniden Konumlandırma",
                 role: "Takım Lideri",
-                description: "Glioblastoma Multiforme ilacının yeniden kullanımı için alttipe özgü biyobelirteçleri ve terapötik hedefleri belirlemek üzere YZ odaklı biyoinformatik platformu.",
+                description: "Bu proje, tümör RNA-seq verilerini analiz ederek moleküler alt tip tahmini yapan, alt tipe özgü biyobelirteçleri belirleyen ve sonraki terapötik keşif süreçleri için biyolojik olarak anlamlı hedefleri önceliklendiren yapay zekâ destekli bir GBM hassas tıp platformudur. Geliştirilen sistem; biyoinformatik, gözetimsiz kümeleme, çok dallı konsensüs tahmini ve web tabanlı analiz arayüzünü bir araya getirmektedir. Platformun mevcut en güçlü çıktıları moleküler alt tip sınıflandırması, biyobelirteç sıralaması ve hedefe hazır gen önceliklendirmesidir. İlaç yeniden konumlandırma katmanı ise sistemin nihai translasyonel karar destek hedefini temsil etmektedir.",
                 details: [
                     "GBM için biyoinformatik analizi",
                     "İlaç yeniden konumlandırma hattı",
