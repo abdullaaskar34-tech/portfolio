@@ -92,18 +92,18 @@ export const leadershipExperience = [
     tags: ["Student Representation", "Leadership", "Communication", "Advocacy"]
   },
   {
-    role: "Scientific Office Volunteer",
-    organization: "Syrian Students Federation — Karabük",
-    location: "Karabük",
-    date: "2025 – 2026",
-    icon: GraduationCap,
-    logo: `${import.meta.env.BASE_URL}logos/syrian-students-federation-clean.png?v=2`,
-    scale: 1.25,
-    description: "Supported academic development initiatives by organizing exam-review sessions, coordinating educational workshops, and collaborating with academic staff and volunteer instructors. Contributed to learning programs serving approximately 500 Syrian students in Karabük.",
-    tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
+    role: "Interpreter",
+    organization: "Turkish Red Crescent",
+    location: "Istanbul",
+    date: "2019 – 2020",
+    icon: Heart,
+    logo: `${import.meta.env.BASE_URL}logos/kizilay-clean.png?v=2`,
+    scale: 0.85,
+    description: "Provided Arabic–Turkish interpretation support in humanitarian service environments, helping improve communication between Arabic-speaking beneficiaries and Turkish staff. Assisted with real-time guidance and service communication in high-pressure support settings.",
+    tags: ["Translation", "Humanitarian Support", "Cross-Cultural Liaison", "Volunteering"]
   },
   {
-    role: "Student Affairs Representative",
+    role: "Student Affairs Office",
     organization: "General Union of Syrian Students",
     location: "Türkiye",
     date: "2026 – 2027",
@@ -114,15 +114,15 @@ export const leadershipExperience = [
     tags: ["Student Services", "Chatbot Support", "Community Impact", "Problem Solving"]
   },
   {
-    role: "Humanitarian Aid Interpreter",
-    organization: "Turkish Red Crescent",
-    location: "Istanbul",
-    date: "2019 – 2020",
-    icon: Heart,
-    logo: `${import.meta.env.BASE_URL}logos/kizilay-clean.png?v=2`,
-    scale: 0.85,
-    description: "Provided Arabic–Turkish interpretation support in humanitarian service environments, helping improve communication between Arabic-speaking beneficiaries and Turkish staff. Assisted with real-time guidance and service communication in high-pressure support settings.",
-    tags: ["Translation", "Humanitarian Support", "Cross-Cultural Liaison", "Volunteering"]
+    role: "Science Office",
+    organization: "Karabük",
+    location: "Karabük",
+    date: "Date not specified",
+    icon: GraduationCap,
+    logo: `${import.meta.env.BASE_URL}logos/syrian-students-federation-clean.png?v=2`,
+    scale: 1.25,
+    description: "Supported academic development initiatives by organizing exam-review sessions, coordinating educational workshops, and collaborating with academic staff and volunteer instructors. Contributed to learning programs serving approximately 500 Syrian students in Karabük.",
+    tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
   }
 ];
 

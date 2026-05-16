@@ -92,7 +92,7 @@ export const translations = {
         result: "Result",
     },
     leadership: {
-        title: "Leadership & Community Impact",
+        title: "Volunteering",
         eyebrow: "Impact & Service",
         description: "A record of student representation, academic support, humanitarian service, and community-focused volunteering across university and nonprofit environments."
     },
@@ -182,28 +182,32 @@ export const translations = {
         ],
         leadershipExperience: [
             {
-                role: "International Student Senate Member",
-                organization: "Karabük University — Faculty of Engineering Sciences",
-                description: "Represented international engineering students as a university-appointed senate member, acting as a communication bridge between students and university administration. Collected academic and administrative concerns, communicated them to relevant bodies, and supported stronger student participation in faculty-level decision-making.",
+                role: "International Student Senate Member — Faculty of Engineering Sciences",
+                organization: "Karabük University",
+                date: "2026 – 2027",
+                description: "As an international student senate member, I strengthened communication between international students and the university administration, and contributed to transferring students’ academic and administrative concerns to the relevant university units.",
                 tags: ["Student Representation", "Leadership", "Communication", "Advocacy"]
             },
             {
-                role: "Scientific Office Volunteer",
-                organization: "Syrian Students Federation — Karabük",
-                description: "Supported academic development initiatives by organizing exam-review sessions, coordinating educational workshops, and collaborating with academic staff and volunteer instructors. Contributed to learning programs serving approximately 500 Syrian students in Karabük.",
-                tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
+                role: "Interpreter",
+                organization: "Turkish Red Crescent, Istanbul",
+                date: "2019 – 2020",
+                description: "As a volunteer interpreter at the Turkish Red Crescent, I supported communication between Arabic-speaking individuals and Turkish staff, and contributed to accurate guidance during aid and support processes.",
+                tags: ["Translation", "Humanitarian Support", "Cross-cultural Liaison", "Volunteering"]
             },
             {
-                role: "Student Affairs Representative",
+                role: "Student Affairs Office",
                 organization: "General Union of Syrian Students",
-                description: "Assisted Syrian students across Türkiye with academic, administrative, and student-life inquiries. Supported service workflows and contributed to the development of an AI-powered student-support chatbot for a nationwide community of approximately 5,000 students.",
-                tags: ["Student Services", "Chatbot Support", "Community Impact", "Problem Solving"]
+                date: "2026 – 2027",
+                description: "As a volunteer in the Student Affairs Office, I contributed to support processes reaching approximately 5,000 students across Turkey; I helped answer academic and administrative questions and took part in managing the chatbot support system.",
+                tags: ["Student Services", "Chatbot Implementation", "Community Impact", "Problem Solving"]
             },
             {
-                role: "Humanitarian Aid Interpreter",
-                organization: "Turkish Red Crescent",
-                description: "Provided Arabic–Turkish interpretation support in humanitarian service environments, helping improve communication between Arabic-speaking beneficiaries and Turkish staff. Assisted with real-time guidance and service communication in high-pressure support settings.",
-                tags: ["Translation", "Humanitarian Support", "Cross-Cultural Liaison", "Volunteering"]
+                role: "Science Office",
+                organization: "Karabük",
+                date: "Date not specified",
+                description: "I supported academic development initiatives by coordinating educational workshops and collaborating with academic staff and volunteer instructors. I contributed to educational programs serving approximately 500 Syrian students in Karabük.",
+                tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
             }
         ],
         professionalSkills: [
@@ -408,7 +412,7 @@ export const translations = {
         result: "Sonuç",
     },
     leadership: {
-        title: "Liderlik ve Toplumsal Katkı",
+        title: "Gönüllülük",
         eyebrow: "Etki ve Hizmet",
         description: "Üniversite ve sivil toplum kuruluşlarında öğrenci temsilciliği, akademik destek ve insani yardım projelerinde aktif rol ve gönüllülük."
     },
@@ -498,28 +502,32 @@ export const translations = {
         ],
         leadershipExperience: [
             {
-                role: "Uluslararası Öğrenci Senatosu Üyesi",
-                organization: "Karabük Üniversitesi — Mühendislik Fakültesi",
-                description: "Üniversite tarafından atanan senato üyesi olarak uluslararası mühendislik öğrencilerini temsil ettim; öğrenciler ile üniversite yönetimi arasında bir iletişim köprüsü görevi gördüm. Akademik ve idari endişeleri toplayarak ilgili birimlere ilettim ve fakülte düzeyindeki karar alma mekanizmalarına öğrenci katılımını destekledim.",
+                role: "Uluslararası Öğrenci Senatosu Üyesi — Mühendislik Bilimleri Fakültesi",
+                organization: "Karabük Üniversitesi",
+                date: "2026 – 2027",
+                description: "Uluslararası öğrenci senatosu üyesi olarak, uluslararası öğrenciler ile üniversite yönetimi arasındaki iletişimi güçlendirdim ve öğrencilerin akademik/idari süreçlerdeki sorunlarının ilgili birimlere aktarılmasına katkı sağladım.",
                 tags: ["Öğrenci Temsilciliği", "Liderlik", "İletişim", "Savunuculuk"]
             },
             {
-                role: "Bilim Ofisi Gönüllüsü",
-                organization: "Suriye Öğrenciler Federasyonu — Karabük",
-                description: "Sınav tekrar oturumları düzenleyerek, eğitim atölyeleri koordine ederek ve akademik kadro ile gönüllü eğitmenlerle iş birliği yaparak akademik gelişim girişimlerini destekledim. Karabük'teki yaklaşık 500 Suriyeli öğrenciye hizmet veren eğitim programlarına katkıda bulundum.",
+                role: "Tercüman",
+                organization: "Türk Kızılay, İstanbul",
+                date: "2019 – 2020",
+                description: "Türk Kızılay’da gönüllü tercüman olarak, Arapça konuşan bireyler ile Türk personel arasındaki iletişimi destekledim ve yardım süreçlerinde doğru yönlendirme yapılmasına katkı sağladım.",
+                tags: ["Tercüme", "İnsani Destek", "Kültürlerarası İrtibat", "Gönüllülük"]
+            },
+            {
+                role: "Öğrenci İşleri Ofisi",
+                organization: "Suriyeli Öğrenciler Genel Birliği",
+                date: "2026 – 2027",
+                description: "Öğrenci İşleri Ofisinde gönüllü olarak, Türkiye genelinde yaklaşık 5.000 öğrenciye ulaşan destek süreçlerine katkı sağladım; akademik/idari soruların yanıtlanması ve chatbot destek sisteminin yönetiminde görev aldım.",
+                tags: ["Öğrenci Hizmetleri", "Sohbet Robotu Uygulaması", "Toplumsal Etki", "Problem Çözme"]
+            },
+            {
+                role: "Bilim Ofisi",
+                organization: "Karabük",
+                date: "Tarih belirtilmedi",
+                description: "Eğitim atölyeleri koordine ederek ve akademik kadro ile gönüllü eğitmenlerle iş birliği yaparak akademik gelişim girişimlerini destekledim. Karabük’teki yaklaşık 500 Suriyeli öğrenciye hizmet veren eğitim programlarına katkıda bulundum.",
                 tags: ["Akademik Destek", "Atölye Koordinasyonu", "Öğrenci Gelişimi", "Takım Çalışması"]
-            },
-            {
-                role: "Öğrenci İşleri Temsilcisi",
-                organization: "Suriye Öğrencileri Genel Birliği",
-                description: "Türkiye genelindeki Suriyeli öğrencilere akademik, idari ve öğrenci yaşamına dair konularda yardımcı oldum. Hizmet iş akışlarını destekledim ve yaklaşık 5.000 öğrenciden oluşan ülke çapındaki bir topluluk için YZ destekli bir öğrenci destek sohbet robotunun geliştirilmesine katkıda bulundum.",
-                tags: ["Öğrenci Hizmetleri", "Sohbet Robotu Desteği", "Toplumsal Etki", "Problem Çözme"]
-            },
-            {
-                role: "İnsani Yardım Tercümanı",
-                organization: "Türk Kızılay",
-                description: "İnsani hizmet ortamlarında Arapça–Türkçe tercüme desteği sağlayarak, Arapça konuşan faydalanıcılar ile Türk personel arasındaki iletişimin güçlendirilmesine yardımcı oldum. Yüksek baskı altındaki destek ortamlarında gerçek zamanlı rehberlik ve hizmet iletişimi süreçlerini destekledim.",
-                tags: ["Çeviri", "İnsani Yardım", "Kültürlerarası İletişim", "Gönüllülük"]
             }
         ],
         professionalSkills: [

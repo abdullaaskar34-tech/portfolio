@@ -21,7 +21,8 @@ const Leadership = memo(() => {
         role: transItem.role,
         organization: transItem.organization,
         description: transItem.description,
-        tags: transItem.tags
+        tags: transItem.tags,
+        date: transItem.date || item.date
     };
   });
 
