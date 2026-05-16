@@ -87,6 +87,7 @@ export const translations = {
         title: "Clinical Experience",
         eyebrow: "Clinical Engineering",
         description: "Hands-on biomedical engineering experience in troubleshooting, calibration, repair, and maintenance of hospital medical equipment.",
+        galleryCaption: "These images are example photos from technical service, maintenance, inspection, and field practice activities carried out during the internship period.",
         problem: "Problem",
         intervention: "Intervention",
         result: "Result",
@@ -289,7 +290,7 @@ export const translations = {
         experience: [
             {
                 title: "Internship I —",
-                place: "Karabük Training and Research Hospital, Karabük",
+                place: "Private Hospital, Karabük",
                 description: "I gained hands-on experience in the maintenance, inspection, and technical service processes of medical devices such as ventilators, ECG devices, defibrillators, and similar clinical equipment. I supported the biomedical technical service team in troubleshooting, calibration, and periodic maintenance activities.",
                 cases: [
                     { title: "Device: Surgical Operating Light", problem: "Problem: There was a problem in the main board affecting the light intensity control.", intervention: "Intervention: The faulty main board was replaced.", result: "Result: The lighting control system was restored and the unit became fully functional." },
@@ -402,6 +403,7 @@ export const translations = {
         title: "Mesleki Deneyim",
         eyebrow: "Klinik Mühendislik",
         description: "Hastane tıbbi cihazlarının arıza tespiti, kalibrasyonu, onarımı ve bakımı üzerine uygulamalı biyomedikal mühendisliği deneyimi.",
+        galleryCaption: "Bu görseller, staj sürecinde gerçekleştirilen teknik servis, bakım, kontrol ve saha uygulamalarından bazı örnek fotoğraflardır.",
         problem: "Sorun",
         intervention: "Müdahale",
         result: "Sonuç",
@@ -604,7 +606,7 @@ export const translations = {
         experience: [
             {
                 title: "Staj I —",
-                place: "Karabük Eğitim ve Araştırma Hastanesi, Karabük",
+                place: "Özel Hastane, Karabük",
                 description: "Ventilatör, EKG cihazı, defibrilatör ve benzeri medikal cihazların bakım, kontrol ve teknik servis süreçlerinde uygulamalı deneyim kazandım. Arıza tespiti, kalibrasyon ve periyodik bakım çalışmalarında biyomedikal teknik servis ekibine destek sağladım.",
                 cases: [
                     { title: "Cihaz: Cerrahi Ameliyat Lambası", problem: "Sorun: Ana kartta, ışık şiddeti kontrolünü etkileyen bir problem tespit edildi.", intervention: "Müdahale: Arızalı ana kart değiştirildi.", result: "Sonuç: Işık kontrol sistemi düzgün şekilde çalışır hale getirildi." },

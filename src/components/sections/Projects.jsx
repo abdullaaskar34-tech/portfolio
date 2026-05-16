@@ -66,14 +66,24 @@ const ProjectModal = memo(({ project, onClose, language, t }) => {
                                     title="Technical Documentation"
                                 />
                             ) : (
-                                <div className="h-full overflow-y-auto p-4 sm:p-8 bg-slate-100 flex justify-center">
-                                    <img 
-                                        src={activeMedia.src} 
-                                        alt="Document Preview" 
-                                        className="max-w-full h-auto shadow-2xl rounded-sm"
-                                        loading="lazy"
-                                        decoding="async"
-                                    />
+                                <div className="h-full overflow-y-auto p-8 sm:p-12 bg-slate-50 flex flex-col items-center justify-center text-center">
+                                    <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-3xl bg-white shadow-xl shadow-slate-200 grid place-items-center mb-6 ring-1 ring-slate-100">
+                                        <FileText size={40} className="text-sky-500 sm:w-12 sm:h-12" />
+                                    </div>
+                                    <h4 className="text-xl sm:text-2xl font-black text-slate-800 mb-2">{language === 'tr' ? 'Doküman Görüntüleme' : 'Document Preview'}</h4>
+                                    <p className="text-sm sm:text-base font-medium text-slate-500 mb-8 max-w-md">
+                                        {language === 'tr' 
+                                            ? 'Bu dosya türü doğrudan önizleme için desteklenmiyor. Lütfen dosyayı açmak veya indirmek için aşağıdaki butonu kullanın.' 
+                                            : 'This file type is not supported for direct preview. Please use the button below to open or download the file.'}
+                                    </p>
+                                    <a 
+                                        href={activeMedia.src} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 rounded-2xl bg-slate-800 px-8 py-4 text-xs sm:text-sm font-black uppercase tracking-widest text-white transition-all hover:scale-[1.02] hover:bg-slate-900 active:scale-95 shadow-xl shadow-slate-200"
+                                    >
+                                        <ExternalLink size={18} /> {language === 'tr' ? 'Dosyayı Aç' : 'Open File'}
+                                    </a>
                                 </div>
                             )}
                         </div>

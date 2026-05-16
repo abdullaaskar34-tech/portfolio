@@ -297,7 +297,7 @@ export const projects = [
       "TUBITAK supported innovation",
       "Presented at 6th BILSEL Congress"
     ],
-    preview: `${import.meta.env.BASE_URL}project-previews/project-ai-triage-device.svg`,
+    preview: `${import.meta.env.BASE_URL}project-previews/ppg-1.png`,
     media: [
         { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ.pdf`, label: "TRIAJ.pdf" },
         { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ2.docx`, label: "TRIAJ2.docx" },
@@ -426,7 +426,7 @@ export const certifications = [
 export const experience = [
   {
     title: "Internship I —",
-    place: "Karabuk Education & Research Hospital",
+    place: "Private Hospital",
     date: "Oct 2024 - Nov 2024",
     description: "Hands-on biomedical engineering experience involving troubleshooting, calibration, repair, testing, and maintenance of hospital medical equipment across operating rooms, ICU, radiology, ophthalmology, sterilization, and diagnostic units.",
     cases: [

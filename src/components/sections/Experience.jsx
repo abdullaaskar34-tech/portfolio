@@ -345,6 +345,14 @@ const Experience = memo(() => {
                 <div className="mt-8 sm:mt-10 h-px w-full bg-gradient-to-r from-slate-200 via-slate-100 to-transparent" />
               </div>
 
+              {t.experience.galleryCaption && (
+                <div className="mb-8 px-4 py-3 rounded-2xl bg-slate-50 border border-slate-100">
+                  <p className="text-xs sm:text-sm font-medium text-slate-500 italic leading-relaxed">
+                    {t.experience.galleryCaption}
+                  </p>
+                </div>
+              )}
+
               <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                 {internship.cases.map((c, cIdx) => (
                     <CaseCard key={cIdx} caseStudy={c} onClick={() => setActiveCase(c)} language={language} />
