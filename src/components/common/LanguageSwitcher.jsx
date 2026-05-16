@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, memo } from 'react';
 import { Globe, Check, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -7,7 +7,7 @@ const languages = [
   { code: 'tr', name: 'Türkçe', flag: 'TR' },
 ];
 
-export default function LanguageSwitcher() {
+const LanguageSwitcher = memo(() => {
   const { language, toggleLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -64,7 +64,7 @@ export default function LanguageSwitcher() {
                   : 'text-slate-600 hover:bg-sky-50 hover:text-sky-600'
               }`}
             >
-              <span className="text-sm font-bold">
+              <span className="text-xs font-bold">
                 {lang.name}
               </span>
               {language === lang.code && <Check size={14} />}
@@ -74,4 +74,6 @@ export default function LanguageSwitcher() {
       )}
     </div>
   );
-}
+});
+
+export default LanguageSwitcher;

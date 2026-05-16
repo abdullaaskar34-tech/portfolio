@@ -71,6 +71,8 @@ const ProjectModal = memo(({ project, onClose, language, t }) => {
                                         src={activeMedia.src} 
                                         alt="Document Preview" 
                                         className="max-w-full h-auto shadow-2xl rounded-sm"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 </div>
                             )}
@@ -105,6 +107,8 @@ const ProjectModal = memo(({ project, onClose, language, t }) => {
                             src={activeMedia?.src || project.preview} 
                             alt="Project media" 
                             className="max-w-full max-h-full object-contain rounded-[32px] shadow-2xl" 
+                            loading="lazy"
+                            decoding="async"
                         />
                     </div>
                 )}
@@ -230,6 +234,8 @@ const ProjectCard = memo(({ project, onClick, language, t }) => {
                             src={project.preview}
                             alt={project.title}
                             className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            loading="lazy"
+                            decoding="async"
                         />
                         {project.media && project.media[0]?.type === 'video' && (
                             <div className="absolute bottom-6 h-10 w-10 grid place-items-center rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 transition-all duration-500 right-6">

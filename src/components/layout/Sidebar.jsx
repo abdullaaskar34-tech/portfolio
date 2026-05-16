@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import {
   UserRound,
   BrainCircuit,
@@ -16,7 +16,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import Dock from "../common/Dock";
 
-export default function Sidebar() {
+const Sidebar = memo(() => {
   const { language } = useLanguage();
   const t = translations[language];
   const [activeSection, setActiveSection] = useState("");
@@ -33,36 +33,28 @@ export default function Sidebar() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const viewportCenter = window.innerHeight / 2;
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -20% 0px',
+      threshold: [0, 0.25, 0.5, 0.75, 1]
+    };
+
+    const sectionElements = navItems.map(item => document.getElementById(item.id)).filter(Boolean);
+    
+    const handleIntersection = (entries) => {
+      const visibleEntries = entries.filter(entry => entry.isIntersecting);
       
-      let closestSection = "";
-      let minDistance = Infinity;
-
-      navItems.forEach((item) => {
-        const element = document.getElementById(item.id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const sectionCenter = rect.top + rect.height / 2;
-          const distance = Math.abs(sectionCenter - viewportCenter);
-          
-          if (distance < minDistance) {
-            minDistance = distance;
-            closestSection = item.id;
-          }
-        }
-      });
-
-      if (closestSection) {
-        setActiveSection(closestSection);
+      if (visibleEntries.length > 0) {
+        visibleEntries.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        setActiveSection(visibleEntries[0].target.id);
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    sectionElements.forEach(el => observer.observe(el));
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [language]); // Re-run if language changes because labels change
+    return () => observer.disconnect();
+  }, [language]); 
 
   const handleNavClick = (id) => {
     setActiveSection(id);
@@ -70,7 +62,7 @@ export default function Sidebar() {
     
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Account for any fixed headers if present
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -142,7 +134,7 @@ export default function Sidebar() {
                 ))}
             </div>
             <div className="mt-auto border-t border-slate-100 pt-8 flex gap-4 justify-center">
-                 <a href="https://www.linkedin.com/in/abdulla-askar-424881274" target="_blank" className="p-3 rounded-xl bg-slate-50 text-slate-400 hover:text-sky-500 hover:bg-sky-50 transition-all">
+                 <a href="https://www.linkedin.com/in/abdulla-askar-424881274" target="_blank" rel="noreferrer" className="p-3 rounded-xl bg-slate-50 text-slate-400 hover:text-sky-500 hover:bg-sky-50 transition-all">
                     <Linkedin size={20} />
                  </a>
                  <a href="mailto:abdullaaskar34@gmail.com" className="p-3 rounded-xl bg-slate-50 text-slate-400 hover:text-sky-500 hover:bg-sky-50 transition-all">
@@ -153,4 +145,6 @@ export default function Sidebar() {
       </nav>
     </>
   );
-}
+});
+
+export default Sidebar;

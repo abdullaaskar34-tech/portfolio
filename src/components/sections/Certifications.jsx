@@ -26,7 +26,7 @@ const CertificationModal = memo(({ cert, onClose, language, t }) => {
 
                         <div className="md:w-3/5 bg-slate-50/50 p-8 md:p-12 flex items-center justify-center border-slate-100 overflow-hidden md:border-r border-b md:border-b-0">
                             <div className="relative group/image">
-                                <img src={cert.image} alt={cert.title} className="max-w-full max-h-[70vh] rounded-2xl shadow-2xl ring-1 ring-black/5 object-contain" />
+                                <img src={cert.image} alt={cert.title} className="max-w-full max-h-[70vh] rounded-2xl shadow-2xl ring-1 ring-black/5 object-contain" loading="lazy" decoding="async" />
                                 <div className="absolute inset-0 rounded-2xl bg-black/5 opacity-0 group-hover/image:opacity-100 transition-opacity pointer-events-none" />
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const CertificationCard = memo(({ cert, onClick, language, t }) => {
                 className="group cursor-pointer relative flex flex-col h-full w-full overflow-hidden p-4 transition-all duration-500 hover:shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] hover:-translate-y-2"
             >
                 <div className="relative aspect-[16/11] overflow-hidden rounded-[32px] bg-slate-100 mb-6 ring-1 ring-black/5">
-                    <img src={cert.image} alt={cert.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img src={cert.image} alt={cert.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                         <div className="flex items-center gap-3 text-white text-[10px] font-black uppercase tracking-[0.2em]">
                             {language === 'tr' ? 'Tam Görünüm' : 'Full View'} <Maximize2 size={16} />

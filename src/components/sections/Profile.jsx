@@ -65,6 +65,8 @@ const Profile = memo(() => {
                   src={`${import.meta.env.BASE_URL}media/profile/my_photo.jpeg`}
                   alt={`${t.hero.name} ${t.hero.surname}`}
                   className="h-full w-full object-cover transition-all duration-700 hover:scale-110 grayscale-[20%] hover:grayscale-0"
+                  decoding="async"
+                  fetchpriority="high"
                 />
               </div>
             </div>

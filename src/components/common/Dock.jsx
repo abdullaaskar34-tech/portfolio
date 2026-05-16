@@ -8,16 +8,23 @@ import './Dock.css';
 function DockItem({ children, className = '', onClick, mouseX, spring, distance, magnification, baseItemSize }) {
   const ref = useRef(null);
   const isHovered = useMotionValue(0);
+  const itemCenterY = useMotionValue(0);
 
-  const mouseDistance = useTransform(mouseX, val => {
-    const rect = ref.current?.getBoundingClientRect() ?? {
-      x: 0,
-      y: 0,
-      width: baseItemSize,
-      height: baseItemSize
+  useLayoutEffect(() => {
+    const updatePosition = () => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        itemCenterY.set(rect.y + rect.height / 2);
+      }
     };
-    // For vertical dock, we use Y distance
-    return val - rect.y - baseItemSize / 2;
+
+    updatePosition();
+    window.addEventListener('resize', updatePosition);
+    return () => window.removeEventListener('resize', updatePosition);
+  }, [itemCenterY]);
+
+  const mouseDistance = useTransform([mouseX, itemCenterY], ([latestMouseY, latestCenterY]) => {
+    return latestMouseY - latestCenterY;
   });
 
   const targetSize = useTransform(mouseDistance, [-distance, 0, distance], [baseItemSize, magnification, baseItemSize]);

@@ -6,9 +6,11 @@
   border: 1px solid var(--gh-border);
   overflow: hidden;
   position: relative;
-  display: flex; /* Changed from grid to flex to ensure children can fill height more easily if needed */
+  display: flex;
   align-items: center;
   justify-content: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .glare-hover::before {
@@ -32,6 +34,7 @@
     0 0;
   z-index: 5;
   pointer-events: none;
+  will-change: background-position;
 }
 
 .glare-hover:hover {

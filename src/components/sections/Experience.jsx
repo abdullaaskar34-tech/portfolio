@@ -174,6 +174,8 @@ const CaseModal = memo(({ caseStudy, onClose, language, t }) => {
                                             src={activeImage.src} 
                                             className="h-full w-full object-contain animate-in fade-in zoom-in duration-500" 
                                             alt={activeImage.alt || "Case evidence"} 
+                                            loading="lazy"
+                                            decoding="async"
                                         />
                                         <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/main:opacity-100 transition-opacity flex items-center justify-center">
                                             <div className="h-14 w-14 rounded-full bg-white/90 shadow-xl flex items-center justify-center text-slate-800 scale-90 group-hover/main:scale-100 transition-transform">
@@ -197,7 +199,13 @@ const CaseModal = memo(({ caseStudy, onClose, language, t }) => {
                                                 onClick={() => setActiveImage(img)}
                                                 className={`relative aspect-square overflow-hidden rounded-2xl border-2 transition-all hover:scale-105 active:scale-95 ${activeImage.src === img.src ? 'border-sky-500 ring-4 ring-sky-100 shadow-lg' : 'border-white shadow-md'}`}
                                             >
-                                                <img src={img.src} className="h-full w-full object-cover" alt={img.alt || `Evidence ${idx + 1}`} />
+                                                <img 
+                                                  src={img.src} 
+                                                  className="h-full w-full object-cover" 
+                                                  alt={img.alt || `Evidence ${idx + 1}`} 
+                                                  loading="lazy"
+                                                  decoding="async"
+                                                />
                                             </button>
                                         ))}
                                     </div>
@@ -246,6 +254,8 @@ const CaseCard = memo(({ caseStudy, onClick, language }) => {
                         src={caseStudy.thumbnail} 
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
                         alt={caseStudy.title} 
+                        loading="lazy"
+                        decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                         <p className="text-white text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
