@@ -81,7 +81,7 @@ const TranscriptModal = memo(({ open, onClose, title, subtitle, courses, icon: I
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-950/70 p-0 sm:p-4 backdrop-blur-xl transition-all duration-500">
       <div className="relative h-full sm:h-auto sm:max-h-[95vh] w-full max-w-7xl overflow-hidden sm:rounded-[48px] border border-white/30 bg-white/90 shadow-[0_32px_128px_rgba(0,0,0,0.2)] backdrop-blur-3xl flex flex-col animate-slideUp">
         
-        <div className="sticky top-0 z-20 flex items-center justify-between border-b border-slate-200/50 bg-white/80 p-6 sm:p-10 backdrop-blur-md">
+        <div className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200/50 bg-white/95 p-6 sm:p-10 backdrop-blur-xl shadow-sm">
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-[24px] bg-slate-800 text-white shadow-xl shadow-slate-200">
                 <Icon size={24} className="sm:w-8 sm:h-8" />
