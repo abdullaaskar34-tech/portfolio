@@ -18,7 +18,7 @@ export default function App() {
   const t = translations[language];
 
   return (
-    <main className={`min-h-screen overflow-x-hidden bg-[#f8fbff] text-slate-700 selection:bg-sky-500/20`}>
+    <main className={`min-h-screen overflow-x-hidden text-slate-700 selection:bg-sky-500/20 bg-transparent`}>
       {/* Plasma Background Effect */}
       <Plasma 
         color="#0ea5e9"
