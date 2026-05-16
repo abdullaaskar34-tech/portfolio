@@ -298,9 +298,10 @@ export const projects = [
       "Presented at 6th BILSEL Congress"
     ],
     preview: `${import.meta.env.BASE_URL}project-previews/project-ai-triage-device.svg`,
-    document: `${import.meta.env.BASE_URL}project-documents/triage-routing-device-technical-report.pdf`,
     media: [
-        { type: "image", src: `${import.meta.env.BASE_URL}project-previews/ppg-1.png`, label: "System Interface" }
+        { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ.pdf`, label: "TRIAJ.pdf" },
+        { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ2.docx`, label: "TRIAJ2.docx" },
+        { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ3.pdf`, label: "TRIAJ3.pdf" }
     ]
   },
   {
