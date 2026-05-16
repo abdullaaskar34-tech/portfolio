@@ -253,7 +253,7 @@ export const translations = {
             },
             {
                 title: "PPG-Based Blood Glucose Monitoring",
-                description: "Non-invasive glucose estimation using smartphone camera photoplethysmography (PPG) and custom ML models.",
+                description: "A smartphone-based non-invasive health monitoring project focused on estimating blood glucose levels using photoplethysmography (PPG) signals. The system captures fingertip PPG data through the phone’s front camera and screen light, then applies signal preprocessing, filtering, pulse segmentation, feature extraction, and machine-learning-based prediction using reference glucometer measurements. Technologies and methods used include smartphone camera-based PPG acquisition, screen-light illumination, ROI-based pixel averaging, upsampling, moving average and band-pass filtering, signal segmentation, feature extraction, machine learning, and mobile application development.",
                 details: [
                     "Non-invasive health monitoring",
                     "Custom PPG signal processing pipeline",
@@ -569,7 +569,7 @@ export const translations = {
             },
             {
                 title: "PPG Tabanlı Kan Şekeri İzleme",
-                description: "Akıllı telefon kamerası fotopletismografisi (PPG) ve özel MÖ modelleri kullanarak non-invaziv glikoz tahmini.",
+                description: "Akıllı telefon kamerası ile elde edilen fotopletismografi (PPG) sinyallerini kullanarak kan glikoz seviyesini non-invazif şekilde tahmin etmeyi amaçlayan mobil sağlık teknolojisi projesidir. Sistem, telefonun ön kamerası ve ekran ışığı ile parmak ucundan PPG verisi toplar; ardından sinyal ön işleme, filtreleme, nabız segmentasyonu, öznitelik çıkarımı ve referans glukometre ölçümleriyle makine öğrenmesi tabanlı tahmin süreci uygular. Kullanılan teknolojiler ve yöntemler arasında akıllı telefon kamerası tabanlı PPG sinyal toplama, ekran ışığı ile aydınlatma, ROI tabanlı piksel ortalaması, upsampling, moving average ve band-pass filtreleme, sinyal segmentasyonu, öznitelik çıkarımı, makine öğrenmesi ve mobil uygulama geliştirme yer almaktadır.",
                 details: [
                     "Non-invaziv sağlık izleme",
                     "Özel PPG sinyal işleme hattı",

@@ -309,8 +309,8 @@ export const projects = [
     year: "TEKNOFEST",
     category: "Health Tech",
     status: "Research Phase",
-    description: "Non-invasive glucose estimation using smartphone camera photoplethysmography (PPG) and custom ML models for diabetic patient monitoring.",
-    tech: ["Machine Learning", "Signal Processing", "Python", "PPG Analysis", "Keras"],
+    description: "A smartphone-based non-invasive health monitoring project focused on estimating blood glucose levels using photoplethysmography (PPG) signals. The system captures fingertip PPG data through the phone’s front camera and screen light, then applies signal preprocessing, filtering, pulse segmentation, feature extraction, and machine-learning-based prediction using reference glucometer measurements. Technologies and methods used include smartphone camera-based PPG acquisition, screen-light illumination, ROI-based pixel averaging, upsampling, moving average and band-pass filtering, signal segmentation, feature extraction, machine learning, and mobile application development.",
+    tech: ["PPG", "Machine Learning", "Signal Processing", "Mobile Health", "Computer Vision", "Python"],
     details: [
       "Non-invasive health monitoring",
       "Custom PPG signal processing pipeline",
