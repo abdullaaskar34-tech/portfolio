@@ -202,7 +202,7 @@ export const translations = {
             {
                 role: "Science Office",
                 organization: "Karabük",
-                date: "Date not specified",
+                date: "2025 – 2026",
                 description: "I supported academic development initiatives by coordinating educational workshops and collaborating with academic staff and volunteer instructors. I contributed to educational programs serving approximately 500 Syrian students in Karabük.",
                 tags: ["Academic Support", "Workshop Coordination", "Student Development", "Teamwork"]
             }

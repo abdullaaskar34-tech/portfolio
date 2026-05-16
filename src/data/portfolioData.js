@@ -117,7 +117,7 @@ export const leadershipExperience = [
     role: "Science Office",
     organization: "Karabük",
     location: "Karabük",
-    date: "Date not specified",
+    date: "2025 – 2026",
     icon: GraduationCap,
     logo: `${import.meta.env.BASE_URL}logos/syrian-students-federation-clean.png?v=2`,
     scale: 1.25,
