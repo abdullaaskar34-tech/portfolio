@@ -507,7 +507,7 @@ export const experience = [
     title: "Internship II —",
     place: "Karabuk Education & Research Hospital",
     date: "Jun 2025 - Jul 2025",
-    description: "Advanced clinical engineering training focused on high-acuity life support systems and specialized diagnostic modalities in critical care and emergency departments.",
+    description: "I actively participated in the maintenance, inspection, and fault-tracking processes of medical devices used in clinical environments. I gained practical experience in device performance checks, field applications, and hospital technical service workflows.",
     cases: [
       {
         title: "Device: Ventilator — Mindray SV300",

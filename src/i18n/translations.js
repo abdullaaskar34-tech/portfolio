@@ -289,8 +289,8 @@ export const translations = {
         experience: [
             {
                 title: "Internship I —",
-                place: "Private Hospital",
-                description: "Hands-on biomedical engineering experience involving troubleshooting, calibration, repair, testing, and maintenance of hospital medical equipment.",
+                place: "Karabük Training and Research Hospital, Karabük",
+                description: "I gained hands-on experience in the maintenance, inspection, and technical service processes of medical devices such as ventilators, ECG devices, defibrillators, and similar clinical equipment. I supported the biomedical technical service team in troubleshooting, calibration, and periodic maintenance activities.",
                 cases: [
                     { title: "Device: Surgical Operating Light", problem: "Problem: There was a problem in the main board affecting the light intensity control.", intervention: "Intervention: The faulty main board was replaced.", result: "Result: The lighting control system was restored and the unit became fully functional." },
                     { title: "Device: Topcon IS-600 Slit Lamp", problem: "Problem: The illumination lamp was not working.", intervention: "Intervention: The device was temporarily connected to AUX 2 until a new potentiometer could be installed.", result: "Result: Temporary operation was restored and the device was prepared for final repair." },
@@ -301,8 +301,8 @@ export const translations = {
             },
             {
                 title: "Internship II —",
-                place: "Karabuk Education & Research Hospital",
-                description: "Advanced clinical engineering training focused on high-acuity life support systems and specialized diagnostic modalities.",
+                place: "Karabük Training and Research Hospital, Karabük",
+                description: "I actively participated in the maintenance, inspection, and fault-tracking processes of medical devices used in clinical environments. I gained practical experience in device performance checks, field applications, and hospital technical service workflows.",
                 cases: [
                     { title: "Device: Ventilator — Mindray SV300", problem: "Problem: The ventilator showed a “Bellows service required” warning because the bellows unit had exceeded its operating hours.", intervention: "Intervention: The bellows unit was inspected and replaced.", result: "Result: The warning was cleared and the ventilator was restored to normal operating condition." },
                     { title: "Device: Raphael XTC Ventilator — Mixer Valve Replacement", problem: "Problem: The Raphael XTC ventilator displayed an error caused by a faulty mixer valve and oxygen sensor.", intervention: "Intervention: The faulty mixer valve was replaced, and the device was tested using a test lung.", result: "Result: The ventilation function was verified and the device was restored to working condition." },
@@ -604,8 +604,8 @@ export const translations = {
         experience: [
             {
                 title: "Staj I —",
-                place: "Özel Hastane",
-                description: "Hastane tıbbi cihazlarının arıza tespiti, kalibrasyonu, onarımı ve bakımı üzerine uygulamalı biyomedikal mühendisliği deneyimi.",
+                place: "Karabük Eğitim ve Araştırma Hastanesi, Karabük",
+                description: "Ventilatör, EKG cihazı, defibrilatör ve benzeri medikal cihazların bakım, kontrol ve teknik servis süreçlerinde uygulamalı deneyim kazandım. Arıza tespiti, kalibrasyon ve periyodik bakım çalışmalarında biyomedikal teknik servis ekibine destek sağladım.",
                 cases: [
                     { title: "Cihaz: Cerrahi Ameliyat Lambası", problem: "Sorun: Ana kartta, ışık şiddeti kontrolünü etkileyen bir problem tespit edildi.", intervention: "Müdahale: Arızalı ana kart değiştirildi.", result: "Sonuç: Işık kontrol sistemi düzgün şekilde çalışır hale getirildi." },
                     { title: "Cihaz: Topcon IS-600 Slit Lamp", problem: "Sorun: Aydınlatma lambası çalışmıyordu.", intervention: "Müdahale: Yeni potansiyometre takılana kadar cihaz geçici olarak AUX 2 bağlantısı üzerinden çalıştırıldı.", result: "Sonuç: Cihazın geçici olarak kullanılabilirliği sağlandı ve nihai onarım için hazırlık yapıldı." },
@@ -616,8 +616,8 @@ export const translations = {
             },
             {
                 title: "Staj II —",
-                place: "Karabük Eğitim ve Araştırma Hastanesi",
-                description: "Yüksek hassasiyetli yaşam destek sistemleri ve özel teşhis yöntemlerine odaklanan ileri klinik mühendisliği eğitimi.",
+                place: "Karabük Eğitim ve Araştırma Hastanesi, Karabük",
+                description: "Klinik ortamda kullanılan medikal cihazların bakım, kontrol ve arıza takibi süreçlerine aktif olarak katıldım. Cihaz performans kontrolleri, saha uygulamaları ve hastane teknik servis işleyişi konusunda pratik deneyim edindim.",
                 cases: [
                     { title: "Cihaz: Ventilatör — Mindray SV300", problem: "Sorun: Cihazda “Bellows service required” uyarısı görüldü. Bellows biriminin çalışma ömrünü doldurduğu belirlendi.", intervention: "Müdahale: Bellows ünitesi kontrol edildi ve değiştirme işlemi gerçekleştirildi.", result: "Sonuç: Uyarı giderildi ve ventilatörün çalışma durumu normale döndürüldü." },
                     { title: "Cihaz: Raphael XTC Ventilatör — Mixer Valve Değişimi", problem: "Sorun: Raphael XTC ventilatörde mixer valve ve oksijen sensörü kaynaklı hata tespit edildi.", intervention: "Müdahale: Arızalı mixer valve değiştirildi ve cihaz test akciğeri kullanılarak kontrol edildi.", result: "Sonuç: Cihazın ventilasyon fonksiyonu doğrulandı ve sistem çalışır duruma getirildi." },
