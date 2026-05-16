@@ -31,8 +31,8 @@ export default function App() {
       <LanguageSwitcher />
       <Sidebar />
 
-      <div className="relative z-10 mx-auto max-w-[1480px] w-[94vw] px-6 py-12 lg:px-12 lg:py-20">
-        <div className="grid gap-20">
+      <div className="relative z-10 mx-auto max-w-[1480px] w-full px-4 sm:px-6 py-12 lg:px-12 lg:py-20">
+        <div className="grid gap-12 sm:gap-16 lg:gap-20">
           
           {/* Hero Row */}
           <div id="profile" className="grid grid-cols-1">
@@ -40,19 +40,19 @@ export default function App() {
           </div>
 
           {/* Skill Identity Matrix */}
-          <section id="skills" className="grid grid-cols-1 gap-12 py-10">
+          <section id="skills" className="grid grid-cols-1 gap-8 sm:gap-12 py-6 sm:py-10">
             <div className="w-full">
-               <div className={`flex items-center gap-4 mb-6`}>
-                  <span className="h-px w-12 bg-sky-500" />
-                  <p className="text-[11px] font-black uppercase tracking-[0.4em] text-sky-600">{t.skills.eyebrow}</p>
+               <div className={`flex items-center gap-4 mb-4 sm:mb-6`}>
+                  <span className="h-px w-8 sm:w-12 bg-sky-500" />
+                  <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.4em] text-sky-600">{t.skills.eyebrow}</p>
                </div>
-               <h2 className={`text-5xl md:text-6xl font-black tracking-tight text-slate-800 mb-8 leading-[1.1]`}>{t.skills.title}</h2>
-               <p className={`text-xl md:text-2xl font-medium text-slate-500 leading-relaxed w-full`}>
+               <h2 className={`text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-800 mb-6 sm:mb-8 leading-[1.1]`}>{t.skills.title}</h2>
+               <p className={`text-lg sm:text-xl md:text-2xl font-medium text-slate-500 leading-relaxed w-full`}>
                   {t.skills.description}
                </p>
             </div>
             
-            <div className="grid grid-cols-1 gap-12">
+            <div className="grid grid-cols-1 gap-8 sm:gap-12">
               <TechnicalSkills />
               <ProfessionalSkills />
               <Languages />

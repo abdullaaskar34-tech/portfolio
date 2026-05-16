@@ -45,7 +45,7 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "Biomedical Engineering specialist bridging the gap between AI Health Tech and Embedded Software. Dedicated to precision engineering in clinical applications.",
+      bio: "I have an interdisciplinary engineering profile that combines a background in biomedical engineering with electrical-electronics engineering, artificial intelligence, and embedded systems. In health technology-focused projects, I have carried out hands-on work in software development, data analysis, biomedical device systems, and hardware integration. I have actively contributed to research, technical implementation, and project processes.",
       birthYear: "Birth Year",
       location: "Location",
       locationVal: "Karabuk, TR",
@@ -170,15 +170,12 @@ export const translations = {
             { title: "Fundamentals of Radar Systems", category: "Radar", note: "Radar equation, target tracking, and signal detection principles." },
         ],
         technicalSkills: [
-            { name: "Programming & Development", description: "Expertise in Python, C/C++, and SQL for building robust engineering applications and high-performance embedded firmware." },
-            { name: "AI & Machine Learning", description: "Architecting and deploying deep learning models using TensorFlow and Keras for predictive healthcare and industrial automation." },
-            { name: "Computer Vision & Edge AI", description: "Implementing real-time object detection (YOLOv11) and tracking systems optimized for NVIDIA Jetson edge hardware." },
-            { name: "Embedded Systems & Robotics", description: "Integrating flight controllers (Pixhawk), telemetry systems, and STM32/Arduino microcontrollers for autonomous platforms." },
-            { name: "Biomedical Engineering", description: "Specialized in clinical equipment maintenance, calibration standards, and advanced biomedical signal processing systems." },
-            { name: "Hardware & Design Tools", description: "Advanced PCB layout in Proteus/KiCad and 3D mechanical modeling in SolidWorks for medical device prototyping." },
-            { name: "Data Analysis & Visualization", description: "Working with structured datasets, research outputs, and analytical workflows to extract insights and present findings clearly." },
-            { name: "Web Technologies & Tools", description: "Building and supporting digital solutions using modern web technologies and practical software development environments." },
-            { name: "AI Tools & Chatbot Platforms", description: "Using AI-powered platforms and no-code tools to build, customize, and improve chatbot-based user interaction systems." },
+            { name: "Programming and Data Analysis", tools: ["Python", "Data analysis", "Data visualization", "Algorithms", "Signal processing"] },
+            { name: "Machine Learning", tools: ["Machine learning", "Biomedical AI", "Decision support systems", "Model development", "Data classification"] },
+            { name: "Embedded Systems", tools: ["Arduino", "C / C++", "Sensors", "Embedded software", "Real-time data acquisition", "Microcontrollers"] },
+            { name: "Electrical-Electronics", tools: ["Circuit design", "Analog electronics", "Digital electronics", "PCB design", "Troubleshooting", "Hardware integration"] },
+            { name: "Biomedical Technologies", tools: ["Biomedical signals", "Device calibration", "Device maintenance", "Device safety", "Clinical device systems"] },
+            { name: "Image Processing", tools: ["Computer vision", "Camera-based analysis", "Visual data processing", "Object detection", "Image analysis"] },
         ],
         leadershipExperience: [
             {
@@ -211,12 +208,8 @@ export const translations = {
             }
         ],
         professionalSkills: [
-            { name: "Collaborative Leadership", description: "Proven ability to lead technical teams through complex project-based workflows and high-stakes competitions." },
-            { name: "Strategic Problem Solving", description: "Skilled in diagnosing multi-layered technical issues, evaluating alternative solutions, and implementing practical, high-efficiency fixes." },
-            { name: "Cross-functional Collaboration", description: "Fluent in bridging the gap between biomedical, electrical, and software engineering contexts to achieve unified project goals." },
-            { name: "Evidence-Based Research", description: "A methodical approach to technical research and clinical investigation, ensuring all solutions are backed by data and rigorous testing." },
-            { name: "Project Lifecycle Management", description: "Managing tasks, timelines, and technical deliverables from initial concept through implementation and verification." },
-            { name: "High-Impact Communication", description: "Delivering clear, concise technical reporting and maintaining effective communication channels across interdisciplinary teams." },
+            { name: "Core Capabilities", tools: ["Teamwork", "Collaboration", "Problem solving", "Analytical thinking", "Effective communication", "Responsibility", "Research", "Fast information access"] },
+            { name: "Execution and Management", tools: ["Leadership", "Team coordination", "Fast learning", "Adaptability", "Time management", "Task tracking", "Project planning", "Process monitoring"] },
         ],
         languages: [
             { name: "Arabic", level: "Native" },
@@ -313,7 +306,7 @@ export const translations = {
                     { title: "Raphael XTC Ventilator Mixer Valve Replacement", problem: "Mixed gas ratio errors linked to mixer valve and oxygen sensor failure.", intervention: "Replacement of the high-precision mixer valve and recalibration of O2 sensors.", result: "Verified oxygen delivery accuracy using a digital test lung simulator." },
                     { title: "Defibrillator Paddle Replacement and Calibration", problem: "Kaşıklar kalibrasyon sırasında programlanan enerji çıkışını sağlayamıyor.", intervention: "Arızalı yüksek voltaj kaşıkları değiştirildi; kapasitör deşarj güvenilirliği test edildi.", result: "Tüm enerji aralığında kalibre edildi ve Jul iletimi doğrulandı." },
                     { title: "Mobil X-Ray Ünitesi Kol Bakımı", problem: "Kol hareketinin tamamen kaybına yol açan dahili çelik kablo arızası.", intervention: "Dahili gergi kablosu değiştirildi; hasarlı kontrol kabloları yeniden lehimlendi.", result: "Tam hareket aralığı ve mekanik kilitleme kararlılığı geri yüklendi." },
-                    { title: "KBB Ünitesi Pompa Değişimi", problem: "Teşhis prosedürlerini bozan aspirasyon pompası arızası.", intervention: "Arızalı motor/pumpa tertibatı değiştirildi; sıvı devresi bağlantıları güncellendi.", result: "Vakum basıncı ve sıvı akış hızı klinik spesifikasyonlara göre doğrulandı." }
+                    { title: "KBB Ünitesi Pompa Değişimi", problem: "Teşhis prosedürlerini bozan aspirasyon pompası arızası.", intervention: "Arızalı motor/pompa tertibatı değiştirildi; sıvı devresi bağlantıları güncellendi.", result: "Vakum basıncı ve sıvı akış hızı klinik spesifikasyonlara göre doğrulandı." }
                 ]
             }
         ]
@@ -365,7 +358,7 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "Biyomedikal Mühendisliği uzmanı; Yapay Zeka Sağlık Teknolojileri ile Gömülü Sistemler arasındaki köprüyü kuruyor. Klinik uygulamalarda hassas mühendislik çözümlerine odaklı.",
+      bio: "Biyomedikal mühendisliği altyapısını elektrik-elektronik mühendisliği, yapay zekâ ve gömülü sistemler ile birleştiren disiplinler arası bir mühendislik profiline sahibim. Sağlık teknolojileri odaklı projelerde yazılım geliştirme, veri analizi, biyomedikal cihaz sistemleri ve donanım entegrasyonu üzerine uygulamalı çalışmalar yürüttüm. Araştırma, teknik uygulama ve proje süreçlerinde aktif rol aldım.",
       birthYear: "Doğum Yılı",
       location: "Konum",
       locationVal: "Karabük, Türkiye",
@@ -434,7 +427,7 @@ export const translations = {
             { title: "Python ile Bilimsel Programlama", category: "Biyomedikal YZ", note: "Karmaşık biyolojik veri analizi için veri bilimi ve algortimik çözümler." },
             { title: "Yumuşak Hesaplamaya Giriş", category: "Biyomedikal YZ", note: "Tıpta bulanık mantık, sinir ağları ve evrimsel algoritmalar." },
             { title: "Klinik Mühendisliğine Giriş", category: "Klinik Mühendisliği", note: "Tıbbi teknoloji yönetimi ve hastane güvenlik standartları." },
-            { title: "İnsan Anatomisi ve Fizyolojisi", category: "Fizyoloji", note: "İnsan vücudu fonksiyonlarının ve anatomik yapıların sistemik analizi." },
+            { title: "İnsan Anatomisi ve Fizyolojisi", category: "Fizyoloji", note: "İnsan vüvudu fonksiyonlarının ve anatomik yapıların sistemik analizi." },
             { title: "Lazerler ve Optoelektronik", category: "Tıbbi Elektronik", note: "Lazer-doku etkileşimleri ve optik teşhis teknolojileri." },
             { title: "Biyomekanik", category: "Biyomekanik", note: "İnsan hareketi ve kas-iskelet sistemlerine uygulanan mekanik prensipler." },
             { title: "Biyomalzemelere Giriş", category: "Biyomalzemeler", note: "Tıbbi implantlarda kullanılan malzemelerin biyouyumluluğu ve özellikleri." },
@@ -482,7 +475,7 @@ export const translations = {
             { title: "Signals and Systems", category: "Signals", note: "LTI systems, Fourier analysis, and Laplace transforms for signal processing." },
             { title: "Electromagnetic Waves", category: "Electromagnetics", note: "Wave propagation, transmission lines, and antenna fundamentals." },
             { title: "Control Systems I", category: "Control", note: "Classical control theory, root locus, and frequency domain design." },
-            { title: "Probability and Statistics", category: "Mathematics", note: "Random variables and statistical methods for engineering data analysis." },
+            { title: "Probability and Statistics", category: "Matematik", note: "Random variables and statistical methods for engineering data analysis." },
             { title: "Engineering Economics", category: "Management", note: "Cost-benefit analysis and financial feasibility for technical projects." },
             { title: "Communication Systems I", category: "Communication", note: "Analog modulation techniques and noise performance analysis." },
             { title: "Circuit Theory I", category: "Circuits", note: "DC analysis and fundamental Kirchhoff's laws." },
@@ -490,15 +483,12 @@ export const translations = {
             { title: "Fundamentals of Radar Systems", category: "Radar", note: "Radar equation, target tracking, and signal detection principles." },
         ],
         technicalSkills: [
-            { name: "Programlama ve Geliştirme", description: "Güçlü mühendislik uygulamaları ve yüksek performanslı gömülü aygıt yazılımı oluşturmak için Python, C/C++ ve SQL uzmanlığı." },
-            { name: "Yapay Zeka ve Makine Öğrenimi", description: "Öngörücü sağlık hizmetleri ve endüstriyel otomasyon için TensorFlow ve Keras kullanarak derin öğrenme modelleri mimarisi ve dağıtımı." },
-            { name: "Bilgisayarlı Görü ve Uç YZ", description: "NVIDIA Jetson uç donanımı için optimize edilmiş gerçek zamanlı nesne algılama (YOLOv11) ve izleme sistemlerinin uygulanması." },
-            { name: "Gömülü Sistemler ve Robotik", description: "Otonom platformlar için uçuş kontrolörleri (Pixhawk), telemetri sistemleri ve STM32/Arduino mikro denetleyicilerinin entegrasyonu." },
-            { name: "Biyomedikal Mühendisliği", description: "Klinik ekipman bakımı, kalibrasyon standartları ve gelişmiş biyomedikal sinyal işleme sistemlerinde uzmanlaşmıştır." },
-            { name: "Donanım ve Tasarım Araçları", description: "Tıbbi cihaz prototiplemesi için Proteus/KiCad'de gelişmiş PCB tasarımı ve SolidWorks'te 3D mekanik modelleme." },
-            { name: "Veri Analizi ve Görselleştirme", description: "İçgörü çıkarmak ve bulguları net bir şekilde sunmak için yapılandırılmış veri kümeleri, araştırma çıktıları ve analitik iş akışlarıyla çalışma." },
-            { name: "Web Teknolojileri ve Araçları", description: "Modern web teknolojilerini ve pratik yazılım geliştirme ortamlarını kullanarak dijital çözümler oluşturma ve destekleme." },
-            { name: "YZ Araçları ve Sohbet Robotu Platformları", description: "Sohbet robotu tabanlı kullanıcı etkileşim sistemleri oluşturmak, özelleştirmek ve iyileştirmek için YZ destekli platformlar ve kodsuz araçlar kullanma." },
+            { name: "Programlama ve Veri Analizi", tools: ["Python", "Veri analizi", "Veri görselleştirme", "Algoritmalar", "Sinyal işleme"] },
+            { name: "Makine Öğrenmesi", tools: ["Makine öğrenmesi", "Biyomedikal yapay zekâ", "Karar destek sistemleri", "Model geliştirme", "Veri sınıflandırma"] },
+            { name: "Gömülü Sistemler", tools: ["Arduino", "C / C++", "Sensörler", "Gömülü yazılım", "Gerçek zamanlı veri toplama", "Mikrodenetleyiciler"] },
+            { name: "Elektrik-Elektronik", tools: ["Devre tasarımı", "Analog elektronik", "Dijital elektronik", "PCB tasarımı", "Arıza tespiti", "Donanım entegrasyonu"] },
+            { name: "Biyomedikal Teknolojiler", tools: ["Biyomedikal sinyaller", "Cihaz kalibrasyonu", "Cihaz bakımı", "Cihaz güvenliği", "Klinik cihaz sistemleri"] },
+            { name: "Görüntü İşleme", tools: ["Bilgisayarlı görü", "Kamera tabanlı analiz", "Görsel veri işleme", "Nesne tespiti", "Görüntü analizi"] },
         ],
         leadershipExperience: [
             {
@@ -531,12 +521,8 @@ export const translations = {
             }
         ],
         professionalSkills: [
-            { name: "İşbirlikçi Liderlik", description: "Teknik ekiplere karmaşık proje tabanlı iş akışları ve yüksek riskli yarışmalar boyunca rehberlik etme yeteneği kanıtlanmıştır." },
-            { name: "Stratejik Problem Çözme", description: "Çok katmanlı teknik sorunları teşhis etme, alternatif çözümleri değerlendirme ve pratik, yüksek verimli düzeltmeler uygulama konusunda yetenekli." },
-            { name: "Çapraz Fonksiyonel İşbirliği", description: "Birleşik proje hedeflerine ulaşmak için biyomedikal, elektrik ve yazılım mühendisliği bağlamları arasındaki boşluğu doldurma konusunda akıcı." },
-            { name: "Kanıta Dayalı Araştırma", description: "Tüm çözümlerin verilere ve titiz testlere dayanmasını sağlayan teknik araştırma ve klinik araştırmaya yönelik metodolojik bir yaklaşım." },
-            { name: "Proje Yaşam Döngüsü Yönetimi", description: "İlk konseptten uygulama ve doğrulamaya kadar görevleri, zaman çizelgelerini ve teknik çıktıları yönetme." },
-            { name: "Yüksek Etkili İletişim", description: "Net, özlü teknik raporlama sunmak ve disiplinler arası ekipler arasında etkili iletişim kanalları sürdürmek." },
+            { name: "Kişisel Yetenekler", tools: ["Takım çalışması", "İş birliği", "Problem çözme", "Analitik düşünme", "Etkili iletişim", "Sorumluluk bilinci", "Araştırma", "Hızlı bilgiye ulaşma"] },
+            { name: "Yönetim ve Organizasyon", tools: ["Liderlik", "Ekip koordinasyonu", "Hızlı öğrenme", "Uyum sağlama", "Zaman yönetimi", "Görev takibi", "Proje planlama", "Süreç takibi"] },
         ],
         languages: [
             { name: "Arapça", level: "Ana Dil" },
