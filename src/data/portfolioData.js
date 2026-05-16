@@ -273,7 +273,7 @@ export const projects = [
     category: "Computer Vision",
     role: "Lead Developer",
     status: "Production Ready",
-    description: "Computer vision-based industrial inspection system using YOLOv11 for real-time object detection and quality/defect monitoring.",
+    description: "This project is a YOLOv11-based industrial computer vision system developed for real-time detection, tracking, and counting of bread loaves on a conveyor belt. The system was implemented using Python, OpenCV, NumPy, Ultralytics YOLO, and a Roboflow YOLO-format dataset. The current implementation successfully performs bread loaf detection and counting in real time. Defect detection and automatic sorting are planned as the next quality-control layer for the complete industrial inspection system.",
     tech: ["YOLOv11", "Python", "Computer Vision", "OpenCV", "Industrial Inspection", "Object Detection"],
     details: [
       "Real-time YOLOv11 defect detection",

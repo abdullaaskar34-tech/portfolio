@@ -234,7 +234,7 @@ export const translations = {
             {
                 title: "YOLOv11 Industrial Inspection",
                 role: "Lead Developer",
-                description: "A computer vision-based industrial inspection system using YOLOv11 for real-time object detection and quality/defect tracking.",
+                description: "This project is a YOLOv11-based industrial computer vision system developed for real-time detection, tracking, and counting of bread loaves on a conveyor belt. The system was implemented using Python, OpenCV, NumPy, Ultralytics YOLO, and a Roboflow YOLO-format dataset. The current implementation successfully performs bread loaf detection and counting in real time. Defect detection and automatic sorting are planned as the next quality-control layer for the complete industrial inspection system.",
                 details: [
                     "Real-time YOLOv11 defect detection",
                     "High-speed industrial counting logic",
@@ -547,7 +547,7 @@ export const translations = {
             {
                 title: "YOLOv11 Endüstriyel Denetim",
                 role: "Lider Geliştirici",
-                description: "Gerçek zamanlı nesne algılama ve kalite/kusur izleme için YOLOv11 kullanan bilgisayarlı görü tabanlı endüstriyel denetim sistemi.",
+                description: "Bu proje, konveyör bandı üzerinde ilerleyen ekmekleri gerçek zamanlı olarak tespit etmek, takip etmek ve saymak için geliştirilen YOLOv11 tabanlı bir endüstriyel bilgisayarlı görü sistemidir. Sistem Python, OpenCV, NumPy, Ultralytics YOLO ve Roboflow YOLO formatındaki veri seti kullanılarak geliştirilmiştir. Mevcut uygulama, ekmek tespiti ve sayımı işlemlerini gerçek zamanlı olarak başarıyla gerçekleştirmektedir. Kusur tespiti ve otomatik ayırma sistemi ise tam kapsamlı endüstriyel kalite kontrol sistemi için bir sonraki geliştirme katmanı olarak planlanmaktadır.",
                 details: [
                     "Gerçek zamanlı YOLOv11 kusur algılama",
                     "Yüksek hızda endüstriyel sayım mantığı",
