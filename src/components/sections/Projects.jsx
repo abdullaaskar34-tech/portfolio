@@ -160,16 +160,6 @@ const ProjectModal = memo(({ project, onClose, language, t }) => {
                 <h3 className="text-3xl sm:text-5xl font-black text-slate-800 leading-[1.1] tracking-tighter mb-6 sm:mb-8">
                     {project.title}
                 </h3>
-
-                <div className="flex items-center gap-4 text-sm font-bold text-slate-500 bg-slate-50 p-4 sm:p-5 rounded-2xl sm:rounded-[24px] ring-1 ring-slate-100">
-                    <div className="h-9 w-9 sm:h-10 sm:w-10 shrink-0 grid place-items-center rounded-xl bg-white shadow-sm text-sky-500">
-                        <UserRound size={18} className="sm:w-5 sm:h-5" />
-                    </div>
-                    <div>
-                        <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-slate-400">{t.common.role}</p>
-                        <p className="text-xs sm:text-sm text-slate-800 uppercase tracking-tighter">{project.role}</p>
-                    </div>
-                </div>
             </div>
 
             <div className="mb-10 sm:mb-12">
@@ -255,10 +245,6 @@ const ProjectCard = memo(({ project, onClick, language, t }) => {
                         <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] text-sky-500">
                             {project.category}
                         </span>
-                        <div className="h-1 w-1 rounded-full bg-slate-200" />
-                        <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
-                            {project.role.split(' & ')[0]}
-                        </span>
                     </div>
 
                     <h3 className="text-xl sm:text-2xl font-black text-slate-800 mb-4 sm:mb-6 leading-tight group-hover:text-sky-600 transition-colors line-clamp-1">
@@ -304,7 +290,6 @@ const Projects = memo(() => {
     return {
         ...project,
         title: transProject.title,
-        role: transProject.role,
         description: transProject.description,
         details: transProject.details
     };

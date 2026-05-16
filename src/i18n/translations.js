@@ -219,7 +219,6 @@ export const translations = {
         projects: [
             {
                 title: "Combat UAV Avionics System — Genç Sancaktarlar",
-                role: "Avionics Team Lead",
                 description: "Critical design project for a fixed-wing combat UAV platform developed for the TEKNOFEST 2025 Fighter UAV Competition.",
                 details: [
                     "Pixhawk-based flight control and autonomous mission support",
@@ -233,7 +232,6 @@ export const translations = {
             },
             {
                 title: "YOLOv11 Industrial Inspection",
-                role: "Lead Developer",
                 description: "This project is a YOLOv11-based industrial computer vision system developed for real-time detection, tracking, and counting of bread loaves on a conveyor belt. The system was implemented using Python, OpenCV, NumPy, Ultralytics YOLO, and a Roboflow YOLO-format dataset. The current implementation successfully performs bread loaf detection and counting in real time. Defect detection and automatic sorting are planned as the next quality-control layer for the complete industrial inspection system.",
                 details: [
                     "Real-time YOLOv11 defect detection",
@@ -244,7 +242,6 @@ export const translations = {
             },
             {
                 title: "AI-Powered Triage Routing Device",
-                role: "Project Lead & AI Developer",
                 description: "An AI-supported triage system for contactless vital parameter measurement and automated patient routing in clinical settings.",
                 details: [
                     "Camera-based non-contact vital monitoring",
@@ -255,7 +252,6 @@ export const translations = {
             },
             {
                 title: "PPG-Based Blood Glucose Monitoring",
-                role: "AI & Data Lead",
                 description: "Non-invasive glucose estimation using smartphone camera photoplethysmography (PPG) and custom ML models.",
                 details: [
                     "Non-invasive health monitoring",
@@ -265,7 +261,6 @@ export const translations = {
             },
             {
                 title: "Collaborative Robots",
-                role: "System Designer",
                 description: "This project is a low-cost, scalable, vision-based industrial and robotic coordination system designed to coordinate two heterogeneous mobile robots from a central vision system. The operator selects a target point, and the system calculates which robot is closest to the target using Euclidean distance. The selected robot is then guided toward the target through closed-loop heading correction. The system demonstrates centralized task allocation and real-time visual robot coordination using an overhead smartphone camera, ArUco marker tracking, Wi-Fi communication, and two different mobile robot platforms.",
                 details: [
                     "Python-based central control logic",
@@ -283,7 +278,6 @@ export const translations = {
             },
             {
                 title: "GBM Subtype Drug Repositioning",
-                role: "Team Lead",
                 description: "An AI-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
                 details: [
                     "Bioinformatics analysis for GBM",
@@ -523,7 +517,7 @@ export const translations = {
             {
                 role: "Bilim Ofisi",
                 organization: "Karabük",
-                date: "Tarih belirtilmedi",
+                date: "2025 – 2026",
                 description: "Eğitim atölyeleri koordine ederek ve akademik kadro ile gönüllü eğitmenlerle iş birliği yaparak akademik gelişim girişimlerini destekledim. Karabük’teki yaklaşık 500 Suriyeli öğrenciye hizmet veren eğitim programlarına katkıda bulundum.",
                 tags: ["Akademik Destek", "Atölye Koordinasyonu", "Öğrenci Gelişimi", "Takım Çalışması"]
             }
@@ -540,7 +534,6 @@ export const translations = {
         projects: [
             {
                 title: "Muharip İHA Aviyonik Sistemi — Genç Sancaktarlar",
-                role: "Aviyonik Takım Sorumlusu",
                 description: "TEKNOFEST 2025 Savaşan İHA Yarışması için geliştirilen sabit kanatlı muharip İHA platformu için kritik tasarım projesi.",
                 details: [
                     "Pixhawk tabanlı uçuş kontrolü ve otonom görev desteği",
@@ -554,7 +547,6 @@ export const translations = {
             },
             {
                 title: "YOLOv11 Endüstriyel Denetim",
-                role: "Lider Geliştirici",
                 description: "Bu proje, yürüyen bant üzerinde ilerleyen ekmekleri gerçek zamanlı olarak tespit etmek, takip etmek ve saymak için geliştirilen YOLOv11 tabanlı bir endüstriyel bilgisayarlı görü sistemidir. Sistem Python, OpenCV, NumPy, Ultralytics YOLO ve Roboflow YOLO formatındaki veri seti kullanılarak geliştirilmiştir. Mevcut uygulama, ekmek tespiti ve sayımı işlemlerini gerçek zamanlı olarak başarıyla gerçekleştirmektedir. Kusur tespiti ve otomatik ayırma sistemi ise tam kapsamlı endüstriyel kalite kontrol sistemi için bir sonraki geliştirme katmanı olarak planlanmaktadır.",
                 details: [
                     "Gerçek zamanlı YOLOv11 kusur algılama",
@@ -565,7 +557,6 @@ export const translations = {
             },
             {
                 title: "YZ Destekli Triyaj Yönlendirme Cihazı",
-                role: "Proje Lideri ve YZ Geliştiricisi",
                 description: "Klinik ortamlarda temassız vital parametre ölçümü ve otomatik hasta yönlendirmesi için YZ destekli bir triyaj sistemi.",
                 details: [
                     "Kamera tabanlı temassız vital izleme",
@@ -576,7 +567,6 @@ export const translations = {
             },
             {
                 title: "PPG Tabanlı Kan Şekeri İzleme",
-                role: "YZ ve Veri Lideri",
                 description: "Akıllı telefon kamerası fotopletismografisi (PPG) ve özel MÖ modelleri kullanarak non-invaziv glikoz tahmini.",
                 details: [
                     "Non-invaziv sağlık izleme",
@@ -586,7 +576,6 @@ export const translations = {
             },
             {
                 title: "İşbirlikçi Çoklu Robot Sistemi",
-                role: "Sistem Tasarımcısı",
                 description: "Bu proje, merkezi bir görüntü sistemi üzerinden iki farklı yapıya sahip mobil robotu koordine etmek için geliştirilen düşük maliyetli, ölçeklenebilir ve görüntü tabanlı bir endüstriyel/robotik koordinasyon sistemidir. Operatör bir hedef noktası seçer ve sistem, Öklid mesafesini kullanarak hedefe en yakın robotu hesaplar. Seçilen robot daha sonra kapalı çevrim yön düzeltmesi ile hedef noktaya yönlendirilir. Sistem; üstten konumlandırılmış akıllı telefon kamerası, ArUco işaretçi takibi, Wi-Fi iletişimi ve iki farklı mobil robot platformu kullanarak merkezi görev atamasını ve gerçek zamanlı görsel robot koordinasyonunu göstermektedir.",
                 details: [
                     "Python tabanlı merkezi kontrol mantığı",
@@ -604,7 +593,6 @@ export const translations = {
             },
             {
                 title: "GBM Alttipi İlaç Yeniden Konumlandırma",
-                role: "Takım Lideri",
                 description: "Bu proje, tümör RNA-seq verilerini analiz ederek moleküler alt tip tahmini yapan, alt tipe özgü biyobelirteçleri belirleyen ve sonraki terapötik keşif süreçleri için biyolojik olarak anlamlı hedefleri önceliklendiren yapay zekâ destekli bir GBM hassas tıp platformudur. Geliştirilen sistem; biyoinformatik, gözetimsiz kümeleme, çok dallı konsensüs tahmini ve web tabanlı analiz arayüzünü bir araya getirmektedir. Platformun mevcut en güçlü çıktıları moleküler alt tip sınıflandırması, biyobelirteç sıralaması ve hedefe hazır gen önceliklendirmesidir. İlaç yeniden konumlandırma katmanı ise sistemin nihai translasyonel karar destek hedefini temsil etmektedir.",
                 details: [
                     "GBM için biyoinformatik analizi",
