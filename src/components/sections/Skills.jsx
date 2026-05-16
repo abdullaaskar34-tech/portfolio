@@ -95,9 +95,9 @@ export const Languages = memo(() => {
           </p>
         </div>
         
-        <div className="flex flex-wrap gap-4 sm:gap-6">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6">
           {t.data.languages.map(({ name, level }) => (
-            <div key={name} className="group flex items-center gap-4 rounded-3xl bg-slate-50/50 p-4 pr-6 sm:pr-8 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-xl hover:ring-sky-100 w-full sm:w-auto">
+            <div key={name} className="group flex items-center gap-4 rounded-3xl bg-slate-50/50 p-4 pr-6 sm:pr-8 ring-1 ring-slate-100 transition-all hover:bg-white hover:shadow-xl hover:ring-sky-100 w-full lg:w-auto flex-1 lg:flex-none">
               <div className="h-11 w-11 sm:h-12 sm:w-12 shrink-0 grid place-items-center rounded-2xl bg-white shadow-sm text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-all duration-500">
                 <CheckCircle2 size={22} className="sm:w-6 sm:h-6" />
               </div>
