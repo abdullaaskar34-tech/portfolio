@@ -45,7 +45,7 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "Biomedical Engineering specialist bridging the gap between AI Health Tech and Embedded Software. Dedicated to precision engineering in clinical applications.",
+      bio: "I have an interdisciplinary engineering profile that combines a background in biomedical engineering with electrical-electronics engineering, artificial intelligence, and embedded systems. In health technology-focused projects, I have carried out hands-on work in software development, data analysis, biomedical device systems, and hardware integration. I have actively contributed to research, technical implementation, and project processes.",
       birthYear: "Birth Year",
       location: "Location",
       locationVal: "Karabuk, TR",
@@ -361,7 +361,7 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "Biyomedikal Mühendisliği uzmanı; Yapay Zeka Sağlık Teknolojileri ile Gömülü Sistemler arasındaki köprüyü kuruyor. Klinik uygulamalarda hassas mühendislik çözümlerine odaklı.",
+      bio: "Biyomedikal mühendisliği altyapısını elektrik-elektronik mühendisliği, yapay zekâ ve gömülü sistemler ile birleştiren disiplinler arası bir mühendislik profiline sahibim. Sağlık teknolojileri odaklı projelerde yazılım geliştirme, veri analizi, biyomedikal cihaz sistemleri ve donanım entegrasyonu üzerine uygulamalı çalışmalar yürüttüm. Araştırma, teknik uygulama ve proje süreçlerinde aktif rol aldım.",
       birthYear: "Doğum Yılı",
       location: "Konum",
       locationVal: "Karabük, Türkiye",
