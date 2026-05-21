@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Linkedin, Globe, MapPin, Calendar, Send } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin, Send } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
 import ShinyText from "../common/ShinyText";
@@ -8,8 +8,27 @@ const Profile = memo(() => {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const stats = [
-    { label: t.hero.location, value: t.hero.locationVal, icon: MapPin },
+  const contactInfo = [
+    { 
+      label: t.hero.location, 
+      value: t.hero.locationVal, 
+      icon: MapPin,
+      type: 'text'
+    },
+    { 
+      label: t.hero.email, 
+      value: t.hero.emailVal, 
+      icon: Mail,
+      type: 'email',
+      href: `mailto:${t.hero.emailVal}`
+    },
+    { 
+      label: t.hero.phone, 
+      value: t.hero.phoneVal, 
+      icon: Phone,
+      type: 'phone',
+      href: `tel:${t.hero.phoneVal.replace(/\s/g, '')}`
+    },
   ];
 
   return (
@@ -54,6 +73,35 @@ const Profile = memo(() => {
                   <Linkedin size={22} />
                 </a>
               </div>
+
+              {/* Contact Strip */}
+              <div className="hero-contact-strip mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {contactInfo.map((item, index) => (
+                  <div 
+                    key={index}
+                    className="hero-contact-item flex flex-col items-center lg:items-start p-4 rounded-2xl bg-white/50 border border-slate-100 shadow-sm backdrop-blur-sm transition-all hover:shadow-md hover:border-sky-200 group"
+                  >
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="hero-contact-icon p-1.5 rounded-lg bg-sky-50 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                        <item.icon size={14} />
+                      </div>
+                      <span className="hero-contact-label text-[10px] font-black uppercase tracking-widest text-slate-400">
+                        {item.label}
+                      </span>
+                    </div>
+                    {item.type === 'text' ? (
+                      <span className="hero-contact-value text-sm font-bold text-slate-700 tracking-tight">{item.value}</span>
+                    ) : (
+                      <a 
+                        href={item.href}
+                        className="hero-contact-value text-sm font-bold text-slate-700 hover:text-sky-600 transition-colors tracking-tight"
+                      >
+                        {item.value}
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="relative shrink-0 w-full lg:w-auto flex justify-center">
@@ -68,22 +116,6 @@ const Profile = memo(() => {
                 />
               </div>
             </div>
-          </div>
-
-          <div className="mt-10 sm:mt-12 flex justify-center border-t border-slate-100 pt-8 sm:pt-10">
-            {stats.map(({ label, value, icon: Icon }) => (
-              <div key={label} className={`group p-3 sm:p-4 rounded-3xl transition-all hover:bg-white/40 flex flex-col items-center`}>
-                <div className={`flex items-center gap-2 sm:gap-3 mb-2`}>
-                  <div className="p-1.5 sm:p-2 rounded-lg bg-sky-50 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-colors">
-                      <Icon size={14} className="sm:w-4 sm:h-4" />
-                  </div>
-                  <p className="text-[9px] sm:text-[11px] font-black uppercase tracking-widest text-slate-400">
-                      {label}
-                  </p>
-                </div>
-                <p className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">{value}</p>
-              </div>
-            ))}
           </div>
       </div>
     </section>
