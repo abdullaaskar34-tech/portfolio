@@ -286,8 +286,8 @@ export const translations = {
         ],
         experience: [
             {
-                title: "Internship I —",
-                place: "Private Hospital, Karabük",
+                title: "Internship I",
+                place: "Karabük Training and Research Hospital, Karabük",
                 description: "I gained hands-on experience in the maintenance, inspection, and technical service processes of medical devices such as ventilators, ECG devices, defibrillators, and similar clinical equipment. I supported the biomedical technical service team in troubleshooting, calibration, and periodic maintenance activities.",
                 cases: [
                     { title: "Device: Surgical Operating Light", problem: "Problem: There was a problem in the main board affecting the light intensity control.", intervention: "Intervention: The faulty main board was replaced.", result: "Result: The lighting control system was restored and the unit became fully functional." },
@@ -298,7 +298,7 @@ export const translations = {
                 ]
             },
             {
-                title: "Internship II —",
+                title: "Internship II",
                 place: "Karabük Training and Research Hospital, Karabük",
                 description: "I actively participated in the maintenance, inspection, and fault-tracking processes of medical devices used in clinical environments. I gained practical experience in device performance checks, field applications, and hospital technical service workflows.",
                 cases: [
@@ -599,8 +599,8 @@ export const translations = {
         ],
         experience: [
             {
-                title: "Staj I —",
-                place: "Özel Hastane, Karabük",
+                title: "Staj I",
+                place: "Karabük Eğitim ve Araştırma Hastanesi, Karabük",
                 description: "Ventilatör, EKG cihazı, defibrilatör ve benzeri medikal cihazların bakım, kontrol ve teknik servis süreçlerinde uygulamalı deneyim kazandım. Arıza tespiti, kalibrasyon ve periyodik bakım çalışmalarında biyomedikal teknik servis ekibine destek sağladım.",
                 cases: [
                     { title: "Cihaz: Cerrahi Ameliyat Lambası", problem: "Sorun: Ana kartta, ışık şiddeti kontrolünü etkileyen bir problem tespit edildi.", intervention: "Müdahale: Arızalı ana kart değiştirildi.", result: "Sonuç: Işık kontrol sistemi düzgün şekilde çalışır hale getirildi." },
@@ -611,7 +611,7 @@ export const translations = {
                 ]
             },
             {
-                title: "Staj II —",
+                title: "Staj II",
                 place: "Karabük Eğitim ve Araştırma Hastanesi, Karabük",
                 description: "Klinik ortamda kullanılan medikal cihazların bakım, kontrol ve arıza takibi süreçlerine aktif olarak katıldım. Cihaz performans kontrolleri, saha uygulamaları ve hastane teknik servis işleyişi konusunda pratik deneyim edindim.",
                 cases: [

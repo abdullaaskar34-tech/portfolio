@@ -425,8 +425,8 @@ export const certifications = [
 
 export const experience = [
   {
-    title: "Internship I —",
-    place: "Private Hospital",
+    title: "Internship I",
+    place: "Karabük Training & Research Hospital",
     date: "Oct 2024 - Nov 2024",
     description: "Hands-on biomedical engineering experience involving troubleshooting, calibration, repair, testing, and maintenance of hospital medical equipment across operating rooms, ICU, radiology, ophthalmology, sterilization, and diagnostic units.",
     cases: [
@@ -504,8 +504,8 @@ export const experience = [
     ]
   },
   {
-    title: "Internship II —",
-    place: "Karabuk Education & Research Hospital",
+    title: "Internship II",
+    place: "Karabük Training & Research Hospital",
     date: "Jun 2025 - Jul 2025",
     description: "I actively participated in the maintenance, inspection, and fault-tracking processes of medical devices used in clinical environments. I gained practical experience in device performance checks, field applications, and hospital technical service workflows.",
     cases: [
