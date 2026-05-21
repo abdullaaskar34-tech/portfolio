@@ -13,7 +13,7 @@ export const translations = {
       getInTouch: "Get in Touch",
       available: "Available for Research & Engineering",
       rights: "All Rights Reserved.",
-      precision: "Precision Biomedical Engineering & AI Systems",
+      precision: "Precision Biomedical Engineering & Machine Learning Systems",
       navigation: "Navigation",
       menu: "Menu",
       back: "Back",
@@ -45,17 +45,14 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "I have an interdisciplinary engineering profile that combines a background in biomedical engineering with electrical-electronics engineering, artificial intelligence, and embedded systems. In health technology-focused projects, I have carried out hands-on work in software development, data analysis, biomedical device systems, and hardware integration. I have actively contributed to research, technical implementation, and project processes.",
-      birthYear: "Birth Year",
+      bio: "I have an interdisciplinary engineering profile that combines a background in biomedical engineering with electrical-electronics engineering, machine learning, and embedded systems. In health technology-focused projects, I have carried out hands-on work in software development, data analysis, biomedical device systems, and hardware integration. I have actively contributed to research, technical implementation, and project processes.",
       location: "Location",
-      locationVal: "Karabuk, TR",
-      nationality: "Nationality",
-      nationalityVal: "Syrian",
+      locationVal: "Istanbul, Turkey",
     },
     skills: {
       eyebrow: "Identity Matrix",
       title: "Skill Identity Matrix",
-      description: "A compact overview of the technical, professional, and multilingual capabilities I apply across biomedical engineering, embedded systems, AI, computer vision, and interdisciplinary project work.",
+      description: "A compact overview of the technical, professional, and multilingual capabilities I apply across biomedical engineering, embedded systems, machine learning, computer vision, and interdisciplinary project work.",
       technical: {
         eyebrow: "Expertise",
         title: "Technical Arsenal",
@@ -100,20 +97,20 @@ export const translations = {
     projects: {
         title: "Featured Engineering Projects",
         eyebrow: "Innovation Lab",
-        description: "Development of high-precision systems across computer vision, embedded architecture, and medical AI. Focused on scalable, real-world engineering solutions."
+        description: "Development of high-precision systems across computer vision, embedded architecture, and medical machine learning. Focused on scalable, real-world engineering solutions."
     },
     certifications: {
         title: "Professional Certifications",
         eyebrow: "Professional Excellence",
-        description: "Selected professional certifications in artificial intelligence, deep learning, biomedical equipment quality, electronics design, and Python programming."
+        description: "Selected professional certifications in machine learning, deep learning, biomedical equipment quality, electronics design, and Python programming."
     },
     data: {
         biomedicalCourses: [
             { title: "Biomedical Signal Processing", category: "Signal Processing", note: "Advanced analysis of physiological signals (ECG, EEG, EMG) and digital filter design." },
             { title: "Biomedical Imaging Systems", category: "Imaging", note: "Physics and engineering of MRI, CT, Ultrasound, and X-ray imaging modalities." },
             { title: "Biomedical Systems Modelling and Control", category: "Control", note: "Mathematical modeling of biological systems and feedback control mechanisms." },
-            { title: "Scientific Programming with Python", category: "Biomedical AI", note: "Data science and algorithmic solutions for complex biological data analysis." },
-            { title: "Introduction to Soft Computing", category: "Biomedical AI", note: "Fuzzy logic, neural networks, and evolutionary algorithms in medicine." },
+            { title: "Scientific Programming with Python", category: "Machine Learning", note: "Data science and algorithmic solutions for complex biological data analysis." },
+            { title: "Introduction to Soft Computing", category: "Machine Learning", note: "Fuzzy logic, neural networks, and evolutionary algorithms in medicine." },
             { title: "Introduction to Clinical Engineering", category: "Clinical Engineering", note: "Management of medical technology and hospital safety standards." },
             { title: "Human Anatomy and Physiology", category: "Physiology", note: "Systemic analysis of human body functions and anatomical structures." },
             { title: "Lasers and Optoelectronics", category: "Medical Electronics", note: "Laser-tissue interactions and optical diagnostic technologies." },
@@ -135,7 +132,7 @@ export const translations = {
             { title: "Artificial Organs, Prostheses and Implant Design", category: "Biomaterials", note: "Design and engineering of life-support systems and limb replacements." },
             { title: "Medical Biology and Genetics", category: "Physiology", note: "Cellular biology and hereditary mechanisms in human health." },
             { title: "Signals and Systems", category: "Signal Processing", note: "Analysis of continuous and discrete-time signals and LTI systems." },
-            { title: "Database Management Systems", category: "Biomedical AI", note: "Structuring and querying medical records and health data." },
+            { title: "Database Management Systems", category: "Machine Learning", note: "Structuring and querying medical records and health data." },
             { title: "Hydraulics and Pneumatics", category: "Engineering", note: "Fluid power systems and their applications in medical devices." },
             { title: "Probability and Statistics", category: "Mathematics", note: "Statistical analysis of clinical trials and medical data." },
             { title: "Biomedical Instrumentation", category: "Medical Electronics", note: "Design and safety of diagnostic and therapeutic instruments." },
@@ -143,7 +140,7 @@ export const translations = {
             { title: "Circuit Theory", category: "Foundations", note: "Basic electrical laws and network analysis for medical devices." },
         ],
         electricalCourses: [
-            { title: "Artificial Intelligence", category: "AI", note: "Advanced neural networks, machine learning models, and intelligent system design." },
+            { title: "Machine Learning", category: "Machine Learning", note: "Advanced neural networks, machine learning models, and intelligent system design." },
             { title: "Embedded Systems", category: "Embedded", note: "Real-time operating systems, hardware-software co-design, and industrial integration." },
             { title: "Microprocessors and Microcontrollers", category: "Embedded", note: "Architecture, assembly programming, and peripheral interfacing for ARM/AVR." },
             { title: "Logic Design of Digital Systems", category: "Digital", note: "Combinational and sequential logic optimization with hardware description focus." },
@@ -159,7 +156,7 @@ export const translations = {
             { title: "Electromechanical Energy Conversion I", category: "Power", note: "Transformer theory, DC machines, and magnetic circuit analysis." },
             { title: "Electronics Laboratory", category: "Laboratory", note: "Experimental verification of analog circuits and signal prototyping." },
             { title: "Circuit Theory Laboratory", category: "Laboratory", note: "Hands-on implementation and measurement of electrical networks." },
-            { title: "Graduation Project I", category: "Research", note: "Initial design phase and literature review for AI-supported medical triage." },
+            { title: "Graduation Project I", category: "Research", note: "Initial design phase and literature review for machine learning-supported medical triage." },
             { title: "Signals and Systems", category: "Signals", note: "LTI systems, Fourier analysis, and Laplace transforms for signal processing." },
             { title: "Electromagnetic Waves", category: "Electromagnetics", note: "Wave propagation, transmission lines, and antenna fundamentals." },
             { title: "Control Systems I", category: "Control", note: "Classical control theory, root locus, and frequency domain design." },
@@ -172,7 +169,7 @@ export const translations = {
         ],
         technicalSkills: [
             { name: "Programming and Data Analysis", tools: ["Python", "Data analysis", "Data visualization", "Algorithms", "Signal processing"] },
-            { name: "Machine Learning", tools: ["Machine learning", "Biomedical AI", "Decision support systems", "Model development", "Data classification"] },
+            { name: "Machine Learning & Data-Driven Systems", tools: ["Machine learning", "Biomedical Machine Learning", "Predictive Models", "Model development", "Data classification"] },
             { name: "Embedded Systems", tools: ["Arduino", "C / C++", "Sensors", "Embedded software", "Real-time data acquisition", "Microcontrollers"] },
             { name: "Electrical-Electronics", tools: ["Circuit design", "Analog electronics", "Digital electronics", "PCB design", "Troubleshooting", "Hardware integration"] },
             { name: "Biomedical Technologies", tools: ["Biomedical signals", "Device calibration", "Device maintenance", "Device safety", "Clinical device systems"] },
@@ -219,13 +216,13 @@ export const translations = {
         ],
         projects: [
             {
-                title: "Combat UAV Avionics System — Genç Sancaktarlar",
-                description: "Critical design project for a fixed-wing combat UAV platform developed for the TEKNOFEST 2025 Fighter UAV Competition.",
+                title: "UAV Avionics System — Genç Sancaktarlar",
+                description: "Critical design project for a fixed-wing UAV platform developed for the TEKNOFEST 2025 Fighting UAV Competition.",
                 details: [
                     "Pixhawk-based flight control and autonomous mission support",
                     "MAVLink-based communication between onboard systems and ground station",
                     "Telemetry and sensor data integration for UAV health monitoring",
-                    "NVIDIA Jetson Xavier NX integration for real-time AI processing",
+                    "NVIDIA Jetson Xavier NX integration for real-time machine learning processing",
                     "YOLOv11 and ByteTrack based UAV detection and tracking workflow",
                     "Ground control station, communication, and UI architecture",
                     "Avionics-level contribution to electronic and flight subsystem integration"
@@ -242,8 +239,8 @@ export const translations = {
                 ]
             },
             {
-                title: "AI-Powered Triage Routing Device",
-                description: "An AI-supported triage system for contactless vital parameter measurement and automated patient routing in clinical settings.",
+                title: "Machine Learning-Powered Triage Routing Device",
+                description: "A Machine Learning-supported triage system for contactless vital parameter measurement and automated patient routing in clinical settings.",
                 details: [
                     "Camera-based non-contact vital monitoring",
                     "Automated routing decision support",
@@ -279,7 +276,7 @@ export const translations = {
             },
             {
                 title: "GBM Subtype Drug Repositioning",
-                description: "An AI-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
+                description: "A Machine Learning-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
                 details: [
                     "Bioinformatics analysis for GBM",
                     "Drug repurposing pipeline",
@@ -329,7 +326,7 @@ export const translations = {
       getInTouch: "İletişime Geç",
       available: "Araştırma ve Mühendislik Projelerine Uygundur",
       rights: "Tüm Hakları Saklıdır.",
-      precision: "Hassas Biyomedikal Mühendisliği ve YZ Sistemleri",
+      precision: "Hassas Biyomedikal Mühendisliği ve Makine Öğrenimi Sistemleri",
       navigation: "Navigasyon",
       menu: "Menü",
       back: "Geri",
@@ -361,17 +358,14 @@ export const translations = {
     hero: {
       name: "Abdulla",
       surname: "ASKAR",
-      bio: "Biyomedikal mühendisliği altyapısını elektrik-elektronik mühendisliği, yapay zekâ ve gömülü sistemler ile birleştiren disiplinler arası bir mühendislik profiline sahibim. Sağlık teknolojileri odaklı projelerde yazılım geliştirme, veri analizi, biyomedikal cihaz sistemleri ve donanım entegrasyonu üzerine uygulamalı çalışmalar yürüttüm. Araştırma, teknik uygulama ve proje süreçlerinde aktif rol aldım.",
-      birthYear: "Doğum Yılı",
+      bio: "Biyomedikal mühendisliği altyapısını elektrik-elektronik mühendisliği, makine öğrenimi ve gömülü sistemler ile birleştiren disiplinler arası bir mühendislik profiline sahibim. Sağlık teknolojileri odaklı projelerde yazılım geliştirme, veri analizi, biyomedikal cihaz sistemleri ve donanım entegrasyonu üzerine uygulamalı çalışmalar yürüttüm. Araştırma, teknik uygulama ve proje süreçlerinde aktif rol aldım.",
       location: "Konum",
-      locationVal: "Karabük, Türkiye",
-      nationality: "Uyruk",
-      nationalityVal: "Suriye",
+      locationVal: "İstanbul, Türkiye",
     },
     skills: {
       eyebrow: "Yetkinlik Matrisi",
       title: "Yetkinlik Matrisi",
-      description: "Biyomedikal mühendisliği, gömülü sistemler, YZ, bilgisayarlı görü ve disiplinler arası projelerde uyguladığım teknik ve profesyonel becerilerin kısa bir özeti.",
+      description: "Biyomedikal mühendisliği, gömülü sistemler, makine öğrenimi, bilgisayarlı görü ve disiplinler arası projelerde uyguladığım teknik ve profesyonel becerilerin kısa bir özeti.",
       technical: {
         eyebrow: "Uzmanlık",
         title: "Teknik Yetkinlikler",
@@ -416,20 +410,20 @@ export const translations = {
     projects: {
         title: "Mühendislik Projeleri",
         eyebrow: "İnovasyon Laboratuvarı",
-        description: "Bilgisayarlı görü, gömülü mimari ve tıbbi YZ alanlarında yüksek hassasiyetli sistemlerin geliştirilmesi. Ölçeklenebilir, gerçek dünya çözümlerine odaklı."
+        description: "Bilgisayarlı görü, gömülü mimari ve tıbbi makine öğrenimi alanlarında yüksek hassasiyetli sistemlerin geliştirilmesi. Ölçeklenebilir, gerçek dünya çözümlerine odaklı."
     },
     certifications: {
         title: "Sertifikalar ve Başarılar",
         eyebrow: "Profesyonel Mükemmellik",
-        description: "Yapay zeka, derin öğrenme, biyomedikal cihaz kalitesi ve Python programlama alanlarında uluslararası geçerliliği olan sertifikalar."
+        description: "Makine öğrenimi, derin öğrenme, biyomedikal cihaz kalitesi ve Python programlama alanlarında uluslararası geçerliliği olan sertifikalar."
     },
     data: {
         biomedicalCourses: [
             { title: "Biyomedikal Sinyal İşleme", category: "Sinyal İşleme", note: "Fizyolojik sinyallerin (EKG, EEG, EMG) ileri düzey analizi ve dijital filtre tasarımı." },
             { title: "Biyomedikal Görüntüleme Sistemleri", category: "Görüntüleme", note: "MRI, CT, Ultrason ve X-ray görüntüleme modalitelerinin fiziği ve mühendisliği." },
             { title: "Biyomedikal Sistem Modelleme ve Kontrolü", category: "Kontrol", note: "Biyolojik sistemlerin matematiksel modellenmesi ve geri besleme kontrol mekanizmaları." },
-            { title: "Python ile Bilimsel Programlama", category: "Biyomedikal YZ", note: "Karmaşık biyolojik veri analizi için veri bilimi ve algortimik çözümler." },
-            { title: "Yumuşak Hesaplamaya Giriş", category: "Biyomedikal YZ", note: "Tıpta bulanık mantık, sinir ağları ve evrimsel algoritmalar." },
+            { title: "Python ile Bilimsel Programlama", category: "Makine Öğrenimi", note: "Karmaşık biyolojik veri analizi için veri bilimi ve algortimik çözümler." },
+            { title: "Yumuşak Hesaplamaya Giriş", category: "Makine Öğrenimi", note: "Tıpta bulanık mantık, sinir ağları ve evrimsel algoritmalar." },
             { title: "Klinik Mühendisliğine Giriş", category: "Klinik Mühendisliği", note: "Tıbbi teknoloji yönetimi ve hastane güvenlik standartları." },
             { title: "İnsan Anatomisi ve Fizyolojisi", category: "Fizyoloji", note: "İnsan vüvudu fonksiyonlarının ve anatomik yapıların sistemik analizi." },
             { title: "Lazerler ve Optoelektronik", category: "Tıbbi Elektronik", note: "Lazer-doku etkileşimleri ve optik teşhis teknolojileri." },
@@ -451,7 +445,7 @@ export const translations = {
             { title: "Yapay Organlar, Protezler ve İmplant Tasarımı", category: "Biyomalzemeler", note: "Yaşam destek sistemlerinin ve uzuv protezlerinin tasarımı ve mühendisliği." },
             { title: "Tıbbi Biyoloji ve Genetik", category: "Fizyoloji", note: "İnsan sağlığında hücresel biyoloji ve kalıtsal mekanizmalar." },
             { title: "Sinyaller ve Sistemler", category: "Sinyal İşleme", note: "Sürekli ve ayrık zamanlı sinyallerin ve LTI sistemlerin analizi." },
-            { title: "Veritabanı Yönetim Sistemleri", category: "Biyomedikal YZ", note: "Tıbbi kayıtların ve sağlık verilerinin yapılandırılması ve sorgulanması." },
+            { title: "Veritabanı Yönetim Sistemleri", category: "Makine Öğrenimi", note: "Tıbbi kayıtların ve sağlık verilerinin yapılandırılması ve sorgulanması." },
             { title: "Hidrolik ve Pnömatik", category: "Mühendislik", note: "Akışkan gücü sistemleri ve tıbbi cihazlardaki uygulamaları." },
             { title: "Olasılık ve İstatistik", category: "Matematik", note: "Klinik araştırmaların ve tıbbi verilerin istatistiksel analizi." },
             { title: "Biyomedikal Enstrümantasyon", category: "Tıbbi Elektronik", note: "Teşhis ve tedavi cihazlarının tasarımı ve güvenliği." },
@@ -459,7 +453,7 @@ export const translations = {
             { title: "Devre Teorisi", category: "Temeller", note: "Tıbbi cihazlar için temel elektrik yasaları ve ağ analizi." },
         ],
         electricalCourses: [
-            { title: "Yapay Zeka", category: "YZ", note: "İleri sinir ağları, makine öğrenimi modelleri ve akıllı sistem tasarımı." },
+            { title: "Makine Öğrenimi", category: "Makine Öğrenimi", note: "İleri sinir ağları, makine öğrenimi modelleri ve akıllı sistem tasarımı." },
             { title: "Gömülü Sistemler", category: "Gömülü", note: "Gerçek zamanlı işletim sistemleri, donanım-yazılım ortak tasarımı ve endüstriyel entegrasyon." },
             { title: "Mikroişlemciler ve Mikrodenetleyiciler", category: "Gömülü", note: "ARM/AVR mimarisi, assembly programlama ve çevresel arayüz oluşturma." },
             { title: "Dijital Sistemlerin Mantıksal Tasarımı", category: "Dijital", note: "Donanım tanımlama odaklı kombinasyonel ve ardışık mantık optimizasyonu." },
@@ -475,7 +469,7 @@ export const translations = {
             { title: "Elektromekanik Enerji Dönüşümü I", category: "Güç", note: "Trafo teorisi, DC makineler ve manyetik devre analizi." },
             { title: "Elektronik Laboratuvarı", category: "Laboratory", note: "Experimental verification of analog circuits and signal prototyping." },
             { title: "Circuit Theory Laboratory", category: "Laboratory", note: "Hands-on implementation and measurement of electrical networks." },
-            { title: "Graduation Project I", category: "Research", note: "Initial design phase and literature review for AI-supported medical triage." },
+            { title: "Graduation Project I", category: "Research", note: "Initial design phase and literature review for machine learning-supported medical triage." },
             { title: "Signals and Systems", category: "Signals", note: "LTI systems, Fourier analysis, and Laplace transforms for signal processing." },
             { title: "Electromagnetic Waves", category: "Electromagnetics", note: "Wave propagation, transmission lines, and antenna fundamentals." },
             { title: "Control Systems I", category: "Control", note: "Classical control theory, root locus, and frequency domain design." },
@@ -488,7 +482,7 @@ export const translations = {
         ],
         technicalSkills: [
             { name: "Programlama ve Veri Analizi", tools: ["Python", "Veri analizi", "Veri görselleştirme", "Algoritmalar", "Sinyal işleme"] },
-            { name: "Makine Öğrenmesi", tools: ["Makine öğrenmesi", "Biyomedikal yapay zekâ", "Karar destek sistemleri", "Model geliştirme", "Veri sınıflandırma"] },
+            { name: "Makine Öğrenimi ve Veri Odaklı Sistemler", tools: ["Makine öğrenimi", "Biyomedikal makine öğrenimi", "Öngörü Modelleri", "Model geliştirme", "Veri sınıflandırma"] },
             { name: "Gömülü Sistemler", tools: ["Arduino", "C / C++", "Sensörler", "Gömülü yazılım", "Gerçek zamanlı veri toplama", "Mikrodenetleyiciler"] },
             { name: "Elektrik-Elektronik", tools: ["Devre tasarımı", "Analog elektronik", "Dijital elektronik", "PCB tasarımı", "Arıza tespiti", "Donanım entegrasyonu"] },
             { name: "Biyomedikal Teknolojiler", tools: ["Biyomedikal sinyaller", "Cihaz kalibrasyonu", "Cihaz bakımı", "Cihaz güvenliği", "Klinik cihaz sistemleri"] },
@@ -535,13 +529,13 @@ export const translations = {
         ],
         projects: [
             {
-                title: "Muharip İHA Aviyonik Sistemi — Genç Sancaktarlar",
-                description: "TEKNOFEST 2025 Savaşan İHA Yarışması için geliştirilen sabit kanatlı muharip İHA platformu için kritik tasarım projesi.",
+                title: "İHA Aviyonik Sistemi — Genç Sancaktarlar",
+                description: "TEKNOFEST 2025 Savaşan İHA Yarışması için geliştirilen sabit kanatlı İHA platformuna yönelik kritik tasarım projesi.",
                 details: [
                     "Pixhawk tabanlı uçuş kontrolü ve otonom görev desteği",
                     "Araç içi sistemler ile yer istasyonu arasında MAVLink tabanlı iletişim",
                     "İHA durum izleme için telemetri ve sensör veri entegrasyonu",
-                    "Gerçek zamanlı YZ işleme için NVIDIA Jetson Xavier NX entegrasyonu",
+                    "Gerçek zamanlı makine öğrenimi işleme için NVIDIA Jetson Xavier NX entegrasyonu",
                     "YOLOv11 ve ByteTrack tabanlı İHA algılama ve izleme iş akışı",
                     "Yer kontrol istasyonu, iletişim ve kullanıcı arayüzü mimarisi",
                     "Elektronik ve uçuş alt sistem entegrasyonuna aviyonik düzeyinde katkı"
@@ -558,8 +552,8 @@ export const translations = {
                 ]
             },
             {
-                title: "YZ Destekli Triyaj Yönlendirme Cihazı",
-                description: "Klinik ortamlarda temassız vital parametre ölçümü ve otomatik hasta yönlendirmesi için YZ destekli bir triyaj sistemi.",
+                title: "Makine Öğrenimi Destekli Triyaj Yönlendirme Cihazı",
+                description: "Klinik ortamlarda temassız vital parametre ölçümü ve otomatik hasta yönlendirmesi için makine öğrenimi destekli bir triyaj sistemi.",
                 details: [
                     "Kamera tabanlı temassız vital izleme",
                     "Otomatik yönlendirme karar desteği",
@@ -595,7 +589,7 @@ export const translations = {
             },
             {
                 title: "GBM Alttipi İlaç Yeniden Konumlandırma",
-                description: "Bu proje, tümör RNA-seq verilerini analiz ederek moleküler alt tip tahmini yapan, alt tipe özgü biyobelirteçleri belirleyen ve sonraki terapötik keşif süreçleri için biyolojik olarak anlamlı hedefleri önceliklendiren yapay zekâ destekli bir GBM hassas tıp platformudur. Geliştirilen sistem; biyoinformatik, gözetimsiz kümeleme, çok dallı konsensüs tahmini ve web tabanlı analiz arayüzünü bir araya getirmektedir. Platformun mevcut en güçlü çıktıları moleküler alt tip sınıflandırması, biyobelirteç sıralaması ve hedefe hazır gen önceliklendirmesidir. İlaç yeniden konumlandırma katmanı ise sistemin nihai translasyonel karar destek hedefini temsil etmektedir.",
+                description: "Bu proje, tümör RNA-seq verilerini analiz ederek moleküler alt tip tahmini yapan, alt tipe özgü biyobelirteçleri belirleyen ve sonraki terapötik keşif süreçleri için biyolojik olarak anlamlı hedefleri önceliklendiren makine öğrenimi destekli bir GBM hassas tıp platformudur. Geliştirilen sistem; biyoinformatik, gözetimsiz kümeleme, çok dallı konsensüs tahmini ve web tabanlı analiz arayüzünü bir araya getirmektedir. Platformun mevcut en güçlü çıktıları moleküler alt tip sınıflandırması, biyobelirteç sıralaması ve hedefe hazır gen önceliklendirmesidir. İlaç yeniden konumlandırma katmanı ise sistemin nihai translasyonel karar destek hedefini temsil etmektedir.",
                 details: [
                     "GBM için biyoinformatik analizi",
                     "İlaç yeniden konumlandırma hattı",

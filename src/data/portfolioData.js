@@ -31,13 +31,13 @@ export const technicalSkills = [
     tools: ["Python", "C/C++", "SQL", "Embedded C"]
   },
   { 
-    name: "AI & Machine Learning", 
+    name: "Machine Learning & Data-Driven Systems", 
     icon: BrainCircuit,
     description: "Architecting and deploying deep learning models using TensorFlow and Keras for predictive healthcare and industrial automation.",
     tools: ["TensorFlow", "Keras", "Scikit-learn", "Neural Networks"]
   },
   { 
-    name: "Computer Vision & Edge AI", 
+    name: "Computer Vision & Edge Machine Learning", 
     icon: ScanEye,
     description: "Implementing real-time object detection (YOLOv11) and tracking systems optimized for NVIDIA Jetson edge hardware.",
     tools: ["YOLOv11", "OpenCV", "ByteTrack", "Xavier NX"]
@@ -175,8 +175,8 @@ export const biomedicalCourses = [
   { title: "Biomedical Signal Processing", grade: "AA", score: 100, semester: "", category: "Signal Processing", note: "Advanced analysis of physiological signals (ECG, EEG, EMG) and digital filter design." },
   { title: "Biomedical Imaging Systems", grade: "AA", score: 100, semester: "", category: "Imaging", note: "Physics and engineering of MRI, CT, Ultrasound, and X-ray imaging modalities." },
   { title: "Biomedical Systems Modelling and Control", grade: "AA", score: 98, semester: "", category: "Control", note: "Mathematical modeling of biological systems and feedback control mechanisms." },
-  { title: "Scientific Programming with Python", grade: "AA", score: 100, semester: "", category: "Biomedical AI", note: "Data science and algorithmic solutions for complex biological data analysis." },
-  { title: "Introduction to Soft Computing", grade: "AA", score: 97, semester: "", category: "Biomedical AI", note: "Fuzzy logic, neural networks, and evolutionary algorithms in medicine." },
+  { title: "Scientific Programming with Python", grade: "AA", score: 100, semester: "", category: "Machine Learning", note: "Data science and algorithmic solutions for complex biological data analysis." },
+  { title: "Introduction to Soft Computing", grade: "AA", score: 97, semester: "", category: "Machine Learning", note: "Fuzzy logic, neural networks, and evolutionary algorithms in medicine." },
   { title: "Introduction to Clinical Engineering", grade: "AA", score: 100, semester: "", category: "Clinical Engineering", note: "Management of medical technology and hospital safety standards." },
   { title: "Human Anatomy and Physiology", grade: "AA", score: 96, semester: "", category: "Physiology", note: "Systemic analysis of human body functions and anatomical structures." },
   { title: "Lasers and Optoelectronics", grade: "AA", score: 95, semester: "", category: "Medical Electronics", note: "Laser-tissue interactions and optical diagnostic technologies." },
@@ -200,7 +200,7 @@ export const biomedicalCourses = [
   { title: "Artificial Organs, Prostheses and Implant Design", grade: "BA", score: 87, semester: "", category: "Biomaterials", note: "Design and engineering of life-support systems and limb replacements." },
   { title: "Medical Biology and Genetics", grade: "BA", score: 86, semester: "", category: "Physiology", note: "Cellular biology and hereditary mechanisms in human health." },
   { title: "Signals and Systems", grade: "BA", score: 85, semester: "", category: "Signal Processing", note: "Analysis of continuous and discrete-time signals and LTI systems." },
-  { title: "Database Management Systems", grade: "BA", score: 89, semester: "", category: "Biomedical AI", note: "Structuring and querying medical records and health data." },
+  { title: "Database Management Systems", grade: "BA", score: 89, semester: "", category: "Machine Learning", note: "Structuring and querying medical records and health data." },
   { title: "Hydraulics and Pneumatics", grade: "BA", score: 84, semester: "", category: "Engineering", note: "Fluid power systems and their applications in medical devices." },
   { title: "Probability and Statistics", grade: "BA", score: 88, semester: "", category: "Mathematics", note: "Statistical analysis of clinical trials and medical data." },
 
@@ -212,7 +212,7 @@ export const biomedicalCourses = [
 
 export const electricalCourses = [
   // AA - HIGHLIGHTS & CORE SPECIALIZATIONS
-  { title: "Artificial Intelligence", grade: "AA", score: 100, semester: "", category: "AI", note: "Advanced neural networks, machine learning models, and intelligent system design." },
+  { title: "Machine Learning", grade: "AA", score: 100, semester: "", category: "Machine Learning", note: "Advanced neural networks, machine learning models, and intelligent system design." },
   { title: "Embedded Systems", grade: "AA", score: 100, semester: "", category: "Embedded", note: "Real-time operating systems, hardware-software co-design, and industrial integration." },
   { title: "Microprocessors and Microcontrollers", grade: "AA", score: 98, semester: "", category: "Embedded", note: "Architecture, assembly programming, and peripheral interfacing for ARM/AVR." },
   { title: "Logic Design of Digital Systems", grade: "AA", score: 100, semester: "", category: "Digital", note: "Combinational and sequential logic optimization with hardware description focus." },
@@ -228,7 +228,7 @@ export const electricalCourses = [
   { title: "Electromechanical Energy Conversion I", grade: "AA", score: 92, semester: "", category: "Power", note: "Transformer theory, DC machines, and magnetic circuit analysis." },
   { title: "Electronics Laboratory", grade: "AA", score: 100, semester: "", category: "Laboratory", note: "Experimental verification of analog circuits and signal prototyping." },
   { title: "Circuit Theory Laboratory", grade: "AA", score: 100, semester: "", category: "Laboratory", note: "Hands-on implementation and measurement of electrical networks." },
-  { title: "Graduation Project I", grade: "AA", score: 100, semester: "", category: "Research", note: "Initial design phase and literature review for AI-supported medical triage." },
+  { title: "Graduation Project I", grade: "AA", score: 100, semester: "", category: "Research", note: "Initial design phase and literature review for machine learning-supported medical triage." },
 
   // BA - STRONG PERFORMANCE
   { title: "Signals and Systems", grade: "BA", score: 88, semester: "", category: "Signals", note: "LTI systems, Fourier analysis, and Laplace transforms for signal processing." },
@@ -246,17 +246,17 @@ export const electricalCourses = [
 
 export const projects = [
   {
-    title: "Combat UAV Avionics System — Genç Sancaktarlar",
+    title: "UAV Avionics System — Genç Sancaktarlar",
     year: "2025",
     category: "UAV Avionics",
     status: "Competition Project",
-    description: "Critical design project for a fixed-wing combat UAV platform developed for the TEKNOFEST 2025 Savaşan İHA Competition. The system integrates autonomous flight, Pixhawk-based flight control, MAVLink communication, telemetry, sensor fusion, onboard AI processing, and real-time target detection using YOLOv11 and ByteTrack. Responsible for telemetry integration, sensor data coordination, and avionics architecture support.",
+    description: "Critical design project for a fixed-wing UAV platform developed for the TEKNOFEST 2025 Savaşan İHA Competition. The system integrates autonomous flight, Pixhawk-based flight control, MAVLink communication, telemetry, sensor fusion, onboard AI processing, and real-time target detection using YOLOv11 and ByteTrack. Responsible for telemetry integration, sensor data coordination, and avionics architecture support.",
     tech: ["Pixhawk", "MAVLink", "Telemetry", "UAV Systems", "Sensor Integration", "NVIDIA Jetson", "YOLOv11", "ByteTrack", "ArduPilot", "Ground Control Station", "Autonomous Flight"],
     details: [
       "Pixhawk-based flight control and autonomous mission support",
       "MAVLink-based communication between onboard systems and ground station",
       "Telemetry and sensor data integration for UAV state monitoring",
-      "NVIDIA Jetson Xavier NX integration for real-time AI processing",
+      "NVIDIA Jetson Xavier NX integration for real-time machine learning processing",
       "YOLOv11 and ByteTrack-based UAV detection and tracking workflow",
       "Ground control station, communication, and user interface architecture",
       "Avionics-level contribution to electronic and flight subsystem integration"
@@ -264,7 +264,7 @@ export const projects = [
     preview: `${import.meta.env.BASE_URL}project-media/genc-sancaktarlar-cover.jpg`,
     document: `${import.meta.env.BASE_URL}project-documents/genc-sancaktarlar-critical-design-report.pdf`,
     documentLabel: "Critical Design Report",
-    documentDescription: "Comprehensive technical report detailing the avionics architecture, communication protocols, and AI integration for the Genç Sancaktarlar Combat UAV."
+    documentDescription: "Comprehensive technical report detailing the avionics architecture, communication protocols, and AI integration for the Genç Sancaktarlar UAV."
   },
   {
     title: "YOLOv11 Industrial Inspection",
@@ -285,12 +285,12 @@ export const projects = [
     ]
   },
   {
-    title: "AI-Powered Triage Routing Device",
+    title: "Machine Learning-Powered Triage Routing Device",
     year: "2025",
     category: "Graduation Project",
     status: "Prototype",
-    description: "An AI-supported triage system for contactless vital parameter measurement and automated patient routing in clinical settings. Utilizes computer vision and decision support logic.",
-    tech: ["Python", "TensorFlow", "Computer Vision", "Medical AI", "Signal Processing"],
+    description: "A Machine Learning-supported triage system for contactless vital parameter measurement and automated patient routing in clinical settings. Utilizes computer vision and decision support logic.",
+    tech: ["Python", "TensorFlow", "Computer Vision", "Medical Machine Learning", "Signal Processing"],
     details: [
       "Camera-based non-contact vital monitoring",
       "Automated routing decision support",
@@ -300,7 +300,7 @@ export const projects = [
     preview: `${import.meta.env.BASE_URL}project-previews/ppg-1.png`,
     media: [
         { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ.pdf`, label: "TRIAJ.pdf" },
-        { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ2.docx`, label: "TRIAJ2.docx" },
+        { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ2.pdf`, label: "TRIAJ2.pdf" },
         { type: "document", src: `${import.meta.env.BASE_URL}project-documents/TRIAJ3.pdf`, label: "TRIAJ3.pdf" }
     ]
   },
@@ -354,9 +354,9 @@ export const projects = [
   {
     title: "GBM Subtype Drug Repositioning",
     year: "TEKNOFEST 2025",
-    category: "Oncology AI",
+    category: "Oncology Machine Learning",
     status: "Finalist",
-    description: "An AI-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
+    description: "A Machine Learning-driven GBM precision medicine platform that analyzes tumor RNA-seq data to predict molecular subtype, identify subtype-specific biomarkers, and prioritize biologically relevant targets for downstream therapeutic discovery. The implemented system combines bioinformatics, unsupervised clustering, multi-branch consensus prediction, and a web-based analysis interface. Its strongest current outputs are subtype classification, biomarker ranking, and target-ready gene prioritization, while the drug repurposing layer represents the platform’s final translational decision-support goal.",
     tech: ["Bioinformatics", "Python", "Genomics", "Machine Learning", "R"],
     details: [
       "Bioinformatics analysis for GBM",
@@ -373,7 +373,7 @@ export const certifications = [
     title: "AI for Medical Diagnosis",
     issuer: "DeepLearning.AI",
     date: "Sep 2024",
-    category: "AI & Healthcare",
+    category: "Machine Learning & Healthcare",
     id: "CF19DGI7VAPZ",
     link: "https://coursera.org/verify/CF19DGI7VAPZ",
     document: `${import.meta.env.BASE_URL}certificates/CF19DGI7VAPZ.pdf`,

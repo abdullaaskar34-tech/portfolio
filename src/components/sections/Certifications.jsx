@@ -129,9 +129,9 @@ const Certifications = memo(() => {
     <>
       <GlassCard id="certificates" className="w-full" delay={150}>
         <div className="mb-10 sm:mb-16">
-            <SectionTitle icon={Award} eyebrow={language === 'tr' ? 'Profesyonel Mükemmellik' : 'Professional Excellence'} title={t.nav.certificates} />
+            <SectionTitle icon={Award} eyebrow={t.certifications.eyebrow} title={t.nav.certificates} />
             <p className="mt-6 max-w-6xl text-base sm:text-lg font-medium leading-relaxed text-slate-500">
-                {language === 'tr' ? 'Yapay zeka, derin öğrenme, biyomedikal ekipman kalitesi, elektronik tasarımı ve Python programlama alanlarında seçilmiş profesyonel sertifikalar.' : 'Selected professional certifications in artificial intelligence, deep learning, biomedical equipment quality, electronics design, and Python programming.'}
+                {t.certifications.description}
             </p>
         </div>
 

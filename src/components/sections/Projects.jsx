@@ -309,9 +309,9 @@ const Projects = memo(() => {
     <>
       <GlassCard id="projects" className="w-full">
         <div className="mb-16">
-            <SectionTitle icon={CircuitBoard} eyebrow={language === 'tr' ? 'İnovasyon Laboratuvarı' : 'Innovation Lab'} title={language === 'tr' ? 'Öne Çıkan Mühendislik Projeleri' : 'Featured Engineering Projects'} />
+            <SectionTitle icon={CircuitBoard} eyebrow={t.projects.eyebrow} title={t.projects.title} />
             <p className="mt-6 max-w-6xl text-lg font-medium text-slate-500 leading-relaxed">
-                {language === 'tr' ? 'Bilgisayarlı görü, gömülü mimari ve tıbbi YZ genelinde yüksek hassasiyetli sistemlerin geliştirilmesi. Ölçeklenebilir, gerçek dünya mühendislik çözümlerine odaklanılmıştır.' : 'Development of high-precision systems across computer vision, embedded architecture, and medical AI. Focused on scalable, real-world engineering solutions.'}
+                {t.projects.description}
             </p>
         </div>
 

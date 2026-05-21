@@ -9,9 +9,7 @@ const Profile = memo(() => {
   const t = translations[language];
 
   const stats = [
-    { label: t.hero.birthYear, value: "2001", icon: Calendar },
     { label: t.hero.location, value: t.hero.locationVal, icon: MapPin },
-    { label: t.hero.nationality, value: t.hero.nationalityVal, icon: Globe },
   ];
 
   return (
@@ -72,9 +70,9 @@ const Profile = memo(() => {
             </div>
           </div>
 
-          <div className="mt-10 sm:mt-12 grid grid-cols-2 gap-4 sm:gap-6 border-t border-slate-100 pt-8 sm:pt-10 sm:grid-cols-4">
+          <div className="mt-10 sm:mt-12 flex justify-center border-t border-slate-100 pt-8 sm:pt-10">
             {stats.map(({ label, value, icon: Icon }) => (
-              <div key={label} className={`group p-3 sm:p-4 rounded-3xl transition-all hover:bg-white/40`}>
+              <div key={label} className={`group p-3 sm:p-4 rounded-3xl transition-all hover:bg-white/40 flex flex-col items-center`}>
                 <div className={`flex items-center gap-2 sm:gap-3 mb-2`}>
                   <div className="p-1.5 sm:p-2 rounded-lg bg-sky-50 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-colors">
                       <Icon size={14} className="sm:w-4 sm:h-4" />
