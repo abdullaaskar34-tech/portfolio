@@ -150,6 +150,7 @@ const Education = memo(() => {
     {
       id: "biomedical",
       degree: t.education.biomedical,
+      degreeSuffix: "BSc",
       years: "2021 — 2025",
       gpa: "3.58 / 4.00",
       gpaLabel: language === 'tr' ? 'Final Not Ortalaması' : 'Final GPA',
@@ -163,11 +164,13 @@ const Education = memo(() => {
       badgeBg: "bg-emerald-500",
       badgeShadow: "shadow-emerald-100",
       textAccent: "text-emerald-600",
-      icon: Building2
+      icon: Building2,
+      hasTranscript: true
     },
     {
       id: "electrical",
       degree: t.education.electrical,
+      degreeSuffix: "BSc",
       years: "2023 — 2026",
       gpa: "3.58 / 4.00",
       gpaLabel: language === 'tr' ? 'Güncel Not Ortalaması' : 'Current GPA',
@@ -181,7 +184,28 @@ const Education = memo(() => {
       badgeBg: "bg-sky-500",
       badgeShadow: "shadow-sky-100",
       textAccent: "text-sky-500",
-      icon: Zap
+      icon: Zap,
+      hasTranscript: true
+    },
+    {
+      id: "itu",
+      degree: t.education.itu,
+      degreeSuffix: "MSc",
+      years: "2026 — 2028",
+      gpa: null,
+      gpaLabel: null,
+      status: t.education.ongoing,
+      statusIcon: GraduationCap,
+      university: t.education.ituUniversity,
+      info: t.education.ituInfo,
+      themeColor: "indigo",
+      bgGradient: "from-white to-indigo-50/30",
+      ringColor: "hover:ring-indigo-200",
+      badgeBg: "bg-indigo-500",
+      badgeShadow: "shadow-indigo-100",
+      textAccent: "text-indigo-600",
+      icon: GraduationCap,
+      hasTranscript: false
     }
   ];
 
@@ -201,7 +225,7 @@ const Education = memo(() => {
     <>
       <GlassCard id="education" className="w-full">
         <SectionTitle icon={GraduationCap} eyebrow={t.education.title} title={t.nav.education} />
-        <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 xl:grid-cols-3">
           {educationData.map((item) => (
             <GlareHover 
               key={item.id} 
@@ -215,7 +239,10 @@ const Education = memo(() => {
               className="h-full"
             >
               <div className={`group relative h-full w-full overflow-hidden p-6 sm:p-8 transition-all hover:shadow-2xl`}>
-                <div className={`absolute -right-10 -top-10 h-32 w-32 sm:h-40 sm:w-40 rounded-full ${item.id === 'biomedical' ? 'bg-emerald-100/20' : 'bg-sky-100/20'} blur-3xl transition-all group-hover:opacity-40`} />
+                <div className={`absolute -right-10 -top-10 h-32 w-32 sm:h-40 sm:w-40 rounded-full ${
+                  item.id === 'biomedical' ? 'bg-emerald-100/20' :
+                  item.id === 'electrical' ? 'bg-sky-100/20' : 'bg-indigo-100/20'
+                } blur-3xl transition-all group-hover:opacity-40`} />
                 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6 sm:mb-8">
@@ -225,16 +252,23 @@ const Education = memo(() => {
                           <item.statusIcon size={12} className="sm:w-3.5 sm:h-3.5" /> {item.status}
                         </div>
                     </div>
-                    <div className="text-left sm:text-right">
-                        <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{item.gpaLabel}</p>
-                        <p className={`text-lg sm:text-xl font-black ${item.textAccent}`}>{item.gpa}</p>
-                    </div>
+                    {item.gpa && (
+                      <div className="text-left sm:text-right">
+                          <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{item.gpaLabel}</p>
+                          <p className={`text-lg sm:text-xl font-black ${item.textAccent}`}>{item.gpa}</p>
+                      </div>
+                    )}
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-800 mb-1">{item.degree} BSc</h3>
-                  <p className="text-sm font-bold text-slate-400 mb-8">{item.university} {item.id === 'biomedical' ? `• ${item.info}` : `(${item.info})`}</p>
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-800 mb-1">{item.degree} {item.degreeSuffix}</h3>
+                  <p className="text-sm font-bold text-slate-400 mb-8">
+                    {item.id === 'biomedical' ? `${item.university} • ${item.info}` :
+                     item.id === 'electrical' ? `${item.university} (${item.info})` :
+                     `${item.university} • ${item.info}`}
+                  </p>
                   
                   <div className="mt-auto flex flex-col gap-3">
+                    {item.hasTranscript && (
                       <button
                         type="button"
                         onClick={() => setModalType(item.id)}
@@ -242,6 +276,7 @@ const Education = memo(() => {
                       >
                         {t.education.viewTranscript} <ChevronRight size={18} />
                       </button>
+                    )}
                   </div>
                 </div>
               </div>
