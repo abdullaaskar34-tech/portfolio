@@ -174,8 +174,8 @@ const Education = memo(() => {
       years: "2023 — 2026",
       gpa: "3.58 / 4.00",
       gpaLabel: language === 'tr' ? 'Güncel Not Ortalaması' : 'Current GPA',
-      status: t.education.doubleMajor,
-      statusIcon: Zap,
+      status: t.education.graduated,
+      statusIcon: BadgeCheck,
       university: t.education.university,
       info: t.education.doubleMajor,
       themeColor: "sky",
@@ -198,12 +198,12 @@ const Education = memo(() => {
       statusIcon: GraduationCap,
       university: t.education.ituUniversity,
       info: t.education.ituInfo,
-      themeColor: "indigo",
-      bgGradient: "from-white to-indigo-50/30",
-      ringColor: "hover:ring-indigo-200",
-      badgeBg: "bg-indigo-500",
-      badgeShadow: "shadow-indigo-100",
-      textAccent: "text-indigo-600",
+      themeColor: "emerald",
+      bgGradient: "from-white to-green-50/30",
+      ringColor: "hover:ring-green-200",
+      badgeBg: "bg-green-500",
+      badgeShadow: "shadow-green-100",
+      textAccent: "text-green-600",
       icon: GraduationCap,
       hasTranscript: false
     }
@@ -241,7 +241,7 @@ const Education = memo(() => {
               <div className={`group relative h-full w-full overflow-hidden p-6 sm:p-8 transition-all hover:shadow-2xl`}>
                 <div className={`absolute -right-10 -top-10 h-32 w-32 sm:h-40 sm:w-40 rounded-full ${
                   item.id === 'biomedical' ? 'bg-emerald-100/20' :
-                  item.id === 'electrical' ? 'bg-sky-100/20' : 'bg-indigo-100/20'
+                  item.id === 'electrical' ? 'bg-sky-100/20' : 'bg-green-100/20'
                 } blur-3xl transition-all group-hover:opacity-40`} />
                 
                 <div className="relative z-10 flex flex-col h-full">
